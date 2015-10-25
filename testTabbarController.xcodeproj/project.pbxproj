@@ -12,9 +12,22 @@
 		FD15A1EF1BAAB1D70048B4D2 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15A1EE1BAAB1D70048B4D2 /* FirstViewController.m */; };
 		FD15A1F21BAAB1D70048B4D2 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15A1F11BAAB1D70048B4D2 /* SecondViewController.m */; };
 		FD15A1F51BAAB1D70048B4D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD15A1F31BAAB1D70048B4D2 /* Main.storyboard */; };
-		FD15A1F71BAAB1D70048B4D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD15A1F61BAAB1D70048B4D2 /* Images.xcassets */; };
 		FD15A1FA1BAAB1D70048B4D2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD15A1F81BAAB1D70048B4D2 /* LaunchScreen.xib */; };
 		FD15A2061BAAB1D70048B4D2 /* testTabbarControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15A2051BAAB1D70048B4D2 /* testTabbarControllerTests.m */; };
+		FD15A2111BAAB2950048B4D2 /* TestTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15A2101BAAB2950048B4D2 /* TestTabBarController.m */; };
+		FD5434CF1BD0A129008FE241 /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5434CE1BD0A129008FE241 /* RecordViewController.m */; settings = {ASSET_TAGS = (); }; };
+		FDDFE0E61BDCA30800865CDE /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE0E51BDCA30800865CDE /* BaseModel.m */; settings = {ASSET_TAGS = (); }; };
+		FDDFE0E91BDCA31A00865CDE /* EssayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE0E81BDCA31A00865CDE /* EssayModel.m */; settings = {ASSET_TAGS = (); }; };
+		FDDFE0EC1BDCA3EA00865CDE /* DataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE0EB1BDCA3EA00865CDE /* DataClass.m */; settings = {ASSET_TAGS = (); }; };
+		FDDFE0EF1BDCC67200865CDE /* EssayDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE0EE1BDCC67200865CDE /* EssayDetailController.m */; settings = {ASSET_TAGS = (); }; };
+		FDDFE0F21BDCCA8000865CDE /* EssayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE0F11BDCCA8000865CDE /* EssayTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		FDDFE1001BDCE07600865CDE /* ApiXml.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE0F71BDCE07600865CDE /* ApiXml.mm */; settings = {ASSET_TAGS = (); }; };
+		FDDFE1011BDCE07600865CDE /* payRequsestHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE0F91BDCE07600865CDE /* payRequsestHandler.mm */; settings = {ASSET_TAGS = (); }; };
+		FDDFE1021BDCE07600865CDE /* WXUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE0FB1BDCE07600865CDE /* WXUtil.mm */; settings = {ASSET_TAGS = (); }; };
+		FDDFE1031BDCE07600865CDE /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDFE0FD1BDCE07600865CDE /* libWeChatSDK.a */; settings = {ASSET_TAGS = (); }; };
+		FDDFE1071BDCE0FE00865CDE /* WeixinPay.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE1061BDCE0FE00865CDE /* WeixinPay.m */; settings = {ASSET_TAGS = (); }; };
+		FDE2296E1BAAB9D7008E581B /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE2296D1BAAB9D7008E581B /* ThreeViewController.m */; };
+		FDE229701BAAC160008E581B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDE2296F1BAAC160008E581B /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,11 +51,38 @@
 		FD15A1F01BAAB1D70048B4D2 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		FD15A1F11BAAB1D70048B4D2 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		FD15A1F41BAAB1D70048B4D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FD15A1F61BAAB1D70048B4D2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FD15A1F91BAAB1D70048B4D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FD15A1FF1BAAB1D70048B4D2 /* testTabbarControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testTabbarControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD15A2041BAAB1D70048B4D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD15A2051BAAB1D70048B4D2 /* testTabbarControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testTabbarControllerTests.m; sourceTree = "<group>"; };
+		FD15A20F1BAAB2950048B4D2 /* TestTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTabBarController.h; sourceTree = "<group>"; };
+		FD15A2101BAAB2950048B4D2 /* TestTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTabBarController.m; sourceTree = "<group>"; };
+		FD5434CD1BD0A129008FE241 /* RecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordViewController.h; sourceTree = "<group>"; };
+		FD5434CE1BD0A129008FE241 /* RecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordViewController.m; sourceTree = "<group>"; };
+		FDDFE0E41BDCA30800865CDE /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		FDDFE0E51BDCA30800865CDE /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		FDDFE0E71BDCA31A00865CDE /* EssayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EssayModel.h; sourceTree = "<group>"; };
+		FDDFE0E81BDCA31A00865CDE /* EssayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EssayModel.m; sourceTree = "<group>"; };
+		FDDFE0EA1BDCA3EA00865CDE /* DataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataClass.h; sourceTree = "<group>"; };
+		FDDFE0EB1BDCA3EA00865CDE /* DataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataClass.m; sourceTree = "<group>"; };
+		FDDFE0ED1BDCC67200865CDE /* EssayDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EssayDetailController.h; sourceTree = "<group>"; };
+		FDDFE0EE1BDCC67200865CDE /* EssayDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EssayDetailController.m; sourceTree = "<group>"; };
+		FDDFE0F01BDCCA8000865CDE /* EssayTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EssayTableViewCell.h; sourceTree = "<group>"; };
+		FDDFE0F11BDCCA8000865CDE /* EssayTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EssayTableViewCell.m; sourceTree = "<group>"; };
+		FDDFE0F61BDCE07600865CDE /* ApiXml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiXml.h; sourceTree = "<group>"; };
+		FDDFE0F71BDCE07600865CDE /* ApiXml.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ApiXml.mm; sourceTree = "<group>"; };
+		FDDFE0F81BDCE07600865CDE /* payRequsestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = payRequsestHandler.h; sourceTree = "<group>"; };
+		FDDFE0F91BDCE07600865CDE /* payRequsestHandler.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = payRequsestHandler.mm; sourceTree = "<group>"; };
+		FDDFE0FA1BDCE07600865CDE /* WXUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXUtil.h; sourceTree = "<group>"; };
+		FDDFE0FB1BDCE07600865CDE /* WXUtil.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WXUtil.mm; sourceTree = "<group>"; };
+		FDDFE0FD1BDCE07600865CDE /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		FDDFE0FE1BDCE07600865CDE /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		FDDFE0FF1BDCE07600865CDE /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		FDDFE1051BDCE0FE00865CDE /* WeixinPay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeixinPay.h; sourceTree = "<group>"; };
+		FDDFE1061BDCE0FE00865CDE /* WeixinPay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeixinPay.m; sourceTree = "<group>"; };
+		FDE2296C1BAAB9D7008E581B /* ThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
+		FDE2296D1BAAB9D7008E581B /* ThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
+		FDE2296F1BAAC160008E581B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDDFE1031BDCE07600865CDE /* libWeChatSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +107,7 @@
 		FD15A1DA1BAAB1D70048B4D2 = {
 			isa = PBXGroup;
 			children = (
+				FDDFE0F31BDCE07500865CDE /* extension */,
 				FD15A1E51BAAB1D70048B4D2 /* testTabbarController */,
 				FD15A2021BAAB1D70048B4D2 /* testTabbarControllerTests */,
 				FD15A1E41BAAB1D70048B4D2 /* Products */,
@@ -84,14 +126,25 @@
 		FD15A1E51BAAB1D70048B4D2 /* testTabbarController */ = {
 			isa = PBXGroup;
 			children = (
-				FD15A1EA1BAAB1D70048B4D2 /* AppDelegate.h */,
+				FDE2296F1BAAC160008E581B /* Images.xcassets */,
 				FD15A1EB1BAAB1D70048B4D2 /* AppDelegate.m */,
+				FD5434CC1BD0A0E5008FE241 /* model */,
 				FD15A1ED1BAAB1D70048B4D2 /* FirstViewController.h */,
+				FD15A1EA1BAAB1D70048B4D2 /* AppDelegate.h */,
 				FD15A1EE1BAAB1D70048B4D2 /* FirstViewController.m */,
 				FD15A1F01BAAB1D70048B4D2 /* SecondViewController.h */,
 				FD15A1F11BAAB1D70048B4D2 /* SecondViewController.m */,
+				FDE2296C1BAAB9D7008E581B /* ThreeViewController.h */,
+				FD5434CD1BD0A129008FE241 /* RecordViewController.h */,
+				FD5434CE1BD0A129008FE241 /* RecordViewController.m */,
+				FDE2296D1BAAB9D7008E581B /* ThreeViewController.m */,
+				FD15A20F1BAAB2950048B4D2 /* TestTabBarController.h */,
+				FD15A2101BAAB2950048B4D2 /* TestTabBarController.m */,
+				FDDFE0ED1BDCC67200865CDE /* EssayDetailController.h */,
+				FDDFE0EE1BDCC67200865CDE /* EssayDetailController.m */,
+				FDDFE0F01BDCCA8000865CDE /* EssayTableViewCell.h */,
+				FDDFE0F11BDCCA8000865CDE /* EssayTableViewCell.m */,
 				FD15A1F31BAAB1D70048B4D2 /* Main.storyboard */,
-				FD15A1F61BAAB1D70048B4D2 /* Images.xcassets */,
 				FD15A1F81BAAB1D70048B4D2 /* LaunchScreen.xib */,
 				FD15A1E61BAAB1D70048B4D2 /* Supporting Files */,
 			);
@@ -122,6 +175,70 @@
 				FD15A2041BAAB1D70048B4D2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD5434CC1BD0A0E5008FE241 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FDDFE0E41BDCA30800865CDE /* BaseModel.h */,
+				FDDFE0E51BDCA30800865CDE /* BaseModel.m */,
+				FDDFE0E71BDCA31A00865CDE /* EssayModel.h */,
+				FDDFE0E81BDCA31A00865CDE /* EssayModel.m */,
+				FDDFE0EA1BDCA3EA00865CDE /* DataClass.h */,
+				FDDFE0EB1BDCA3EA00865CDE /* DataClass.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		FDDFE0F31BDCE07500865CDE /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				FDDFE0F41BDCE07500865CDE /* weixin */,
+			);
+			name = extension;
+			path = testTabbarController/extension;
+			sourceTree = "<group>";
+		};
+		FDDFE0F41BDCE07500865CDE /* weixin */ = {
+			isa = PBXGroup;
+			children = (
+				FDDFE1041BDCE0FE00865CDE /* mpl */,
+				FDDFE0F51BDCE07600865CDE /* lib */,
+				FDDFE0FC1BDCE07600865CDE /* SDKExport */,
+			);
+			path = weixin;
+			sourceTree = "<group>";
+		};
+		FDDFE0F51BDCE07600865CDE /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				FDDFE0F61BDCE07600865CDE /* ApiXml.h */,
+				FDDFE0F71BDCE07600865CDE /* ApiXml.mm */,
+				FDDFE0F81BDCE07600865CDE /* payRequsestHandler.h */,
+				FDDFE0F91BDCE07600865CDE /* payRequsestHandler.mm */,
+				FDDFE0FA1BDCE07600865CDE /* WXUtil.h */,
+				FDDFE0FB1BDCE07600865CDE /* WXUtil.mm */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		FDDFE0FC1BDCE07600865CDE /* SDKExport */ = {
+			isa = PBXGroup;
+			children = (
+				FDDFE0FD1BDCE07600865CDE /* libWeChatSDK.a */,
+				FDDFE0FE1BDCE07600865CDE /* WXApi.h */,
+				FDDFE0FF1BDCE07600865CDE /* WXApiObject.h */,
+			);
+			path = SDKExport;
+			sourceTree = "<group>";
+		};
+		FDDFE1041BDCE0FE00865CDE /* mpl */ = {
+			isa = PBXGroup;
+			children = (
+				FDDFE1051BDCE0FE00865CDE /* WeixinPay.h */,
+				FDDFE1061BDCE0FE00865CDE /* WeixinPay.m */,
+			);
+			path = mpl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,9 +321,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDE229701BAAC160008E581B /* Images.xcassets in Resources */,
 				FD15A1F51BAAB1D70048B4D2 /* Main.storyboard in Resources */,
 				FD15A1FA1BAAB1D70048B4D2 /* LaunchScreen.xib in Resources */,
-				FD15A1F71BAAB1D70048B4D2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,10 +341,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD15A2111BAAB2950048B4D2 /* TestTabBarController.m in Sources */,
 				FD15A1F21BAAB1D70048B4D2 /* SecondViewController.m in Sources */,
+				FDDFE1001BDCE07600865CDE /* ApiXml.mm in Sources */,
+				FDDFE0E61BDCA30800865CDE /* BaseModel.m in Sources */,
+				FDDFE1071BDCE0FE00865CDE /* WeixinPay.m in Sources */,
 				FD15A1EC1BAAB1D70048B4D2 /* AppDelegate.m in Sources */,
+				FDE2296E1BAAB9D7008E581B /* ThreeViewController.m in Sources */,
 				FD15A1EF1BAAB1D70048B4D2 /* FirstViewController.m in Sources */,
+				FDDFE0EC1BDCA3EA00865CDE /* DataClass.m in Sources */,
+				FD5434CF1BD0A129008FE241 /* RecordViewController.m in Sources */,
+				FDDFE0E91BDCA31A00865CDE /* EssayModel.m in Sources */,
+				FDDFE0EF1BDCC67200865CDE /* EssayDetailController.m in Sources */,
+				FDDFE1011BDCE07600865CDE /* payRequsestHandler.mm in Sources */,
+				FDDFE1021BDCE07600865CDE /* WXUtil.mm in Sources */,
 				FD15A1E91BAAB1D70048B4D2 /* main.m in Sources */,
+				FDDFE0F21BDCCA8000865CDE /* EssayTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +484,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = testTabbarController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/testTabbarController/extension/weixin/SDKExport",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -365,6 +498,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = testTabbarController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/testTabbarController/extension/weixin/SDKExport",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -422,6 +559,7 @@
 				FD15A20B1BAAB1D70048B4D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD15A20C1BAAB1D70048B4D2 /* Build configuration list for PBXNativeTarget "testTabbarControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +568,7 @@
 				FD15A20E1BAAB1D70048B4D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
