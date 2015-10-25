@@ -102,7 +102,7 @@
     //输出Debug Info
     [debugInfo appendFormat:@"服务器返回：\n%@\n\n",[[NSString alloc] initWithData:res encoding:NSUTF8StringEncoding]];
     
-    XMLHelper *xml  = [[XMLHelper alloc] autorelease];
+    XMLHelper *xml  = [[XMLHelper alloc] init];
     
     //开始解析
     [xml startParse:res];
@@ -137,18 +137,8 @@
         [debugInfo appendFormat:@"接口返回错误！！！\n"];
     }
 
-    return [self generateTradeNO];
+    return prepayid;
 }
-
-
-- (NSString *)generateTradeNO
-{
-    long date = time(NULL);
-    NSString* ret = [NSString stringWithFormat:@"%ld", date];
-    return ret;
-}
-
-
 //============================================================
 // V3V4支付流程模拟实现，只作帐号验证和演示
 // 注意:此demo只适合开发调试，参数配置和参数加密需要放到服务器端处理

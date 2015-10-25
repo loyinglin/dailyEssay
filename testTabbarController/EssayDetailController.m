@@ -8,6 +8,7 @@
 
 #import "EssayDetailController.h"
 #import "EssayModel.h"
+#import "WeixinShare.h"
 
 @interface EssayDetailController ()
 
@@ -76,6 +77,7 @@
 
 - (IBAction)shareToWeixin:(id)sender
 {
+    [[WeixinShare instance] sendTextContent:self.text.text];
     
 }
 #pragma mark - delegate

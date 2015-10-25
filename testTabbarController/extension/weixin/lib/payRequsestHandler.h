@@ -39,9 +39,9 @@
  */
 
 // 账号帐户资料
-//更改商户把相关参数后可
+//更改商户把相关参数后可测试
 
-#define APP_ID          @"wxd930ea5d5a258f4f"               //APPID
+#define APP_ID          @"wxbd491d9489f375ef"               //APPID
 #define APP_SECRET      @"4a5e6b5bb36bb2b0815020e7710a325f" //appsecret
 //商户号，填写商户对应参数
 #define MCH_ID          @"1273863201"
@@ -51,7 +51,6 @@
 #define NOTIFY_URL      @"http://wxpay.weixin.qq.com/pub_v2/pay/notify.v2.php"
 //获取服务器端支付数据地址（商户自定义）
 #define SP_URL          @"http://wxpay.weixin.qq.com/pub_v2/app/app_pay.php"
-
 
 
 @interface payRequsestHandler : NSObject{

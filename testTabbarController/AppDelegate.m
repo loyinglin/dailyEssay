@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "payRequsestHandler.h"
+#import "WeixinShare.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //weixin
+    [WXApi registerApp:APP_ID withDescription:@"LY日记"];
+    
     return YES;
 }
 
@@ -41,5 +47,21 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+
+    if ([url.host isEqualToString:@"pay"]) {
+        [WXApi handleOpenURL:url delegate:[WeixinShare instance]];
+    }
+    return YES;
+}
+
+-(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    return [WXApi handleOpenURL:url delegate:[WeixinShare instance]];
+}
+
 
 @end

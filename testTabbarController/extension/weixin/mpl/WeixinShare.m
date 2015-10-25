@@ -6,11 +6,11 @@
 //  Copyright (c) 2015年 林伟池. All rights reserved.
 //
 
-#import "WeixinPay.h"
+#import "WeixinShare.h"
 #import "payRequsestHandler.h"
 #import <UIKit/UIKit.h>
 
-@implementation WeixinPay
+@implementation WeixinShare
 {    
     enum WXScene _scene;
 }
@@ -28,7 +28,7 @@
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     if (alertView.tag == 1000) {
-        LYLog(@"532");
+        NSLog(@"532");
     }
 }
 
@@ -98,12 +98,12 @@
         switch (resp.errCode) {
             case WXSuccess:
                 strMsg = @"支付结果：成功！";
-                LYLog(@"支付成功－PaySuccess，retcode = %d", resp.errCode);
+                NSLog(@"支付成功－PaySuccess，retcode = %d", resp.errCode);
                 break;
                 
             default:
                 strMsg = [NSString stringWithFormat:@"支付结果：失败！retcode = %d, retstr = %@", resp.errCode,resp.errStr];
-                LYLog(@"错误，retcode = %d, retstr = %@", resp.errCode,resp.errStr);
+                NSLog(@"错误，retcode = %d, retstr = %@", resp.errCode,resp.errStr);
                 break;
         }
     }
@@ -111,10 +111,13 @@
     [alert show];
 }
 
-- (void) sendTextContent
+- (void) sendTextContent:(NSString *)text
 {
     SendMessageToWXReq* req = [[SendMessageToWXReq alloc] init];
-    req.text = @"人文的东西并不是体现在你看得到的方面，它更多的体现在你看不到的那些方面，它会影响每一个功能，这才是最本质的。但是，对这点可能很多人没有思考过，以为人文的东西就是我们搞一个很小清新的图片什么的。”综合来看，人文的东西其实是贯穿整个产品的脉络，或者说是它的灵魂所在。";
+    if (text == nil) {
+        text = @"emtpy";
+    }
+    req.text = text;
     req.bText = YES;
     req.scene = _scene;
     
@@ -202,7 +205,7 @@
         //IOS5自带解析类NSJSONSerialization从response中解析出数据放到字典中
         dict = [NSJSONSerialization JSONObjectWithData:response options:NSJSONReadingMutableLeaves error:&error];
         
-        LYLog(@"url:%@",urlString);
+        NSLog(@"url:%@",urlString);
         if(dict != nil){
             NSMutableString *retcode = [dict objectForKey:@"retcode"];
             if (retcode.intValue == 0){
@@ -219,7 +222,7 @@
                 req.sign                = [self generateTradeNO];
                 [WXApi sendReq:req];
                 //日志输出
-                LYLog(@"appid=%@\npartid=%@\nprepayid=%@\nnoncestr=%@\ntimestamp=%ld\npackage=%@\nsign=%@",req.openID,req.partnerId,req.prepayId,req.nonceStr,(long)req.timeStamp,req.package,req.sign );
+                NSLog(@"appid=%@\npartid=%@\nprepayid=%@\nnoncestr=%@\ntimestamp=%ld\npackage=%@\nsign=%@",req.openID,req.partnerId,req.prepayId,req.nonceStr,(long)req.timeStamp,req.package,req.sign );
             }else{
                 [self alert:@"提示信息" msg:[dict objectForKey:@"retmsg"]];
             }

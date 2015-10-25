@@ -9,12 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "WXApi.h"
 
-@interface WeixinPay : NSObject<WXApiDelegate>
+@interface WeixinShare : NSObject<WXApiDelegate>
 
 +(instancetype) instance;
 
 - (void)sendPay;
 
-- (void)sendPay_demo;
+- (void)sendTextContent:(NSString*)text;
 
 @end

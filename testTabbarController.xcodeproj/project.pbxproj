@@ -21,11 +21,15 @@
 		FDDFE0EC1BDCA3EA00865CDE /* DataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE0EB1BDCA3EA00865CDE /* DataClass.m */; settings = {ASSET_TAGS = (); }; };
 		FDDFE0EF1BDCC67200865CDE /* EssayDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE0EE1BDCC67200865CDE /* EssayDetailController.m */; settings = {ASSET_TAGS = (); }; };
 		FDDFE0F21BDCCA8000865CDE /* EssayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE0F11BDCCA8000865CDE /* EssayTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		FDDFE1001BDCE07600865CDE /* ApiXml.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE0F71BDCE07600865CDE /* ApiXml.mm */; settings = {ASSET_TAGS = (); }; };
-		FDDFE1011BDCE07600865CDE /* payRequsestHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE0F91BDCE07600865CDE /* payRequsestHandler.mm */; settings = {ASSET_TAGS = (); }; };
-		FDDFE1021BDCE07600865CDE /* WXUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE0FB1BDCE07600865CDE /* WXUtil.mm */; settings = {ASSET_TAGS = (); }; };
-		FDDFE1031BDCE07600865CDE /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDFE0FD1BDCE07600865CDE /* libWeChatSDK.a */; settings = {ASSET_TAGS = (); }; };
-		FDDFE1071BDCE0FE00865CDE /* WeixinPay.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE1061BDCE0FE00865CDE /* WeixinPay.m */; settings = {ASSET_TAGS = (); }; };
+		FDDFE1071BDCE0FE00865CDE /* WeixinShare.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE1061BDCE0FE00865CDE /* WeixinShare.m */; settings = {ASSET_TAGS = (); }; };
+		FDDFE1131BDCE37200865CDE /* ApiXml.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE10A1BDCE37200865CDE /* ApiXml.mm */; settings = {ASSET_TAGS = (); }; };
+		FDDFE1141BDCE37200865CDE /* payRequsestHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE10C1BDCE37200865CDE /* payRequsestHandler.mm */; settings = {ASSET_TAGS = (); }; };
+		FDDFE1151BDCE37200865CDE /* WXUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE10E1BDCE37200865CDE /* WXUtil.mm */; settings = {ASSET_TAGS = (); }; };
+		FDDFE1171BDCE40700865CDE /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDFE1101BDCE37200865CDE /* libWeChatSDK.a */; settings = {ASSET_TAGS = (); }; };
+		FDDFE1191BDCE53200865CDE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDFE1181BDCE53200865CDE /* libz.tbd */; };
+		FDDFE11B1BDCE54A00865CDE /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDFE11A1BDCE54A00865CDE /* libsqlite3.0.tbd */; };
+		FDDFE11D1BDCE57D00865CDE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDFE11C1BDCE57D00865CDE /* UIKit.framework */; };
+		FDDFE11F1BDCE58B00865CDE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDFE11E1BDCE58B00865CDE /* SystemConfiguration.framework */; };
 		FDE2296E1BAAB9D7008E581B /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE2296D1BAAB9D7008E581B /* ThreeViewController.m */; };
 		FDE229701BAAC160008E581B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDE2296F1BAAC160008E581B /* Images.xcassets */; };
 /* End PBXBuildFile section */
@@ -69,17 +73,21 @@
 		FDDFE0EE1BDCC67200865CDE /* EssayDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EssayDetailController.m; sourceTree = "<group>"; };
 		FDDFE0F01BDCCA8000865CDE /* EssayTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EssayTableViewCell.h; sourceTree = "<group>"; };
 		FDDFE0F11BDCCA8000865CDE /* EssayTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EssayTableViewCell.m; sourceTree = "<group>"; };
-		FDDFE0F61BDCE07600865CDE /* ApiXml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiXml.h; sourceTree = "<group>"; };
-		FDDFE0F71BDCE07600865CDE /* ApiXml.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ApiXml.mm; sourceTree = "<group>"; };
-		FDDFE0F81BDCE07600865CDE /* payRequsestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = payRequsestHandler.h; sourceTree = "<group>"; };
-		FDDFE0F91BDCE07600865CDE /* payRequsestHandler.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = payRequsestHandler.mm; sourceTree = "<group>"; };
-		FDDFE0FA1BDCE07600865CDE /* WXUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXUtil.h; sourceTree = "<group>"; };
-		FDDFE0FB1BDCE07600865CDE /* WXUtil.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WXUtil.mm; sourceTree = "<group>"; };
-		FDDFE0FD1BDCE07600865CDE /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
-		FDDFE0FE1BDCE07600865CDE /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
-		FDDFE0FF1BDCE07600865CDE /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
-		FDDFE1051BDCE0FE00865CDE /* WeixinPay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeixinPay.h; sourceTree = "<group>"; };
-		FDDFE1061BDCE0FE00865CDE /* WeixinPay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeixinPay.m; sourceTree = "<group>"; };
+		FDDFE1051BDCE0FE00865CDE /* WeixinShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeixinShare.h; sourceTree = "<group>"; };
+		FDDFE1061BDCE0FE00865CDE /* WeixinShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeixinShare.m; sourceTree = "<group>"; };
+		FDDFE1091BDCE37200865CDE /* ApiXml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiXml.h; sourceTree = "<group>"; };
+		FDDFE10A1BDCE37200865CDE /* ApiXml.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ApiXml.mm; sourceTree = "<group>"; };
+		FDDFE10B1BDCE37200865CDE /* payRequsestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = payRequsestHandler.h; sourceTree = "<group>"; };
+		FDDFE10C1BDCE37200865CDE /* payRequsestHandler.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = payRequsestHandler.mm; sourceTree = "<group>"; };
+		FDDFE10D1BDCE37200865CDE /* WXUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXUtil.h; sourceTree = "<group>"; };
+		FDDFE10E1BDCE37200865CDE /* WXUtil.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WXUtil.mm; sourceTree = "<group>"; };
+		FDDFE1101BDCE37200865CDE /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		FDDFE1111BDCE37200865CDE /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		FDDFE1121BDCE37200865CDE /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		FDDFE1181BDCE53200865CDE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		FDDFE11A1BDCE54A00865CDE /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		FDDFE11C1BDCE57D00865CDE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FDDFE11E1BDCE58B00865CDE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		FDE2296C1BAAB9D7008E581B /* ThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
 		FDE2296D1BAAB9D7008E581B /* ThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
 		FDE2296F1BAAC160008E581B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -90,7 +98,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDDFE1031BDCE07600865CDE /* libWeChatSDK.a in Frameworks */,
+				FDDFE11F1BDCE58B00865CDE /* SystemConfiguration.framework in Frameworks */,
+				FDDFE11D1BDCE57D00865CDE /* UIKit.framework in Frameworks */,
+				FDDFE11B1BDCE54A00865CDE /* libsqlite3.0.tbd in Frameworks */,
+				FDDFE1191BDCE53200865CDE /* libz.tbd in Frameworks */,
+				FDDFE1171BDCE40700865CDE /* libWeChatSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +119,10 @@
 		FD15A1DA1BAAB1D70048B4D2 = {
 			isa = PBXGroup;
 			children = (
+				FDDFE11E1BDCE58B00865CDE /* SystemConfiguration.framework */,
+				FDDFE11C1BDCE57D00865CDE /* UIKit.framework */,
+				FDDFE11A1BDCE54A00865CDE /* libsqlite3.0.tbd */,
+				FDDFE1181BDCE53200865CDE /* libz.tbd */,
 				FDDFE0F31BDCE07500865CDE /* extension */,
 				FD15A1E51BAAB1D70048B4D2 /* testTabbarController */,
 				FD15A2021BAAB1D70048B4D2 /* testTabbarControllerTests */,
@@ -128,9 +144,9 @@
 			children = (
 				FDE2296F1BAAC160008E581B /* Images.xcassets */,
 				FD15A1EB1BAAB1D70048B4D2 /* AppDelegate.m */,
+				FD15A1EA1BAAB1D70048B4D2 /* AppDelegate.h */,
 				FD5434CC1BD0A0E5008FE241 /* model */,
 				FD15A1ED1BAAB1D70048B4D2 /* FirstViewController.h */,
-				FD15A1EA1BAAB1D70048B4D2 /* AppDelegate.h */,
 				FD15A1EE1BAAB1D70048B4D2 /* FirstViewController.m */,
 				FD15A1F01BAAB1D70048B4D2 /* SecondViewController.h */,
 				FD15A1F11BAAB1D70048B4D2 /* SecondViewController.m */,
@@ -202,43 +218,43 @@
 		FDDFE0F41BDCE07500865CDE /* weixin */ = {
 			isa = PBXGroup;
 			children = (
+				FDDFE1081BDCE37200865CDE /* lib */,
+				FDDFE10F1BDCE37200865CDE /* SDKExport */,
 				FDDFE1041BDCE0FE00865CDE /* mpl */,
-				FDDFE0F51BDCE07600865CDE /* lib */,
-				FDDFE0FC1BDCE07600865CDE /* SDKExport */,
 			);
 			path = weixin;
-			sourceTree = "<group>";
-		};
-		FDDFE0F51BDCE07600865CDE /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				FDDFE0F61BDCE07600865CDE /* ApiXml.h */,
-				FDDFE0F71BDCE07600865CDE /* ApiXml.mm */,
-				FDDFE0F81BDCE07600865CDE /* payRequsestHandler.h */,
-				FDDFE0F91BDCE07600865CDE /* payRequsestHandler.mm */,
-				FDDFE0FA1BDCE07600865CDE /* WXUtil.h */,
-				FDDFE0FB1BDCE07600865CDE /* WXUtil.mm */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
-		FDDFE0FC1BDCE07600865CDE /* SDKExport */ = {
-			isa = PBXGroup;
-			children = (
-				FDDFE0FD1BDCE07600865CDE /* libWeChatSDK.a */,
-				FDDFE0FE1BDCE07600865CDE /* WXApi.h */,
-				FDDFE0FF1BDCE07600865CDE /* WXApiObject.h */,
-			);
-			path = SDKExport;
 			sourceTree = "<group>";
 		};
 		FDDFE1041BDCE0FE00865CDE /* mpl */ = {
 			isa = PBXGroup;
 			children = (
-				FDDFE1051BDCE0FE00865CDE /* WeixinPay.h */,
-				FDDFE1061BDCE0FE00865CDE /* WeixinPay.m */,
+				FDDFE1051BDCE0FE00865CDE /* WeixinShare.h */,
+				FDDFE1061BDCE0FE00865CDE /* WeixinShare.m */,
 			);
 			path = mpl;
+			sourceTree = "<group>";
+		};
+		FDDFE1081BDCE37200865CDE /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				FDDFE1091BDCE37200865CDE /* ApiXml.h */,
+				FDDFE10A1BDCE37200865CDE /* ApiXml.mm */,
+				FDDFE10B1BDCE37200865CDE /* payRequsestHandler.h */,
+				FDDFE10C1BDCE37200865CDE /* payRequsestHandler.mm */,
+				FDDFE10D1BDCE37200865CDE /* WXUtil.h */,
+				FDDFE10E1BDCE37200865CDE /* WXUtil.mm */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		FDDFE10F1BDCE37200865CDE /* SDKExport */ = {
+			isa = PBXGroup;
+			children = (
+				FDDFE1101BDCE37200865CDE /* libWeChatSDK.a */,
+				FDDFE1111BDCE37200865CDE /* WXApi.h */,
+				FDDFE1121BDCE37200865CDE /* WXApiObject.h */,
+			);
+			path = SDKExport;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,21 +357,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDDFE1131BDCE37200865CDE /* ApiXml.mm in Sources */,
 				FD15A2111BAAB2950048B4D2 /* TestTabBarController.m in Sources */,
 				FD15A1F21BAAB1D70048B4D2 /* SecondViewController.m in Sources */,
-				FDDFE1001BDCE07600865CDE /* ApiXml.mm in Sources */,
 				FDDFE0E61BDCA30800865CDE /* BaseModel.m in Sources */,
-				FDDFE1071BDCE0FE00865CDE /* WeixinPay.m in Sources */,
+				FDDFE1071BDCE0FE00865CDE /* WeixinShare.m in Sources */,
 				FD15A1EC1BAAB1D70048B4D2 /* AppDelegate.m in Sources */,
 				FDE2296E1BAAB9D7008E581B /* ThreeViewController.m in Sources */,
 				FD15A1EF1BAAB1D70048B4D2 /* FirstViewController.m in Sources */,
 				FDDFE0EC1BDCA3EA00865CDE /* DataClass.m in Sources */,
+				FDDFE1141BDCE37200865CDE /* payRequsestHandler.mm in Sources */,
 				FD5434CF1BD0A129008FE241 /* RecordViewController.m in Sources */,
 				FDDFE0E91BDCA31A00865CDE /* EssayModel.m in Sources */,
 				FDDFE0EF1BDCC67200865CDE /* EssayDetailController.m in Sources */,
-				FDDFE1011BDCE07600865CDE /* payRequsestHandler.mm in Sources */,
-				FDDFE1021BDCE07600865CDE /* WXUtil.mm in Sources */,
 				FD15A1E91BAAB1D70048B4D2 /* main.m in Sources */,
+				FDDFE1151BDCE37200865CDE /* WXUtil.mm in Sources */,
 				FDDFE0F21BDCCA8000865CDE /* EssayTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +498,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = testTabbarController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -496,6 +513,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = testTabbarController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
