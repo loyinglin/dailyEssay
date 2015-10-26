@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FD15A1EC1BAAB1D70048B4D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15A1EB1BAAB1D70048B4D2 /* AppDelegate.m */; };
 		FD15A2061BAAB1D70048B4D2 /* testTabbarControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15A2051BAAB1D70048B4D2 /* testTabbarControllerTests.m */; };
+		FD47D4681BDDE1C5000482A7 /* TodoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD47D4671BDDE1C5000482A7 /* TodoCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		FDDFE1191BDCE53200865CDE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDFE1181BDCE53200865CDE /* libz.tbd */; };
 		FDDFE11B1BDCE54A00865CDE /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDFE11A1BDCE54A00865CDE /* libsqlite3.0.tbd */; };
 		FDDFE11D1BDCE57D00865CDE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDFE11C1BDCE57D00865CDE /* UIKit.framework */; };
@@ -55,6 +56,8 @@
 		FD15A1FF1BAAB1D70048B4D2 /* testTabbarControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testTabbarControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD15A2041BAAB1D70048B4D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD15A2051BAAB1D70048B4D2 /* testTabbarControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testTabbarControllerTests.m; sourceTree = "<group>"; };
+		FD47D4661BDDE1C5000482A7 /* TodoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoCollectionViewCell.h; sourceTree = "<group>"; };
+		FD47D4671BDDE1C5000482A7 /* TodoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoCollectionViewCell.m; sourceTree = "<group>"; };
 		FDDFE1181BDCE53200865CDE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		FDDFE11A1BDCE54A00865CDE /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		FDDFE11C1BDCE57D00865CDE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -291,6 +294,8 @@
 				FDDFE15E1BDDD8BF00865CDE /* TodoDetailController.m */,
 				FDDFE15F1BDDD8BF00865CDE /* TodoViewController.h */,
 				FDDFE1601BDDD8BF00865CDE /* TodoViewController.m */,
+				FD47D4661BDDE1C5000482A7 /* TodoCollectionViewCell.h */,
+				FD47D4671BDDE1C5000482A7 /* TodoCollectionViewCell.m */,
 			);
 			path = todo;
 			sourceTree = "<group>";
@@ -421,6 +426,7 @@
 				FD15A1EC1BAAB1D70048B4D2 /* AppDelegate.m in Sources */,
 				FDDFE1731BDDD8BF00865CDE /* FirstViewController.m in Sources */,
 				FDDFE1641BDDD8BF00865CDE /* WeixinShare.m in Sources */,
+				FD47D4681BDDE1C5000482A7 /* TodoCollectionViewCell.m in Sources */,
 				FDDFE16F1BDDD8BF00865CDE /* main.m in Sources */,
 				FDDFE1861BDDDA7200865CDE /* EssayModel.m in Sources */,
 				FDDFE1711BDDD8BF00865CDE /* EssayTableViewCell.m in Sources */,

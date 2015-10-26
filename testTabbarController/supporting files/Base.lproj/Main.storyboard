@@ -393,7 +393,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="todo" id="A7r-H7-ix1">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="todo" id="A7r-H7-ix1" customClass="TodoCollectionViewCell">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -422,6 +422,10 @@
                                             <constraint firstItem="uge-Xh-eay" firstAttribute="centerX" secondItem="A7r-H7-ix1" secondAttribute="centerX" id="kmL-cx-US6"/>
                                             <constraint firstItem="0M0-w9-Sbc" firstAttribute="centerX" secondItem="A7r-H7-ix1" secondAttribute="centerX" id="lhi-JQ-yYN"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="myDetail" destination="uge-Xh-eay" id="f0y-DC-PED"/>
+                                            <outlet property="myStartTime" destination="0M0-w9-Sbc" id="Adw-he-95L"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -448,7 +452,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="myTodos" destination="MUY-qk-vht" id="ZBS-cC-MvM"/>
-                        <segue destination="zEL-Rg-GHn" kind="show" identifier="open_todo_detail_board" id="YHu-Mm-2xl"/>
+                        <segue destination="zEL-Rg-GHn" kind="show" identifier="open_todo_detail_board" id="Yig-HD-XeZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="igw-o7-IXk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -467,7 +471,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="abc" translatesAutoresizingMaskIntoConstraints="NO" id="hIg-id-YHQ">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="df发都发你 ababccbcb" translatesAutoresizingMaskIntoConstraints="NO" id="hIg-id-YHQ">
                                 <rect key="frame" x="0.0" y="64" width="600" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -488,12 +492,12 @@
                     <navigationItem key="navigationItem" title="详情" id="Oji-7G-07K">
                         <barButtonItem key="rightBarButtonItem" title="保存" id="z85-dR-LF3">
                             <connections>
-                                <action selector="onSave:" destination="zEL-Rg-GHn" id="xUT-NL-z1c"/>
+                                <action selector="onSave:" destination="zEL-Rg-GHn" id="HM7-kh-FYV"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="myText" destination="hIg-id-YHQ" id="ILq-0G-xfN"/>
+                        <outlet property="myText" destination="hIg-id-YHQ" id="tJQ-Nm-iC6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xTP-AN-Ujv" userLabel="First Responder" sceneMemberID="firstResponder"/>

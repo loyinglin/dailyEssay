@@ -7,6 +7,8 @@
 //
 
 #import "TodoViewController.h"
+#import "TodoDetailController.h"
+#import "TodoCollectionViewCell.h"
 #import "TodoModel.h"
 
 @interface TodoViewController ()
@@ -60,6 +62,14 @@
     [self performSegueWithIdentifier:const_todo_detail sender:self];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:const_todo_detail]){
+        TodoDetailController* controller = segue.destinationViewController;
+        controller.index = myDetailIndex;
+    }
+}
+
 
 #pragma mark - delegate
 
@@ -77,7 +87,11 @@
 //        DetailGoods* goods = [[CategoryDetailModel instance] getDetailGoodsByIndex:indexPath.row];
 //        [cell viewInitWith:goods];
 //    }
-    UICollectionViewCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"todo" forIndexPath:indexPath];
+    TodoCollectionViewCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"todo" forIndexPath:indexPath];
+    Thing* item = [[TodoModel instance] getThingByIndex:indexPath.row];
+    if (item) {
+        [cell viewInitWith:item.startTime Text:item.text];
+    }
     return cell;
 }
 
