@@ -25,7 +25,6 @@
 		FDDFE16B1BDDD8BF00865CDE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDDFE1451BDDD8BF00865CDE /* LaunchScreen.xib */; settings = {ASSET_TAGS = (); }; };
 		FDDFE16C1BDDD8BF00865CDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDDFE1471BDDD8BF00865CDE /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
 		FDDFE16D1BDDD8BF00865CDE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDDFE1491BDDD8BF00865CDE /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
-		FDDFE16E1BDDD8BF00865CDE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FDDFE14A1BDDD8BF00865CDE /* Info.plist */; settings = {ASSET_TAGS = (); }; };
 		FDDFE16F1BDDD8BF00865CDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE14B1BDDD8BF00865CDE /* main.m */; settings = {ASSET_TAGS = (); }; };
 		FDDFE1701BDDD8BF00865CDE /* EssayDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE1501BDDD8BF00865CDE /* EssayDetailController.m */; settings = {ASSET_TAGS = (); }; };
 		FDDFE1711BDDD8BF00865CDE /* EssayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE1521BDDD8BF00865CDE /* EssayTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
@@ -85,7 +84,6 @@
 		FDDFE1461BDDD8BF00865CDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FDDFE1481BDDD8BF00865CDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDDFE1491BDDD8BF00865CDE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		FDDFE14A1BDDD8BF00865CDE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDDFE14B1BDDD8BF00865CDE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FDDFE14F1BDDD8BF00865CDE /* EssayDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EssayDetailController.h; sourceTree = "<group>"; };
 		FDDFE1501BDDD8BF00865CDE /* EssayDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EssayDetailController.m; sourceTree = "<group>"; };
@@ -246,7 +244,6 @@
 				FDDFE1451BDDD8BF00865CDE /* LaunchScreen.xib */,
 				FDDFE1471BDDD8BF00865CDE /* Main.storyboard */,
 				FDDFE1491BDDD8BF00865CDE /* Images.xcassets */,
-				FDDFE14A1BDDD8BF00865CDE /* Info.plist */,
 				FDDFE14B1BDDD8BF00865CDE /* main.m */,
 			);
 			path = "supporting files";
@@ -413,7 +410,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDDFE16E1BDDD8BF00865CDE /* Info.plist in Resources */,
 				FDDFE16D1BDDD8BF00865CDE /* Images.xcassets in Resources */,
 				FDDFE16B1BDDD8BF00865CDE /* LaunchScreen.xib in Resources */,
 				FDDFE16C1BDDD8BF00865CDE /* Main.storyboard in Resources */,
@@ -592,7 +588,7 @@
 					"$(PROJECT_DIR)/TimeFlies/extension/weixin/SDKExport",
 				);
 				PRODUCT_NAME = TimeFlies;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "0d8f46a3-b2dd-4f9c-a1d5-5aa8311c8d50";
 			};
 			name = Debug;
 		};
@@ -610,7 +606,7 @@
 					"$(PROJECT_DIR)/TimeFlies/extension/weixin/SDKExport",
 				);
 				PRODUCT_NAME = TimeFlies;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "0d8f46a3-b2dd-4f9c-a1d5-5aa8311c8d50";
 			};
 			name = Release;
 		};
