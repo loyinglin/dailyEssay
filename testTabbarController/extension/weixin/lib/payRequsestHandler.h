@@ -42,11 +42,11 @@
 //更改商户把相关参数后可测试
 
 #define APP_ID          @"wxbd491d9489f375ef"               //APPID
-#define APP_SECRET      @"4a5e6b5bb36bb2b0815020e7710a325f" //appsecret
+#define APP_SECRET      @"abc" //appsecret
 //商户号，填写商户对应参数
 #define MCH_ID          @"1273863201"
 //商户API密钥，填写相应参数
-#define PARTNER_ID      @"48074ADBA42409BD541C650132CF0801"
+#define PARTNER_ID      @"abc"
 //支付结果回调页面
 #define NOTIFY_URL      @"http://wxpay.weixin.qq.com/pub_v2/pay/notify.v2.php"
 //获取服务器端支付数据地址（商户自定义）
