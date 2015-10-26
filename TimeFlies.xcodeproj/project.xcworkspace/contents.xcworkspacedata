@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:testTabbarController.xcodeproj">
+      location = "self:/Users/loyinglin/Documents/testTabbarController/TimeFlies.xcodeproj">
    </FileRef>
 </Workspace>

@@ -53,10 +53,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FD15A1E31BAAB1D70048B4D2 /* testTabbarController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testTabbarController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD15A1E31BAAB1D70048B4D2 /* TimeFlies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeFlies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD15A1EA1BAAB1D70048B4D2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FD15A1EB1BAAB1D70048B4D2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FD15A1FF1BAAB1D70048B4D2 /* testTabbarControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testTabbarControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD15A1FF1BAAB1D70048B4D2 /* TimeFlies.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeFlies.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD15A2041BAAB1D70048B4D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD15A2051BAAB1D70048B4D2 /* testTabbarControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testTabbarControllerTests.m; sourceTree = "<group>"; };
 		FD47D4661BDDE1C5000482A7 /* TodoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoCollectionViewCell.h; sourceTree = "<group>"; };
@@ -145,8 +145,8 @@
 				FDDFE11C1BDCE57D00865CDE /* UIKit.framework */,
 				FDDFE11A1BDCE54A00865CDE /* libsqlite3.0.tbd */,
 				FDDFE1181BDCE53200865CDE /* libz.tbd */,
-				FD15A1E51BAAB1D70048B4D2 /* testTabbarController */,
-				FD15A2021BAAB1D70048B4D2 /* testTabbarControllerTests */,
+				FD15A1E51BAAB1D70048B4D2 /* TimeFlies */,
+				FD15A2021BAAB1D70048B4D2 /* TimeFliesTests */,
 				FD15A1E41BAAB1D70048B4D2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -154,13 +154,13 @@
 		FD15A1E41BAAB1D70048B4D2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FD15A1E31BAAB1D70048B4D2 /* testTabbarController.app */,
-				FD15A1FF1BAAB1D70048B4D2 /* testTabbarControllerTests.xctest */,
+				FD15A1E31BAAB1D70048B4D2 /* TimeFlies.app */,
+				FD15A1FF1BAAB1D70048B4D2 /* TimeFlies.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FD15A1E51BAAB1D70048B4D2 /* testTabbarController */ = {
+		FD15A1E51BAAB1D70048B4D2 /* TimeFlies */ = {
 			isa = PBXGroup;
 			children = (
 				FDDFE1781BDDDA7200865CDE /* model */,
@@ -170,16 +170,16 @@
 				FD15A1EA1BAAB1D70048B4D2 /* AppDelegate.h */,
 				FD15A1EB1BAAB1D70048B4D2 /* AppDelegate.m */,
 			);
-			path = testTabbarController;
+			path = TimeFlies;
 			sourceTree = "<group>";
 		};
-		FD15A2021BAAB1D70048B4D2 /* testTabbarControllerTests */ = {
+		FD15A2021BAAB1D70048B4D2 /* TimeFliesTests */ = {
 			isa = PBXGroup;
 			children = (
 				FD15A2051BAAB1D70048B4D2 /* testTabbarControllerTests.m */,
 				FD15A2031BAAB1D70048B4D2 /* Supporting Files */,
 			);
-			path = testTabbarControllerTests;
+			path = TimeFliesTests;
 			sourceTree = "<group>";
 		};
 		FD15A2031BAAB1D70048B4D2 /* Supporting Files */ = {
@@ -335,9 +335,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FD15A1E21BAAB1D70048B4D2 /* testTabbarController */ = {
+		FD15A1E21BAAB1D70048B4D2 /* TimeFlies */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FD15A2091BAAB1D70048B4D2 /* Build configuration list for PBXNativeTarget "testTabbarController" */;
+			buildConfigurationList = FD15A2091BAAB1D70048B4D2 /* Build configuration list for PBXNativeTarget "TimeFlies" */;
 			buildPhases = (
 				FD15A1DF1BAAB1D70048B4D2 /* Sources */,
 				FD15A1E01BAAB1D70048B4D2 /* Frameworks */,
@@ -347,14 +347,14 @@
 			);
 			dependencies = (
 			);
-			name = testTabbarController;
+			name = TimeFlies;
 			productName = testTabbarController;
-			productReference = FD15A1E31BAAB1D70048B4D2 /* testTabbarController.app */;
+			productReference = FD15A1E31BAAB1D70048B4D2 /* TimeFlies.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FD15A1FE1BAAB1D70048B4D2 /* testTabbarControllerTests */ = {
+		FD15A1FE1BAAB1D70048B4D2 /* TimeFliesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FD15A20C1BAAB1D70048B4D2 /* Build configuration list for PBXNativeTarget "testTabbarControllerTests" */;
+			buildConfigurationList = FD15A20C1BAAB1D70048B4D2 /* Build configuration list for PBXNativeTarget "TimeFliesTests" */;
 			buildPhases = (
 				FD15A1FB1BAAB1D70048B4D2 /* Sources */,
 				FD15A1FC1BAAB1D70048B4D2 /* Frameworks */,
@@ -365,9 +365,9 @@
 			dependencies = (
 				FD15A2011BAAB1D70048B4D2 /* PBXTargetDependency */,
 			);
-			name = testTabbarControllerTests;
+			name = TimeFliesTests;
 			productName = testTabbarControllerTests;
-			productReference = FD15A1FF1BAAB1D70048B4D2 /* testTabbarControllerTests.xctest */;
+			productReference = FD15A1FF1BAAB1D70048B4D2 /* TimeFlies.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -381,6 +381,7 @@
 				TargetAttributes = {
 					FD15A1E21BAAB1D70048B4D2 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = HF83WH5SDV;
 					};
 					FD15A1FE1BAAB1D70048B4D2 = {
 						CreatedOnToolsVersion = 6.4;
@@ -388,7 +389,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FD15A1DE1BAAB1D70048B4D2 /* Build configuration list for PBXProject "testTabbarController" */;
+			buildConfigurationList = FD15A1DE1BAAB1D70048B4D2 /* Build configuration list for PBXProject "TimeFlies" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -401,8 +402,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FD15A1E21BAAB1D70048B4D2 /* testTabbarController */,
-				FD15A1FE1BAAB1D70048B4D2 /* testTabbarControllerTests */,
+				FD15A1E21BAAB1D70048B4D2 /* TimeFlies */,
+				FD15A1FE1BAAB1D70048B4D2 /* TimeFliesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -472,7 +473,7 @@
 /* Begin PBXTargetDependency section */
 		FD15A2011BAAB1D70048B4D2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FD15A1E21BAAB1D70048B4D2 /* testTabbarController */;
+			target = FD15A1E21BAAB1D70048B4D2 /* TimeFlies */;
 			targetProxy = FD15A2001BAAB1D70048B4D2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -581,14 +582,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "testTabbarController/supporting files/Info.plist";
+				INFOPLIST_FILE = "TimeFlies/supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/testTabbarController/extension/weixin/SDKExport",
+					"$(PROJECT_DIR)/TimeFlies/extension/weixin/SDKExport",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TimeFlies;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -596,14 +600,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "testTabbarController/supporting files/Info.plist";
+				INFOPLIST_FILE = "TimeFlies/supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/testTabbarController/extension/weixin/SDKExport",
+					"$(PROJECT_DIR)/TimeFlies/extension/weixin/SDKExport",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TimeFlies;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -619,10 +626,10 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = testTabbarControllerTests/Info.plist;
+				INFOPLIST_FILE = TimeFliesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/testTabbarController.app/testTabbarController";
+				PRODUCT_NAME = TimeFlies;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeFlies.app/TimeFlies";
 			};
 			name = Debug;
 		};
@@ -634,17 +641,17 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = testTabbarControllerTests/Info.plist;
+				INFOPLIST_FILE = TimeFliesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/testTabbarController.app/testTabbarController";
+				PRODUCT_NAME = TimeFlies;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeFlies.app/TimeFlies";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FD15A1DE1BAAB1D70048B4D2 /* Build configuration list for PBXProject "testTabbarController" */ = {
+		FD15A1DE1BAAB1D70048B4D2 /* Build configuration list for PBXProject "TimeFlies" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FD15A2071BAAB1D70048B4D2 /* Debug */,
@@ -653,7 +660,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FD15A2091BAAB1D70048B4D2 /* Build configuration list for PBXNativeTarget "testTabbarController" */ = {
+		FD15A2091BAAB1D70048B4D2 /* Build configuration list for PBXNativeTarget "TimeFlies" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FD15A20A1BAAB1D70048B4D2 /* Debug */,
@@ -662,7 +669,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FD15A20C1BAAB1D70048B4D2 /* Build configuration list for PBXNativeTarget "testTabbarControllerTests" */ = {
+		FD15A20C1BAAB1D70048B4D2 /* Build configuration list for PBXNativeTarget "TimeFliesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FD15A20D1BAAB1D70048B4D2 /* Debug */,
