@@ -95,16 +95,16 @@
     return cell;
 }
 
-//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    CGSize size = CGSizeZero;
-//    
-//    size.width = [[UIScreen mainScreen] bounds].size.width / 3 - 1;
-//    
-//    size.height = 100;
-//    
-//    return size;
-//}
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    CGSize size = CGSizeZero;
+    
+    size.width = [[UIScreen mainScreen] bounds].size.width / 3 - 3;
+    
+    size.height = 100;
+    
+    return size;
+}
 
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {

@@ -12,6 +12,8 @@
 
 @end
 
+#define const_select_time @"open_select_time_board"
+
 @implementation FirstViewController
 
 - (void)viewDidLoad {
@@ -31,9 +33,9 @@
 #pragma mark - ui
 -(IBAction)onSelect:(id)sender
 {
-    self.tabBarController.tabBar.hidden = NO;
-    [self.tabBarController setSelectedIndex:2];
+    [self performSegueWithIdentifier:const_select_time sender:self];
 }
+
 #pragma mark - delegate
 
 #pragma mark - notify

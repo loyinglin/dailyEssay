@@ -16,7 +16,7 @@
     self.myDetail.text = text;
     
     NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"yyyy年MM月dd日 HH:mm:ss"];
+    [dateFormatter setDateFormat:@"yyyy/MM/dd"];
     
     
     self.myStartTime.text = [dateFormatter stringFromDate:startTime];

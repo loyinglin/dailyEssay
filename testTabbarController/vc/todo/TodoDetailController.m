@@ -68,6 +68,11 @@
     
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+- (IBAction)onDone:(id)sender
+{
+    [[TodoModel instance] endTodoByIndex:self.index];
+}
 #pragma mark - delegate
 
 #pragma mark - notify

@@ -13,13 +13,18 @@
 
 #pragma mark - init
 
++ (instancetype)instance;
 
 #pragma mark - set
-
+- (void)addNewDone:(Thing *)item;
 
 
 #pragma mark - get
 
+
+- (Thing *)getThingByIndex:(long)index;
+
+- (long)getDoneCounts;
 
 
 #pragma mark - update

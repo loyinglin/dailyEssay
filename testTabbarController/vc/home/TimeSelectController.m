@@ -1,26 +1,22 @@
 //
-//  TestTabBarController.m
+//  TimeSelectController.m
 //  testTabbarController
 //
-//  Created by 林伟池 on 15/9/17.
-//  Copyright (c) 2015年 林伟池. All rights reserved.
+//  Created by 林伟池 on 15/10/26.
+//  Copyright © 2015年 林伟池. All rights reserved.
 //
 
-#import "TestTabBarController.h"
+#import "TimeSelectController.h"
 
-@interface TestTabBarController ()
+@interface TimeSelectController ()
 
 @end
 
-@implementation TestTabBarController
+@implementation TimeSelectController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-//    self.tabBar.hidden = YES;
-
-//    [self setSelectedIndex:3];
-
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,5 +33,21 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - view init
+
+#pragma mark - ui
+
+- (IBAction)onClose:(id)sender
+{
+    [self dismissViewControllerAnimated:NO completion:^{
+        
+    }];
+}
+
+#pragma mark - delegate
+
+#pragma mark - notify
+
 
 @end

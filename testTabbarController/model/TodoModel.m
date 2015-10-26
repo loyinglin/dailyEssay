@@ -7,6 +7,7 @@
 //
 
 #import "TodoModel.h"
+#import "DoneModel.h"
 
 @implementation TodoModel
 {
@@ -65,6 +66,7 @@
     item.startTime = [[NSDate alloc] initWithTimeIntervalSinceNow:0];
     item.text = text;
     [myTodos insertObject:item atIndex:0];
+    [self saveCache];
 }
 
 - (void)modifyTodoByIndex:(long)index Text:(NSString *)text
@@ -75,6 +77,7 @@
     }
     if (item) {
         item.text = text;
+        [self saveCache];
     }
 }
 
@@ -85,6 +88,10 @@
         item.endTime = [[NSDate alloc] initWithTimeIntervalSinceNow:0];
         [myTodos removeObject:item];
         NSLog(@"%@ done", item);
+        
+        [[DoneModel instance] addNewDone:item];
+        
+        [self saveCache];
     }    
 }
 #pragma mark - get

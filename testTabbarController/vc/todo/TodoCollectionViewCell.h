@@ -11,7 +11,7 @@
 @interface TodoCollectionViewCell : UICollectionViewCell
 
 @property (nonatomic , strong) IBOutlet UILabel* myStartTime;
-@property (nonatomic , strong) IBOutlet UILabel* myDetail;
+@property (nonatomic , strong) IBOutlet UITextView* myDetail;
 
 - (void)viewInitWith:(NSDate*)startTime Text:(NSString*)text;
 
