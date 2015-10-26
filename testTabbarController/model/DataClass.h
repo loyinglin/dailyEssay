@@ -17,3 +17,13 @@
 @property (nonatomic , strong) NSDate* time;
 
 @end
+
+@interface Thing : LYCoding
+
+@property (nonatomic , strong) NSDate* startTime;
+
+@property (nonatomic , strong) NSDate* endTime;
+
+@property (nonatomic , strong) NSString* text;
+
+@end

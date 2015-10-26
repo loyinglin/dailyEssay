@@ -13,6 +13,12 @@
 
 @property (nonatomic , strong) IBOutlet UITextView* text;
 
+@property (nonatomic , strong) IBOutlet UIButton* shareToSession;
+
+@property (nonatomic , strong) IBOutlet UIButton* shareToTimeline;
+
+@property (nonatomic , strong) IBOutlet UIButton* shareToFavorite;
+
 @property (nonatomic) long index;
 
 @end

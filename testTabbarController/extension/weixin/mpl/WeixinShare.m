@@ -111,7 +111,7 @@
     [alert show];
 }
 
-- (void) sendTextContent:(NSString *)text
+- (void) sendTextContent:(NSString *)text Scene:(enum WXScene)scene
 {
     SendMessageToWXReq* req = [[SendMessageToWXReq alloc] init];
     if (text == nil) {
@@ -119,7 +119,7 @@
     }
     req.text = text;
     req.bText = YES;
-    req.scene = _scene;
+    req.scene = scene;
     
     [WXApi sendReq:req];
 }

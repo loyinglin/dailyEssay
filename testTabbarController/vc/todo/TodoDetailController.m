@@ -1,31 +1,28 @@
 //
-//  EssayDetailControllerViewController.m
+//  TodoDetailController.m
 //  testTabbarController
 //
-//  Created by 林伟池 on 15/10/25.
+//  Created by 林伟池 on 15/10/26.
 //  Copyright © 2015年 林伟池. All rights reserved.
 //
 
-#import "EssayDetailController.h"
-#import "EssayModel.h"
-#import "WeixinShare.h"
+#import "TodoDetailController.h"
+#include "TodoModel.h"
 
-@interface EssayDetailController ()
+@interface TodoDetailController ()
 
 @end
 
-@implementation EssayDetailController
-{
-    Essay* essay;
-}
+@implementation TodoDetailController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
     if (self.index >= 0) {
-        essay = [[EssayModel instance] getEssayByIndex:self.index];
-        if (essay && essay.text) {
-            self.text.text = essay.text;
+        Thing* item = [[TodoModel instance] getThingByIndex:self.index];
+        if (item && item.text) {
+            self.myText.text = item.text;
         }
     }
 }
@@ -45,7 +42,6 @@
 }
 */
 
-
 #pragma mark - view init
 
 - (void)viewWillAppear:(BOOL)animated
@@ -59,30 +55,21 @@
     [super viewWillDisappear:animated];
     self.tabBarController.tabBar.hidden = NO;
 }
-
 #pragma mark - ui
 
 - (IBAction)onSave:(id)sender
 {
     if (self.index != -1) {
-        [[EssayModel instance] modifyEssay:self.text.text Index:self.index];
+        [[TodoModel instance] modifyTodoByIndex:self.index Text:self.myText.text];
     }
     else{
-        [[EssayModel instance] addNewEssay:self.text.text];
+        [[TodoModel instance] addNewTodo:self.myText.text];
     }
     
     [self.navigationController popViewControllerAnimated:YES];
 }
-
-
-- (IBAction)shareToWeixin:(id)sender
-{
-    [[WeixinShare instance] sendTextContent:self.text.text];
-    
-}
 #pragma mark - delegate
 
 #pragma mark - notify
-
 
 @end

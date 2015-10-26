@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ThreeViewController : UIViewController
+@interface TodoViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate>
+
+@property (nonatomic , strong) IBOutlet UICollectionView* myTodos;
 
 @end

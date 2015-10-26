@@ -52,9 +52,9 @@
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
 
-    if ([url.host isEqualToString:@"pay"]) {
+//    if ([url.host isEqualToString:@"pay"]) {
         [WXApi handleOpenURL:url delegate:[WeixinShare instance]];
-    }
+//    }
     return YES;
 }
 

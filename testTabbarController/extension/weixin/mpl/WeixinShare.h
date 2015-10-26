@@ -15,6 +15,8 @@
 
 - (void)sendPay;
 
-- (void)sendTextContent:(NSString*)text;
+- (void)sendTextContent:(NSString*)text Scene:(enum WXScene)scene;
+
+
 
 @end

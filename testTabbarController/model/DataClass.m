@@ -75,3 +75,8 @@
 
 
 @end
+
+@implementation Thing
+
+
+@end

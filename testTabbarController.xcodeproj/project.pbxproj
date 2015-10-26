@@ -7,31 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FD15A1E91BAAB1D70048B4D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15A1E81BAAB1D70048B4D2 /* main.m */; };
 		FD15A1EC1BAAB1D70048B4D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15A1EB1BAAB1D70048B4D2 /* AppDelegate.m */; };
-		FD15A1EF1BAAB1D70048B4D2 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15A1EE1BAAB1D70048B4D2 /* FirstViewController.m */; };
-		FD15A1F21BAAB1D70048B4D2 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15A1F11BAAB1D70048B4D2 /* SecondViewController.m */; };
-		FD15A1F51BAAB1D70048B4D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD15A1F31BAAB1D70048B4D2 /* Main.storyboard */; };
-		FD15A1FA1BAAB1D70048B4D2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD15A1F81BAAB1D70048B4D2 /* LaunchScreen.xib */; };
 		FD15A2061BAAB1D70048B4D2 /* testTabbarControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15A2051BAAB1D70048B4D2 /* testTabbarControllerTests.m */; };
-		FD15A2111BAAB2950048B4D2 /* TestTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15A2101BAAB2950048B4D2 /* TestTabBarController.m */; };
-		FD5434CF1BD0A129008FE241 /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5434CE1BD0A129008FE241 /* RecordViewController.m */; settings = {ASSET_TAGS = (); }; };
-		FDDFE0E61BDCA30800865CDE /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE0E51BDCA30800865CDE /* BaseModel.m */; settings = {ASSET_TAGS = (); }; };
-		FDDFE0E91BDCA31A00865CDE /* EssayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE0E81BDCA31A00865CDE /* EssayModel.m */; settings = {ASSET_TAGS = (); }; };
-		FDDFE0EC1BDCA3EA00865CDE /* DataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE0EB1BDCA3EA00865CDE /* DataClass.m */; settings = {ASSET_TAGS = (); }; };
-		FDDFE0EF1BDCC67200865CDE /* EssayDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE0EE1BDCC67200865CDE /* EssayDetailController.m */; settings = {ASSET_TAGS = (); }; };
-		FDDFE0F21BDCCA8000865CDE /* EssayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE0F11BDCCA8000865CDE /* EssayTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		FDDFE1071BDCE0FE00865CDE /* WeixinShare.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE1061BDCE0FE00865CDE /* WeixinShare.m */; settings = {ASSET_TAGS = (); }; };
-		FDDFE1131BDCE37200865CDE /* ApiXml.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE10A1BDCE37200865CDE /* ApiXml.mm */; settings = {ASSET_TAGS = (); }; };
-		FDDFE1141BDCE37200865CDE /* payRequsestHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE10C1BDCE37200865CDE /* payRequsestHandler.mm */; settings = {ASSET_TAGS = (); }; };
-		FDDFE1151BDCE37200865CDE /* WXUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE10E1BDCE37200865CDE /* WXUtil.mm */; settings = {ASSET_TAGS = (); }; };
-		FDDFE1171BDCE40700865CDE /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDFE1101BDCE37200865CDE /* libWeChatSDK.a */; settings = {ASSET_TAGS = (); }; };
 		FDDFE1191BDCE53200865CDE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDFE1181BDCE53200865CDE /* libz.tbd */; };
 		FDDFE11B1BDCE54A00865CDE /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDFE11A1BDCE54A00865CDE /* libsqlite3.0.tbd */; };
 		FDDFE11D1BDCE57D00865CDE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDFE11C1BDCE57D00865CDE /* UIKit.framework */; };
 		FDDFE11F1BDCE58B00865CDE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDFE11E1BDCE58B00865CDE /* SystemConfiguration.framework */; };
-		FDE2296E1BAAB9D7008E581B /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE2296D1BAAB9D7008E581B /* ThreeViewController.m */; };
-		FDE229701BAAC160008E581B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDE2296F1BAAC160008E581B /* Images.xcassets */; };
+		FDDFE1611BDDD8BF00865CDE /* ApiXml.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE12D1BDDD8BF00865CDE /* ApiXml.mm */; settings = {ASSET_TAGS = (); }; };
+		FDDFE1621BDDD8BF00865CDE /* payRequsestHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE12F1BDDD8BF00865CDE /* payRequsestHandler.mm */; settings = {ASSET_TAGS = (); }; };
+		FDDFE1631BDDD8BF00865CDE /* WXUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE1311BDDD8BF00865CDE /* WXUtil.mm */; settings = {ASSET_TAGS = (); }; };
+		FDDFE1641BDDD8BF00865CDE /* WeixinShare.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE1341BDDD8BF00865CDE /* WeixinShare.m */; settings = {ASSET_TAGS = (); }; };
+		FDDFE1651BDDD8BF00865CDE /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDFE1361BDDD8BF00865CDE /* libWeChatSDK.a */; settings = {ASSET_TAGS = (); }; };
+		FDDFE16B1BDDD8BF00865CDE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDDFE1451BDDD8BF00865CDE /* LaunchScreen.xib */; settings = {ASSET_TAGS = (); }; };
+		FDDFE16C1BDDD8BF00865CDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDDFE1471BDDD8BF00865CDE /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		FDDFE16D1BDDD8BF00865CDE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDDFE1491BDDD8BF00865CDE /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
+		FDDFE16E1BDDD8BF00865CDE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FDDFE14A1BDDD8BF00865CDE /* Info.plist */; settings = {ASSET_TAGS = (); }; };
+		FDDFE16F1BDDD8BF00865CDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE14B1BDDD8BF00865CDE /* main.m */; settings = {ASSET_TAGS = (); }; };
+		FDDFE1701BDDD8BF00865CDE /* EssayDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE1501BDDD8BF00865CDE /* EssayDetailController.m */; settings = {ASSET_TAGS = (); }; };
+		FDDFE1711BDDD8BF00865CDE /* EssayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE1521BDDD8BF00865CDE /* EssayTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		FDDFE1721BDDD8BF00865CDE /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE1541BDDD8BF00865CDE /* RecordViewController.m */; settings = {ASSET_TAGS = (); }; };
+		FDDFE1731BDDD8BF00865CDE /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE1561BDDD8BF00865CDE /* FirstViewController.m */; settings = {ASSET_TAGS = (); }; };
+		FDDFE1741BDDD8BF00865CDE /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE1591BDDD8BF00865CDE /* SecondViewController.m */; settings = {ASSET_TAGS = (); }; };
+		FDDFE1751BDDD8BF00865CDE /* TestTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE15B1BDDD8BF00865CDE /* TestTabBarController.m */; settings = {ASSET_TAGS = (); }; };
+		FDDFE1761BDDD8BF00865CDE /* TodoDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE15E1BDDD8BF00865CDE /* TodoDetailController.m */; settings = {ASSET_TAGS = (); }; };
+		FDDFE1771BDDD8BF00865CDE /* TodoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE1601BDDD8BF00865CDE /* TodoViewController.m */; settings = {ASSET_TAGS = (); }; };
+		FDDFE1831BDDDA7200865CDE /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE17A1BDDDA7200865CDE /* BaseModel.m */; settings = {ASSET_TAGS = (); }; };
+		FDDFE1841BDDDA7200865CDE /* DataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE17C1BDDDA7200865CDE /* DataClass.m */; settings = {ASSET_TAGS = (); }; };
+		FDDFE1851BDDDA7200865CDE /* DoneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE17E1BDDDA7200865CDE /* DoneModel.m */; settings = {ASSET_TAGS = (); }; };
+		FDDFE1861BDDDA7200865CDE /* EssayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE1801BDDDA7200865CDE /* EssayModel.m */; settings = {ASSET_TAGS = (); }; };
+		FDDFE1871BDDDA7200865CDE /* TodoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE1821BDDDA7200865CDE /* TodoModel.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,51 +50,57 @@
 
 /* Begin PBXFileReference section */
 		FD15A1E31BAAB1D70048B4D2 /* testTabbarController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testTabbarController.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD15A1E71BAAB1D70048B4D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FD15A1E81BAAB1D70048B4D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FD15A1EA1BAAB1D70048B4D2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FD15A1EB1BAAB1D70048B4D2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FD15A1ED1BAAB1D70048B4D2 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		FD15A1EE1BAAB1D70048B4D2 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		FD15A1F01BAAB1D70048B4D2 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		FD15A1F11BAAB1D70048B4D2 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		FD15A1F41BAAB1D70048B4D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FD15A1F91BAAB1D70048B4D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FD15A1FF1BAAB1D70048B4D2 /* testTabbarControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testTabbarControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD15A2041BAAB1D70048B4D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD15A2051BAAB1D70048B4D2 /* testTabbarControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testTabbarControllerTests.m; sourceTree = "<group>"; };
-		FD15A20F1BAAB2950048B4D2 /* TestTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTabBarController.h; sourceTree = "<group>"; };
-		FD15A2101BAAB2950048B4D2 /* TestTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTabBarController.m; sourceTree = "<group>"; };
-		FD5434CD1BD0A129008FE241 /* RecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordViewController.h; sourceTree = "<group>"; };
-		FD5434CE1BD0A129008FE241 /* RecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordViewController.m; sourceTree = "<group>"; };
-		FDDFE0E41BDCA30800865CDE /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
-		FDDFE0E51BDCA30800865CDE /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
-		FDDFE0E71BDCA31A00865CDE /* EssayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EssayModel.h; sourceTree = "<group>"; };
-		FDDFE0E81BDCA31A00865CDE /* EssayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EssayModel.m; sourceTree = "<group>"; };
-		FDDFE0EA1BDCA3EA00865CDE /* DataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataClass.h; sourceTree = "<group>"; };
-		FDDFE0EB1BDCA3EA00865CDE /* DataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataClass.m; sourceTree = "<group>"; };
-		FDDFE0ED1BDCC67200865CDE /* EssayDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EssayDetailController.h; sourceTree = "<group>"; };
-		FDDFE0EE1BDCC67200865CDE /* EssayDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EssayDetailController.m; sourceTree = "<group>"; };
-		FDDFE0F01BDCCA8000865CDE /* EssayTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EssayTableViewCell.h; sourceTree = "<group>"; };
-		FDDFE0F11BDCCA8000865CDE /* EssayTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EssayTableViewCell.m; sourceTree = "<group>"; };
-		FDDFE1051BDCE0FE00865CDE /* WeixinShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeixinShare.h; sourceTree = "<group>"; };
-		FDDFE1061BDCE0FE00865CDE /* WeixinShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeixinShare.m; sourceTree = "<group>"; };
-		FDDFE1091BDCE37200865CDE /* ApiXml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiXml.h; sourceTree = "<group>"; };
-		FDDFE10A1BDCE37200865CDE /* ApiXml.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ApiXml.mm; sourceTree = "<group>"; };
-		FDDFE10B1BDCE37200865CDE /* payRequsestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = payRequsestHandler.h; sourceTree = "<group>"; };
-		FDDFE10C1BDCE37200865CDE /* payRequsestHandler.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = payRequsestHandler.mm; sourceTree = "<group>"; };
-		FDDFE10D1BDCE37200865CDE /* WXUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXUtil.h; sourceTree = "<group>"; };
-		FDDFE10E1BDCE37200865CDE /* WXUtil.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WXUtil.mm; sourceTree = "<group>"; };
-		FDDFE1101BDCE37200865CDE /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
-		FDDFE1111BDCE37200865CDE /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
-		FDDFE1121BDCE37200865CDE /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		FDDFE1181BDCE53200865CDE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		FDDFE11A1BDCE54A00865CDE /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		FDDFE11C1BDCE57D00865CDE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FDDFE11E1BDCE58B00865CDE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		FDE2296C1BAAB9D7008E581B /* ThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
-		FDE2296D1BAAB9D7008E581B /* ThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
-		FDE2296F1BAAC160008E581B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FDDFE12C1BDDD8BF00865CDE /* ApiXml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiXml.h; sourceTree = "<group>"; };
+		FDDFE12D1BDDD8BF00865CDE /* ApiXml.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ApiXml.mm; sourceTree = "<group>"; };
+		FDDFE12E1BDDD8BF00865CDE /* payRequsestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = payRequsestHandler.h; sourceTree = "<group>"; };
+		FDDFE12F1BDDD8BF00865CDE /* payRequsestHandler.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = payRequsestHandler.mm; sourceTree = "<group>"; };
+		FDDFE1301BDDD8BF00865CDE /* WXUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXUtil.h; sourceTree = "<group>"; };
+		FDDFE1311BDDD8BF00865CDE /* WXUtil.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WXUtil.mm; sourceTree = "<group>"; };
+		FDDFE1331BDDD8BF00865CDE /* WeixinShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeixinShare.h; sourceTree = "<group>"; };
+		FDDFE1341BDDD8BF00865CDE /* WeixinShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeixinShare.m; sourceTree = "<group>"; };
+		FDDFE1361BDDD8BF00865CDE /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		FDDFE1371BDDD8BF00865CDE /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		FDDFE1381BDDD8BF00865CDE /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		FDDFE1461BDDD8BF00865CDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FDDFE1481BDDD8BF00865CDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FDDFE1491BDDD8BF00865CDE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FDDFE14A1BDDD8BF00865CDE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDDFE14B1BDDD8BF00865CDE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FDDFE14F1BDDD8BF00865CDE /* EssayDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EssayDetailController.h; sourceTree = "<group>"; };
+		FDDFE1501BDDD8BF00865CDE /* EssayDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EssayDetailController.m; sourceTree = "<group>"; };
+		FDDFE1511BDDD8BF00865CDE /* EssayTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EssayTableViewCell.h; sourceTree = "<group>"; };
+		FDDFE1521BDDD8BF00865CDE /* EssayTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EssayTableViewCell.m; sourceTree = "<group>"; };
+		FDDFE1531BDDD8BF00865CDE /* RecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordViewController.h; sourceTree = "<group>"; };
+		FDDFE1541BDDD8BF00865CDE /* RecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordViewController.m; sourceTree = "<group>"; };
+		FDDFE1551BDDD8BF00865CDE /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		FDDFE1561BDDD8BF00865CDE /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		FDDFE1581BDDD8BF00865CDE /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		FDDFE1591BDDD8BF00865CDE /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		FDDFE15A1BDDD8BF00865CDE /* TestTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTabBarController.h; sourceTree = "<group>"; };
+		FDDFE15B1BDDD8BF00865CDE /* TestTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTabBarController.m; sourceTree = "<group>"; };
+		FDDFE15D1BDDD8BF00865CDE /* TodoDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoDetailController.h; sourceTree = "<group>"; };
+		FDDFE15E1BDDD8BF00865CDE /* TodoDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoDetailController.m; sourceTree = "<group>"; };
+		FDDFE15F1BDDD8BF00865CDE /* TodoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoViewController.h; sourceTree = "<group>"; };
+		FDDFE1601BDDD8BF00865CDE /* TodoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoViewController.m; sourceTree = "<group>"; };
+		FDDFE1791BDDDA7200865CDE /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		FDDFE17A1BDDDA7200865CDE /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		FDDFE17B1BDDDA7200865CDE /* DataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataClass.h; sourceTree = "<group>"; };
+		FDDFE17C1BDDDA7200865CDE /* DataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataClass.m; sourceTree = "<group>"; };
+		FDDFE17D1BDDDA7200865CDE /* DoneModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoneModel.h; sourceTree = "<group>"; };
+		FDDFE17E1BDDDA7200865CDE /* DoneModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoneModel.m; sourceTree = "<group>"; };
+		FDDFE17F1BDDDA7200865CDE /* EssayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EssayModel.h; sourceTree = "<group>"; };
+		FDDFE1801BDDDA7200865CDE /* EssayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EssayModel.m; sourceTree = "<group>"; };
+		FDDFE1811BDDDA7200865CDE /* TodoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoModel.h; sourceTree = "<group>"; };
+		FDDFE1821BDDDA7200865CDE /* TodoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +110,9 @@
 			files = (
 				FDDFE11F1BDCE58B00865CDE /* SystemConfiguration.framework in Frameworks */,
 				FDDFE11D1BDCE57D00865CDE /* UIKit.framework in Frameworks */,
+				FDDFE1651BDDD8BF00865CDE /* libWeChatSDK.a in Frameworks */,
 				FDDFE11B1BDCE54A00865CDE /* libsqlite3.0.tbd in Frameworks */,
 				FDDFE1191BDCE53200865CDE /* libz.tbd in Frameworks */,
-				FDDFE1171BDCE40700865CDE /* libWeChatSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +133,6 @@
 				FDDFE11C1BDCE57D00865CDE /* UIKit.framework */,
 				FDDFE11A1BDCE54A00865CDE /* libsqlite3.0.tbd */,
 				FDDFE1181BDCE53200865CDE /* libz.tbd */,
-				FDDFE0F31BDCE07500865CDE /* extension */,
 				FD15A1E51BAAB1D70048B4D2 /* testTabbarController */,
 				FD15A2021BAAB1D70048B4D2 /* testTabbarControllerTests */,
 				FD15A1E41BAAB1D70048B4D2 /* Products */,
@@ -142,38 +151,14 @@
 		FD15A1E51BAAB1D70048B4D2 /* testTabbarController */ = {
 			isa = PBXGroup;
 			children = (
-				FDE2296F1BAAC160008E581B /* Images.xcassets */,
-				FD15A1EB1BAAB1D70048B4D2 /* AppDelegate.m */,
+				FDDFE1781BDDDA7200865CDE /* model */,
+				FDDFE1291BDDD8BF00865CDE /* extension */,
+				FDDFE1441BDDD8BF00865CDE /* supporting files */,
+				FDDFE14C1BDDD8BF00865CDE /* vc */,
 				FD15A1EA1BAAB1D70048B4D2 /* AppDelegate.h */,
-				FD5434CC1BD0A0E5008FE241 /* model */,
-				FD15A1ED1BAAB1D70048B4D2 /* FirstViewController.h */,
-				FD15A1EE1BAAB1D70048B4D2 /* FirstViewController.m */,
-				FD15A1F01BAAB1D70048B4D2 /* SecondViewController.h */,
-				FD15A1F11BAAB1D70048B4D2 /* SecondViewController.m */,
-				FDE2296C1BAAB9D7008E581B /* ThreeViewController.h */,
-				FD5434CD1BD0A129008FE241 /* RecordViewController.h */,
-				FD5434CE1BD0A129008FE241 /* RecordViewController.m */,
-				FDE2296D1BAAB9D7008E581B /* ThreeViewController.m */,
-				FD15A20F1BAAB2950048B4D2 /* TestTabBarController.h */,
-				FD15A2101BAAB2950048B4D2 /* TestTabBarController.m */,
-				FDDFE0ED1BDCC67200865CDE /* EssayDetailController.h */,
-				FDDFE0EE1BDCC67200865CDE /* EssayDetailController.m */,
-				FDDFE0F01BDCCA8000865CDE /* EssayTableViewCell.h */,
-				FDDFE0F11BDCCA8000865CDE /* EssayTableViewCell.m */,
-				FD15A1F31BAAB1D70048B4D2 /* Main.storyboard */,
-				FD15A1F81BAAB1D70048B4D2 /* LaunchScreen.xib */,
-				FD15A1E61BAAB1D70048B4D2 /* Supporting Files */,
+				FD15A1EB1BAAB1D70048B4D2 /* AppDelegate.m */,
 			);
 			path = testTabbarController;
-			sourceTree = "<group>";
-		};
-		FD15A1E61BAAB1D70048B4D2 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				FD15A1E71BAAB1D70048B4D2 /* Info.plist */,
-				FD15A1E81BAAB1D70048B4D2 /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		FD15A2021BAAB1D70048B4D2 /* testTabbarControllerTests */ = {
@@ -193,68 +178,138 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FD5434CC1BD0A0E5008FE241 /* model */ = {
+		FDDFE1291BDDD8BF00865CDE /* extension */ = {
 			isa = PBXGroup;
 			children = (
-				FDDFE0E41BDCA30800865CDE /* BaseModel.h */,
-				FDDFE0E51BDCA30800865CDE /* BaseModel.m */,
-				FDDFE0E71BDCA31A00865CDE /* EssayModel.h */,
-				FDDFE0E81BDCA31A00865CDE /* EssayModel.m */,
-				FDDFE0EA1BDCA3EA00865CDE /* DataClass.h */,
-				FDDFE0EB1BDCA3EA00865CDE /* DataClass.m */,
+				FDDFE12A1BDDD8BF00865CDE /* weixin */,
 			);
-			path = model;
+			path = extension;
 			sourceTree = "<group>";
 		};
-		FDDFE0F31BDCE07500865CDE /* extension */ = {
+		FDDFE12A1BDDD8BF00865CDE /* weixin */ = {
 			isa = PBXGroup;
 			children = (
-				FDDFE0F41BDCE07500865CDE /* weixin */,
-			);
-			name = extension;
-			path = testTabbarController/extension;
-			sourceTree = "<group>";
-		};
-		FDDFE0F41BDCE07500865CDE /* weixin */ = {
-			isa = PBXGroup;
-			children = (
-				FDDFE1081BDCE37200865CDE /* lib */,
-				FDDFE10F1BDCE37200865CDE /* SDKExport */,
-				FDDFE1041BDCE0FE00865CDE /* mpl */,
+				FDDFE12B1BDDD8BF00865CDE /* lib */,
+				FDDFE1321BDDD8BF00865CDE /* mpl */,
+				FDDFE1351BDDD8BF00865CDE /* SDKExport */,
 			);
 			path = weixin;
 			sourceTree = "<group>";
 		};
-		FDDFE1041BDCE0FE00865CDE /* mpl */ = {
+		FDDFE12B1BDDD8BF00865CDE /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				FDDFE1051BDCE0FE00865CDE /* WeixinShare.h */,
-				FDDFE1061BDCE0FE00865CDE /* WeixinShare.m */,
-			);
-			path = mpl;
-			sourceTree = "<group>";
-		};
-		FDDFE1081BDCE37200865CDE /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				FDDFE1091BDCE37200865CDE /* ApiXml.h */,
-				FDDFE10A1BDCE37200865CDE /* ApiXml.mm */,
-				FDDFE10B1BDCE37200865CDE /* payRequsestHandler.h */,
-				FDDFE10C1BDCE37200865CDE /* payRequsestHandler.mm */,
-				FDDFE10D1BDCE37200865CDE /* WXUtil.h */,
-				FDDFE10E1BDCE37200865CDE /* WXUtil.mm */,
+				FDDFE12C1BDDD8BF00865CDE /* ApiXml.h */,
+				FDDFE12D1BDDD8BF00865CDE /* ApiXml.mm */,
+				FDDFE12E1BDDD8BF00865CDE /* payRequsestHandler.h */,
+				FDDFE12F1BDDD8BF00865CDE /* payRequsestHandler.mm */,
+				FDDFE1301BDDD8BF00865CDE /* WXUtil.h */,
+				FDDFE1311BDDD8BF00865CDE /* WXUtil.mm */,
 			);
 			path = lib;
 			sourceTree = "<group>";
 		};
-		FDDFE10F1BDCE37200865CDE /* SDKExport */ = {
+		FDDFE1321BDDD8BF00865CDE /* mpl */ = {
 			isa = PBXGroup;
 			children = (
-				FDDFE1101BDCE37200865CDE /* libWeChatSDK.a */,
-				FDDFE1111BDCE37200865CDE /* WXApi.h */,
-				FDDFE1121BDCE37200865CDE /* WXApiObject.h */,
+				FDDFE1331BDDD8BF00865CDE /* WeixinShare.h */,
+				FDDFE1341BDDD8BF00865CDE /* WeixinShare.m */,
+			);
+			path = mpl;
+			sourceTree = "<group>";
+		};
+		FDDFE1351BDDD8BF00865CDE /* SDKExport */ = {
+			isa = PBXGroup;
+			children = (
+				FDDFE1361BDDD8BF00865CDE /* libWeChatSDK.a */,
+				FDDFE1371BDDD8BF00865CDE /* WXApi.h */,
+				FDDFE1381BDDD8BF00865CDE /* WXApiObject.h */,
 			);
 			path = SDKExport;
+			sourceTree = "<group>";
+		};
+		FDDFE1441BDDD8BF00865CDE /* supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				FDDFE1451BDDD8BF00865CDE /* LaunchScreen.xib */,
+				FDDFE1471BDDD8BF00865CDE /* Main.storyboard */,
+				FDDFE1491BDDD8BF00865CDE /* Images.xcassets */,
+				FDDFE14A1BDDD8BF00865CDE /* Info.plist */,
+				FDDFE14B1BDDD8BF00865CDE /* main.m */,
+			);
+			path = "supporting files";
+			sourceTree = "<group>";
+		};
+		FDDFE14C1BDDD8BF00865CDE /* vc */ = {
+			isa = PBXGroup;
+			children = (
+				FDDFE14D1BDDD8BF00865CDE /* done */,
+				FDDFE14E1BDDD8BF00865CDE /* essay */,
+				FDDFE1551BDDD8BF00865CDE /* FirstViewController.h */,
+				FDDFE1561BDDD8BF00865CDE /* FirstViewController.m */,
+				FDDFE1571BDDD8BF00865CDE /* home */,
+				FDDFE1581BDDD8BF00865CDE /* SecondViewController.h */,
+				FDDFE1591BDDD8BF00865CDE /* SecondViewController.m */,
+				FDDFE15A1BDDD8BF00865CDE /* TestTabBarController.h */,
+				FDDFE15B1BDDD8BF00865CDE /* TestTabBarController.m */,
+				FDDFE15C1BDDD8BF00865CDE /* todo */,
+			);
+			path = vc;
+			sourceTree = "<group>";
+		};
+		FDDFE14D1BDDD8BF00865CDE /* done */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = done;
+			sourceTree = "<group>";
+		};
+		FDDFE14E1BDDD8BF00865CDE /* essay */ = {
+			isa = PBXGroup;
+			children = (
+				FDDFE14F1BDDD8BF00865CDE /* EssayDetailController.h */,
+				FDDFE1501BDDD8BF00865CDE /* EssayDetailController.m */,
+				FDDFE1511BDDD8BF00865CDE /* EssayTableViewCell.h */,
+				FDDFE1521BDDD8BF00865CDE /* EssayTableViewCell.m */,
+				FDDFE1531BDDD8BF00865CDE /* RecordViewController.h */,
+				FDDFE1541BDDD8BF00865CDE /* RecordViewController.m */,
+			);
+			path = essay;
+			sourceTree = "<group>";
+		};
+		FDDFE1571BDDD8BF00865CDE /* home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		FDDFE15C1BDDD8BF00865CDE /* todo */ = {
+			isa = PBXGroup;
+			children = (
+				FDDFE15D1BDDD8BF00865CDE /* TodoDetailController.h */,
+				FDDFE15E1BDDD8BF00865CDE /* TodoDetailController.m */,
+				FDDFE15F1BDDD8BF00865CDE /* TodoViewController.h */,
+				FDDFE1601BDDD8BF00865CDE /* TodoViewController.m */,
+			);
+			path = todo;
+			sourceTree = "<group>";
+		};
+		FDDFE1781BDDDA7200865CDE /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FDDFE1791BDDDA7200865CDE /* BaseModel.h */,
+				FDDFE17A1BDDDA7200865CDE /* BaseModel.m */,
+				FDDFE17B1BDDDA7200865CDE /* DataClass.h */,
+				FDDFE17C1BDDDA7200865CDE /* DataClass.m */,
+				FDDFE17D1BDDDA7200865CDE /* DoneModel.h */,
+				FDDFE17E1BDDDA7200865CDE /* DoneModel.m */,
+				FDDFE17F1BDDDA7200865CDE /* EssayModel.h */,
+				FDDFE1801BDDDA7200865CDE /* EssayModel.m */,
+				FDDFE1811BDDDA7200865CDE /* TodoModel.h */,
+				FDDFE1821BDDDA7200865CDE /* TodoModel.m */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,9 +392,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDE229701BAAC160008E581B /* Images.xcassets in Resources */,
-				FD15A1F51BAAB1D70048B4D2 /* Main.storyboard in Resources */,
-				FD15A1FA1BAAB1D70048B4D2 /* LaunchScreen.xib in Resources */,
+				FDDFE16E1BDDD8BF00865CDE /* Info.plist in Resources */,
+				FDDFE16D1BDDD8BF00865CDE /* Images.xcassets in Resources */,
+				FDDFE16B1BDDD8BF00865CDE /* LaunchScreen.xib in Resources */,
+				FDDFE16C1BDDD8BF00865CDE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,22 +413,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDDFE1131BDCE37200865CDE /* ApiXml.mm in Sources */,
-				FD15A2111BAAB2950048B4D2 /* TestTabBarController.m in Sources */,
-				FD15A1F21BAAB1D70048B4D2 /* SecondViewController.m in Sources */,
-				FDDFE0E61BDCA30800865CDE /* BaseModel.m in Sources */,
-				FDDFE1071BDCE0FE00865CDE /* WeixinShare.m in Sources */,
+				FDDFE1771BDDD8BF00865CDE /* TodoViewController.m in Sources */,
+				FDDFE1741BDDD8BF00865CDE /* SecondViewController.m in Sources */,
+				FDDFE1721BDDD8BF00865CDE /* RecordViewController.m in Sources */,
+				FDDFE1761BDDD8BF00865CDE /* TodoDetailController.m in Sources */,
+				FDDFE1841BDDDA7200865CDE /* DataClass.m in Sources */,
 				FD15A1EC1BAAB1D70048B4D2 /* AppDelegate.m in Sources */,
-				FDE2296E1BAAB9D7008E581B /* ThreeViewController.m in Sources */,
-				FD15A1EF1BAAB1D70048B4D2 /* FirstViewController.m in Sources */,
-				FDDFE0EC1BDCA3EA00865CDE /* DataClass.m in Sources */,
-				FDDFE1141BDCE37200865CDE /* payRequsestHandler.mm in Sources */,
-				FD5434CF1BD0A129008FE241 /* RecordViewController.m in Sources */,
-				FDDFE0E91BDCA31A00865CDE /* EssayModel.m in Sources */,
-				FDDFE0EF1BDCC67200865CDE /* EssayDetailController.m in Sources */,
-				FD15A1E91BAAB1D70048B4D2 /* main.m in Sources */,
-				FDDFE1151BDCE37200865CDE /* WXUtil.mm in Sources */,
-				FDDFE0F21BDCCA8000865CDE /* EssayTableViewCell.m in Sources */,
+				FDDFE1731BDDD8BF00865CDE /* FirstViewController.m in Sources */,
+				FDDFE1641BDDD8BF00865CDE /* WeixinShare.m in Sources */,
+				FDDFE16F1BDDD8BF00865CDE /* main.m in Sources */,
+				FDDFE1861BDDDA7200865CDE /* EssayModel.m in Sources */,
+				FDDFE1711BDDD8BF00865CDE /* EssayTableViewCell.m in Sources */,
+				FDDFE1851BDDDA7200865CDE /* DoneModel.m in Sources */,
+				FDDFE1701BDDD8BF00865CDE /* EssayDetailController.m in Sources */,
+				FDDFE1751BDDD8BF00865CDE /* TestTabBarController.m in Sources */,
+				FDDFE1611BDDD8BF00865CDE /* ApiXml.mm in Sources */,
+				FDDFE1621BDDD8BF00865CDE /* payRequsestHandler.mm in Sources */,
+				FDDFE1831BDDDA7200865CDE /* BaseModel.m in Sources */,
+				FDDFE1631BDDD8BF00865CDE /* WXUtil.mm in Sources */,
+				FDDFE1871BDDDA7200865CDE /* TodoModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,20 +454,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FD15A1F31BAAB1D70048B4D2 /* Main.storyboard */ = {
+		FDDFE1451BDDD8BF00865CDE /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FD15A1F41BAAB1D70048B4D2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FD15A1F81BAAB1D70048B4D2 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FD15A1F91BAAB1D70048B4D2 /* Base */,
+				FDDFE1461BDDD8BF00865CDE /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		FDDFE1471BDDD8BF00865CDE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDDFE1481BDDD8BF00865CDE /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -499,7 +558,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = testTabbarController/Info.plist;
+				INFOPLIST_FILE = "testTabbarController/supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -514,7 +573,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = testTabbarController/Info.plist;
+				INFOPLIST_FILE = "testTabbarController/supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
