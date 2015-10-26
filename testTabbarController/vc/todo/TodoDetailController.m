@@ -72,6 +72,8 @@
 - (IBAction)onDone:(id)sender
 {
     [[TodoModel instance] endTodoByIndex:self.index];
+    
+    [self.navigationController popViewControllerAnimated:YES];
 }
 #pragma mark - delegate
 

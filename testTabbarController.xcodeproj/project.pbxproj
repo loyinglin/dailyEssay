@@ -11,6 +11,8 @@
 		FD15A2061BAAB1D70048B4D2 /* testTabbarControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15A2051BAAB1D70048B4D2 /* testTabbarControllerTests.m */; };
 		FD47D4681BDDE1C5000482A7 /* TodoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD47D4671BDDE1C5000482A7 /* TodoCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		FD47D46B1BDE0076000482A7 /* TimeSelectController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD47D46A1BDE0076000482A7 /* TimeSelectController.m */; settings = {ASSET_TAGS = (); }; };
+		FD47D46E1BDE0AEB000482A7 /* DoneTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD47D46D1BDE0AEB000482A7 /* DoneTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		FD47D4711BDE0B72000482A7 /* DoneTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD47D4701BDE0B72000482A7 /* DoneTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		FDDFE1191BDCE53200865CDE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDFE1181BDCE53200865CDE /* libz.tbd */; };
 		FDDFE11B1BDCE54A00865CDE /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDFE11A1BDCE54A00865CDE /* libsqlite3.0.tbd */; };
 		FDDFE11D1BDCE57D00865CDE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDFE11C1BDCE57D00865CDE /* UIKit.framework */; };
@@ -61,6 +63,10 @@
 		FD47D4671BDDE1C5000482A7 /* TodoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoCollectionViewCell.m; sourceTree = "<group>"; };
 		FD47D4691BDE0076000482A7 /* TimeSelectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeSelectController.h; sourceTree = "<group>"; };
 		FD47D46A1BDE0076000482A7 /* TimeSelectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeSelectController.m; sourceTree = "<group>"; };
+		FD47D46C1BDE0AEB000482A7 /* DoneTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoneTableViewController.h; sourceTree = "<group>"; };
+		FD47D46D1BDE0AEB000482A7 /* DoneTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoneTableViewController.m; sourceTree = "<group>"; };
+		FD47D46F1BDE0B72000482A7 /* DoneTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoneTableViewCell.h; sourceTree = "<group>"; };
+		FD47D4701BDE0B72000482A7 /* DoneTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoneTableViewCell.m; sourceTree = "<group>"; };
 		FDDFE1181BDCE53200865CDE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		FDDFE11A1BDCE54A00865CDE /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		FDDFE11C1BDCE57D00865CDE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -266,6 +272,10 @@
 		FDDFE14D1BDDD8BF00865CDE /* done */ = {
 			isa = PBXGroup;
 			children = (
+				FD47D46C1BDE0AEB000482A7 /* DoneTableViewController.h */,
+				FD47D46D1BDE0AEB000482A7 /* DoneTableViewController.m */,
+				FD47D46F1BDE0B72000482A7 /* DoneTableViewCell.h */,
+				FD47D4701BDE0B72000482A7 /* DoneTableViewCell.m */,
 			);
 			path = done;
 			sourceTree = "<group>";
@@ -425,11 +435,13 @@
 			files = (
 				FDDFE1771BDDD8BF00865CDE /* TodoViewController.m in Sources */,
 				FDDFE1741BDDD8BF00865CDE /* SecondViewController.m in Sources */,
+				FD47D4711BDE0B72000482A7 /* DoneTableViewCell.m in Sources */,
 				FDDFE1721BDDD8BF00865CDE /* RecordViewController.m in Sources */,
 				FDDFE1761BDDD8BF00865CDE /* TodoDetailController.m in Sources */,
 				FDDFE1841BDDDA7200865CDE /* DataClass.m in Sources */,
 				FD15A1EC1BAAB1D70048B4D2 /* AppDelegate.m in Sources */,
 				FDDFE1731BDDD8BF00865CDE /* FirstViewController.m in Sources */,
+				FD47D46E1BDE0AEB000482A7 /* DoneTableViewController.m in Sources */,
 				FD47D46B1BDE0076000482A7 /* TimeSelectController.m in Sources */,
 				FDDFE1641BDDD8BF00865CDE /* WeixinShare.m in Sources */,
 				FD47D4681BDDE1C5000482A7 /* TodoCollectionViewCell.m in Sources */,

@@ -194,12 +194,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="生命中的第10202天" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awE-rg-tSO">
-                                <rect key="frame" x="225" y="91" width="150" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kie-du-QWF">
                                 <rect key="frame" x="255" y="248" width="90" height="30"/>
                                 <state key="normal" title="设置出生日期"/>
@@ -207,6 +201,18 @@
                                     <action selector="onSelect:" destination="9pv-A4-QxB" eventType="touchUpInside" id="UFf-vv-ObP"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="生命中的第10202天" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awE-rg-tSO">
+                                <rect key="frame" x="225" y="91" width="150" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="旧时今日！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHS-qe-5Jw">
+                                <rect key="frame" x="148" y="312" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -312,13 +318,13 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="5KD-sU-mfQ"/>
                         <segue destination="w7V-uq-Wgu" kind="relationship" relationship="viewControllers" id="tfc-kf-Ey6"/>
-                        <segue destination="Ppn-Cu-ogO" kind="relationship" relationship="viewControllers" id="JPk-2A-gut"/>
                         <segue destination="C7L-Xk-qYp" kind="relationship" relationship="viewControllers" id="fus-uU-mkB"/>
+                        <segue destination="exT-ye-Cip" kind="relationship" relationship="viewControllers" id="Rxg-xW-6Ra"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2158" y="-1004"/>
+            <point key="canvasLocation" x="-2206" y="-1080"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="SPd-nu-E6n">
@@ -350,22 +356,58 @@
             </objects>
             <point key="canvasLocation" x="-1517" y="1513"/>
         </scene>
-        <!--Root View Controller-->
+        <!--时间轴-->
         <scene sceneID="tuu-yt-Vxy">
             <objects>
-                <tableViewController clearsSelectionOnViewWillAppear="NO" id="QUw-nT-RbL" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="A9o-sx-0YM">
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="QUw-nT-RbL" customClass="DoneTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="66" sectionHeaderHeight="28" sectionFooterHeight="28" id="A9o-sx-0YM">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gvJ-5U-kMf">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="done" rowHeight="66" id="gvJ-5U-kMf" customClass="DoneTableViewCell">
+                                <rect key="frame" x="0.0" y="92" width="600" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gvJ-5U-kMf" id="rpE-vD-f3A">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="66"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="27L-IG-0a7">
+                                            <rect key="frame" x="299" y="0.0" width="1" height="66"/>
+                                            <color key="backgroundColor" red="0.36862745098039218" green="0.36862745098039218" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="1" id="1pe-2I-pfO"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是猪" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Px-w5-ukU">
+                                            <rect key="frame" x="310" y="24.5" width="42" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是猪" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5n-OB-JNs">
+                                            <rect key="frame" x="247" y="24" width="42" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="f5n-OB-JNs" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rpE-vD-f3A" secondAttribute="leading" constant="10" id="3Va-0E-3QM"/>
+                                        <constraint firstItem="27L-IG-0a7" firstAttribute="top" secondItem="rpE-vD-f3A" secondAttribute="top" id="7yw-zU-yXM"/>
+                                        <constraint firstItem="27L-IG-0a7" firstAttribute="centerX" secondItem="rpE-vD-f3A" secondAttribute="centerX" id="CUH-nQ-s3f"/>
+                                        <constraint firstAttribute="bottom" secondItem="27L-IG-0a7" secondAttribute="bottom" id="Oyz-Kz-Vk5"/>
+                                        <constraint firstItem="f5n-OB-JNs" firstAttribute="centerY" secondItem="rpE-vD-f3A" secondAttribute="centerY" id="da9-Gi-RYA"/>
+                                        <constraint firstItem="3Px-w5-ukU" firstAttribute="leading" secondItem="27L-IG-0a7" secondAttribute="trailing" constant="10" id="mtd-0f-8au"/>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="3Px-w5-ukU" secondAttribute="trailing" id="nIZ-SR-ujJ"/>
+                                        <constraint firstItem="27L-IG-0a7" firstAttribute="leading" secondItem="f5n-OB-JNs" secondAttribute="trailing" constant="10" id="qVz-On-RGu"/>
+                                        <constraint firstItem="3Px-w5-ukU" firstAttribute="centerY" secondItem="rpE-vD-f3A" secondAttribute="centerY" id="wsy-AR-2wx"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="myLeftText" destination="f5n-OB-JNs" id="R4l-h2-drc"/>
+                                    <outlet property="myRightText" destination="3Px-w5-ukU" id="Tku-lU-4Iq"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -373,11 +415,11 @@
                             <outlet property="delegate" destination="QUw-nT-RbL" id="DYS-Tn-A2M"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Z9M-6q-t07"/>
+                    <navigationItem key="navigationItem" title="时间轴" id="Z9M-6q-t07"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9lb-we-r7N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-658" y="947"/>
+            <point key="canvasLocation" x="-717" y="1008"/>
         </scene>
         <!--只争朝夕-->
         <scene sceneID="TP3-gQ-Tvg">
@@ -397,10 +439,11 @@
             </objects>
             <point key="canvasLocation" x="-658" y="294"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--时过境迁-->
         <scene sceneID="gut-BT-e5p">
             <objects>
                 <navigationController id="exT-ye-Cip" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="时过境迁" image="first" selectedImage="second" id="6Y2-b3-aZM"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="BBn-tG-dVU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -411,7 +454,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Q3-l6-0WW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1517" y="853"/>
+            <point key="canvasLocation" x="-1557" y="717"/>
         </scene>
         <!--时过境迁-->
         <scene sceneID="P94-g3-AIW">
@@ -462,7 +505,7 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="123456789101234567891012345678910" translatesAutoresizingMaskIntoConstraints="NO" id="zkD-Jf-ose">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" text="123456789101234567891012345678910" translatesAutoresizingMaskIntoConstraints="NO" id="zkD-Jf-ose">
                                                     <rect key="frame" x="0.0" y="27" width="100" height="73"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -528,7 +571,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="我是来测试长度\n的网上最后 的" translatesAutoresizingMaskIntoConstraints="NO" id="hIg-id-YHQ">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="我是来测试长度 的网上最后 的" translatesAutoresizingMaskIntoConstraints="NO" id="hIg-id-YHQ">
                                 <rect key="frame" x="0.0" y="64" width="600" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -575,4 +618,7 @@
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="GuD-BM-gri"/>
+    </inferredMetricsTieBreakers>
 </document>

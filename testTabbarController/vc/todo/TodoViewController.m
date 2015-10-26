@@ -48,8 +48,10 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    [super viewWillAppear:animated];
     [self.myTodos reloadData];
+    
+    [super viewWillAppear:animated];
+
 }
 
 
@@ -92,6 +94,7 @@
     if (item) {
         [cell viewInitWith:item.startTime Text:item.text];
     }
+//    [cell layoutIfNeeded];
     return cell;
 }
 
@@ -99,7 +102,7 @@
 {
     CGSize size = CGSizeZero;
     
-    size.width = [[UIScreen mainScreen] bounds].size.width / 3 - 3;
+    size.width = (long)[[UIScreen mainScreen] bounds].size.width / 3 - 1;
     
     size.height = 100;
     

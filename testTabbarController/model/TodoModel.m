@@ -87,7 +87,6 @@
     if (item) {
         item.endTime = [[NSDate alloc] initWithTimeIntervalSinceNow:0];
         [myTodos removeObject:item];
-        NSLog(@"%@ done", item);
         
         [[DoneModel instance] addNewDone:item];
         
