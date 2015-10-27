@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		FD15A1EC1BAAB1D70048B4D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15A1EB1BAAB1D70048B4D2 /* AppDelegate.m */; };
-		FD15A2061BAAB1D70048B4D2 /* testTabbarControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15A2051BAAB1D70048B4D2 /* testTabbarControllerTests.m */; };
+		FD15A2061BAAB1D70048B4D2 /* TimeFliesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15A2051BAAB1D70048B4D2 /* TimeFliesTests.m */; };
 		FD47D4681BDDE1C5000482A7 /* TodoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD47D4671BDDE1C5000482A7 /* TodoCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		FD47D46B1BDE0076000482A7 /* TimeSelectController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD47D46A1BDE0076000482A7 /* TimeSelectController.m */; settings = {ASSET_TAGS = (); }; };
 		FD47D46E1BDE0AEB000482A7 /* DoneTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD47D46D1BDE0AEB000482A7 /* DoneTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		FD47D4711BDE0B72000482A7 /* DoneTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD47D4701BDE0B72000482A7 /* DoneTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		FD4BB4B01BDE27AD00F4AA30 /* HomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4BB4AF1BDE27AD00F4AA30 /* HomeModel.m */; settings = {ASSET_TAGS = (); }; };
+		FD4BB4B31BDF20B500F4AA30 /* DoneDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4BB4B21BDF20B500F4AA30 /* DoneDetailController.m */; settings = {ASSET_TAGS = (); }; };
 		FDDFE1191BDCE53200865CDE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDFE1181BDCE53200865CDE /* libz.tbd */; };
 		FDDFE11B1BDCE54A00865CDE /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDFE11A1BDCE54A00865CDE /* libsqlite3.0.tbd */; };
 		FDDFE11D1BDCE57D00865CDE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDFE11C1BDCE57D00865CDE /* UIKit.framework */; };
@@ -29,7 +31,7 @@
 		FDDFE1701BDDD8BF00865CDE /* EssayDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE1501BDDD8BF00865CDE /* EssayDetailController.m */; settings = {ASSET_TAGS = (); }; };
 		FDDFE1711BDDD8BF00865CDE /* EssayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE1521BDDD8BF00865CDE /* EssayTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		FDDFE1721BDDD8BF00865CDE /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE1541BDDD8BF00865CDE /* RecordViewController.m */; settings = {ASSET_TAGS = (); }; };
-		FDDFE1731BDDD8BF00865CDE /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE1561BDDD8BF00865CDE /* FirstViewController.m */; settings = {ASSET_TAGS = (); }; };
+		FDDFE1731BDDD8BF00865CDE /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE1561BDDD8BF00865CDE /* HomeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		FDDFE1741BDDD8BF00865CDE /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE1591BDDD8BF00865CDE /* SecondViewController.m */; settings = {ASSET_TAGS = (); }; };
 		FDDFE1751BDDD8BF00865CDE /* TestTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE15B1BDDD8BF00865CDE /* TestTabBarController.m */; settings = {ASSET_TAGS = (); }; };
 		FDDFE1761BDDD8BF00865CDE /* TodoDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE15E1BDDD8BF00865CDE /* TodoDetailController.m */; settings = {ASSET_TAGS = (); }; };
@@ -57,7 +59,7 @@
 		FD15A1EB1BAAB1D70048B4D2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FD15A1FF1BAAB1D70048B4D2 /* TimeFlies.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeFlies.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD15A2041BAAB1D70048B4D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FD15A2051BAAB1D70048B4D2 /* testTabbarControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testTabbarControllerTests.m; sourceTree = "<group>"; };
+		FD15A2051BAAB1D70048B4D2 /* TimeFliesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeFliesTests.m; sourceTree = "<group>"; };
 		FD47D4661BDDE1C5000482A7 /* TodoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoCollectionViewCell.h; sourceTree = "<group>"; };
 		FD47D4671BDDE1C5000482A7 /* TodoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoCollectionViewCell.m; sourceTree = "<group>"; };
 		FD47D4691BDE0076000482A7 /* TimeSelectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeSelectController.h; sourceTree = "<group>"; };
@@ -66,6 +68,10 @@
 		FD47D46D1BDE0AEB000482A7 /* DoneTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoneTableViewController.m; sourceTree = "<group>"; };
 		FD47D46F1BDE0B72000482A7 /* DoneTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoneTableViewCell.h; sourceTree = "<group>"; };
 		FD47D4701BDE0B72000482A7 /* DoneTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoneTableViewCell.m; sourceTree = "<group>"; };
+		FD4BB4AE1BDE27AD00F4AA30 /* HomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeModel.h; sourceTree = "<group>"; };
+		FD4BB4AF1BDE27AD00F4AA30 /* HomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeModel.m; sourceTree = "<group>"; };
+		FD4BB4B11BDF20B500F4AA30 /* DoneDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoneDetailController.h; sourceTree = "<group>"; };
+		FD4BB4B21BDF20B500F4AA30 /* DoneDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoneDetailController.m; sourceTree = "<group>"; };
 		FDDFE1181BDCE53200865CDE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		FDDFE11A1BDCE54A00865CDE /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		FDDFE11C1BDCE57D00865CDE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -91,8 +97,8 @@
 		FDDFE1521BDDD8BF00865CDE /* EssayTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EssayTableViewCell.m; sourceTree = "<group>"; };
 		FDDFE1531BDDD8BF00865CDE /* RecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordViewController.h; sourceTree = "<group>"; };
 		FDDFE1541BDDD8BF00865CDE /* RecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordViewController.m; sourceTree = "<group>"; };
-		FDDFE1551BDDD8BF00865CDE /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		FDDFE1561BDDD8BF00865CDE /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		FDDFE1551BDDD8BF00865CDE /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = ../HomeViewController.h; sourceTree = "<group>"; };
+		FDDFE1561BDDD8BF00865CDE /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = ../HomeViewController.m; sourceTree = "<group>"; };
 		FDDFE1581BDDD8BF00865CDE /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		FDDFE1591BDDD8BF00865CDE /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		FDDFE15A1BDDD8BF00865CDE /* TestTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTabBarController.h; sourceTree = "<group>"; };
@@ -174,7 +180,7 @@
 		FD15A2021BAAB1D70048B4D2 /* TimeFliesTests */ = {
 			isa = PBXGroup;
 			children = (
-				FD15A2051BAAB1D70048B4D2 /* testTabbarControllerTests.m */,
+				FD15A2051BAAB1D70048B4D2 /* TimeFliesTests.m */,
 				FD15A2031BAAB1D70048B4D2 /* Supporting Files */,
 			);
 			path = TimeFliesTests;
@@ -242,7 +248,6 @@
 			isa = PBXGroup;
 			children = (
 				FDDFE1451BDDD8BF00865CDE /* LaunchScreen.xib */,
-				FDDFE1471BDDD8BF00865CDE /* Main.storyboard */,
 				FDDFE1491BDDD8BF00865CDE /* Images.xcassets */,
 				FDDFE14B1BDDD8BF00865CDE /* main.m */,
 			);
@@ -252,10 +257,9 @@
 		FDDFE14C1BDDD8BF00865CDE /* vc */ = {
 			isa = PBXGroup;
 			children = (
+				FDDFE1471BDDD8BF00865CDE /* Main.storyboard */,
 				FDDFE14D1BDDD8BF00865CDE /* done */,
 				FDDFE14E1BDDD8BF00865CDE /* essay */,
-				FDDFE1551BDDD8BF00865CDE /* FirstViewController.h */,
-				FDDFE1561BDDD8BF00865CDE /* FirstViewController.m */,
 				FDDFE1571BDDD8BF00865CDE /* home */,
 				FDDFE1581BDDD8BF00865CDE /* SecondViewController.h */,
 				FDDFE1591BDDD8BF00865CDE /* SecondViewController.m */,
@@ -271,6 +275,8 @@
 			children = (
 				FD47D46C1BDE0AEB000482A7 /* DoneTableViewController.h */,
 				FD47D46D1BDE0AEB000482A7 /* DoneTableViewController.m */,
+				FD4BB4B11BDF20B500F4AA30 /* DoneDetailController.h */,
+				FD4BB4B21BDF20B500F4AA30 /* DoneDetailController.m */,
 				FD47D46F1BDE0B72000482A7 /* DoneTableViewCell.h */,
 				FD47D4701BDE0B72000482A7 /* DoneTableViewCell.m */,
 			);
@@ -293,6 +299,8 @@
 		FDDFE1571BDDD8BF00865CDE /* home */ = {
 			isa = PBXGroup;
 			children = (
+				FDDFE1551BDDD8BF00865CDE /* HomeViewController.h */,
+				FDDFE1561BDDD8BF00865CDE /* HomeViewController.m */,
 				FD47D4691BDE0076000482A7 /* TimeSelectController.h */,
 				FD47D46A1BDE0076000482A7 /* TimeSelectController.m */,
 			);
@@ -325,6 +333,8 @@
 				FDDFE1801BDDDA7200865CDE /* EssayModel.m */,
 				FDDFE1811BDDDA7200865CDE /* TodoModel.h */,
 				FDDFE1821BDDDA7200865CDE /* TodoModel.m */,
+				FD4BB4AE1BDE27AD00F4AA30 /* HomeModel.h */,
+				FD4BB4AF1BDE27AD00F4AA30 /* HomeModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -437,7 +447,8 @@
 				FDDFE1761BDDD8BF00865CDE /* TodoDetailController.m in Sources */,
 				FDDFE1841BDDDA7200865CDE /* DataClass.m in Sources */,
 				FD15A1EC1BAAB1D70048B4D2 /* AppDelegate.m in Sources */,
-				FDDFE1731BDDD8BF00865CDE /* FirstViewController.m in Sources */,
+				FDDFE1731BDDD8BF00865CDE /* HomeViewController.m in Sources */,
+				FD4BB4B01BDE27AD00F4AA30 /* HomeModel.m in Sources */,
 				FD47D46E1BDE0AEB000482A7 /* DoneTableViewController.m in Sources */,
 				FD47D46B1BDE0076000482A7 /* TimeSelectController.m in Sources */,
 				FDDFE1641BDDD8BF00865CDE /* WeixinShare.m in Sources */,
@@ -448,6 +459,7 @@
 				FDDFE1851BDDDA7200865CDE /* DoneModel.m in Sources */,
 				FDDFE1701BDDD8BF00865CDE /* EssayDetailController.m in Sources */,
 				FDDFE1751BDDD8BF00865CDE /* TestTabBarController.m in Sources */,
+				FD4BB4B31BDF20B500F4AA30 /* DoneDetailController.m in Sources */,
 				FDDFE1611BDDD8BF00865CDE /* ApiXml.mm in Sources */,
 				FDDFE1621BDDD8BF00865CDE /* payRequsestHandler.mm in Sources */,
 				FDDFE1831BDDDA7200865CDE /* BaseModel.m in Sources */,
@@ -460,7 +472,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD15A2061BAAB1D70048B4D2 /* testTabbarControllerTests.m in Sources */,
+				FD15A2061BAAB1D70048B4D2 /* TimeFliesTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +501,7 @@
 				FDDFE1481BDDD8BF00865CDE /* Base */,
 			);
 			name = Main.storyboard;
+			path = "../supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

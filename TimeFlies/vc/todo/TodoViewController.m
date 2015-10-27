@@ -25,7 +25,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSLog(@"%@ \n %@", [[self class] description], [self.tabBarItem description]);
 //    self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"abc" image:[UIImage imageNamed:@"first"] selectedImage:[UIImage imageNamed:@"second"]];
 }
 

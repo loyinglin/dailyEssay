@@ -63,7 +63,7 @@
                             <outlet property="delegate" destination="x1H-bL-wyH" id="cL4-Lo-EEx"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="我的记录" id="pjv-7C-dEl">
+                    <navigationItem key="navigationItem" title="我的日记" id="pjv-7C-dEl">
                         <barButtonItem key="rightBarButtonItem" title="写" id="2uR-yc-ZAU">
                             <connections>
                                 <action selector="onNewEssay:" destination="x1H-bL-wyH" id="k8x-tb-pGX"/>
@@ -173,7 +173,7 @@
         <!--流光易逝-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="HomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -207,7 +207,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="旧时今日！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHS-qe-5Jw">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="旧时今日！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHS-qe-5Jw">
                                 <rect key="frame" x="148" y="312" width="85" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -228,6 +228,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="流光易逝" image="first" id="acW-dT-cKf"/>
                     <connections>
+                        <outlet property="myBirthDay" destination="awE-rg-tSO" id="Gw3-mL-bbo"/>
+                        <outlet property="myDeadDay" destination="Xrx-aM-7WD" id="bRg-qe-BKx"/>
                         <segue destination="vUQ-uD-LRS" kind="presentation" identifier="open_select_time_board" animates="NO" id="thw-eT-aho"/>
                     </connections>
                 </viewController>
@@ -263,10 +265,16 @@
                                         <date key="date" timeIntervalSinceReferenceDate="467534343.02152503">
                                             <!--2015-10-26 06:39:03 +0000-->
                                         </date>
+                                        <connections>
+                                            <action selector="onValueChange:" destination="vUQ-uD-LRS" eventType="valueChanged" id="e1i-KG-MPS"/>
+                                        </connections>
                                     </datePicker>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AxN-7B-ZRa">
                                         <rect key="frame" x="553" y="8" width="30" height="30"/>
                                         <state key="normal" title="保存"/>
+                                        <connections>
+                                            <action selector="onSave:" destination="vUQ-uD-LRS" eventType="touchUpInside" id="rr7-3n-nv3"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -296,6 +304,9 @@
                             <constraint firstAttribute="trailing" secondItem="riB-bC-A2q" secondAttribute="trailing" id="tv1-eg-oDi"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myDatePicker" destination="gjZ-G9-t1O" id="SB4-cu-puQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s89-wG-0Rc" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="ie5-Vb-a7B">
@@ -416,10 +427,52 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="时间轴" id="Z9M-6q-t07"/>
+                    <connections>
+                        <segue destination="6js-iW-ed2" kind="show" identifier="open_done_detail_board" id="uD0-si-zZq"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9lb-we-r7N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-717" y="1008"/>
+        </scene>
+        <!--详情-->
+        <scene sceneID="k6b-XF-pCC">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="6js-iW-ed2" customClass="DoneDetailController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ndp-Dy-ler"/>
+                        <viewControllerLayoutGuide type="bottom" id="lPT-Fj-Xm8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gAI-2V-hRX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dg7-nd-7qL">
+                                <rect key="frame" x="0.0" y="64" width="600" height="154"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="154" id="xtx-oV-fEb"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dg7-nd-7qL" secondAttribute="trailing" id="g9L-MB-dlt"/>
+                            <constraint firstItem="dg7-nd-7qL" firstAttribute="top" secondItem="ndp-Dy-ler" secondAttribute="bottom" id="xzJ-mc-x1t"/>
+                            <constraint firstItem="dg7-nd-7qL" firstAttribute="leading" secondItem="gAI-2V-hRX" secondAttribute="leading" id="yi4-4M-GpP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="详情" id="BHJ-Qj-ezB"/>
+                    <connections>
+                        <outlet property="myDoneDetail" destination="dg7-nd-7qL" id="s9C-I1-dJe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vBO-3x-9Fe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23" y="1003"/>
         </scene>
         <!--只争朝夕-->
         <scene sceneID="TP3-gQ-Tvg">
@@ -571,7 +624,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="我是来测试长度 的网上最后 的" translatesAutoresizingMaskIntoConstraints="NO" id="hIg-id-YHQ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycQ-hW-NYf">
+                                <rect key="frame" x="285" y="233" width="30" height="30"/>
+                                <state key="normal" title="完成"/>
+                                <connections>
+                                    <action selector="onDone:" destination="zEL-Rg-GHn" eventType="touchUpInside" id="jvy-PK-Q0n"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hIg-id-YHQ">
                                 <rect key="frame" x="0.0" y="64" width="600" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -581,13 +641,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycQ-hW-NYf">
-                                <rect key="frame" x="285" y="233" width="30" height="30"/>
-                                <state key="normal" title="完成"/>
-                                <connections>
-                                    <action selector="onDone:" destination="zEL-Rg-GHn" eventType="touchUpInside" id="jvy-PK-Q0n"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>

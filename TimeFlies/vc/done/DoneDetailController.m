@@ -1,25 +1,27 @@
 //
-//  TimeSelectController.m
-//  testTabbarController
+//  DoneDetailController.m
+//  TimeFlies
 //
-//  Created by 林伟池 on 15/10/26.
+//  Created by 林伟池 on 15/10/27.
 //  Copyright © 2015年 林伟池. All rights reserved.
 //
 
-#import "TimeSelectController.h"
-#import "HomeModel.h"
+#import "DoneDetailController.h"
+#import "DoneModel.h"
 
-@interface TimeSelectController ()
+@interface DoneDetailController ()
 
 @end
 
-@implementation TimeSelectController
+@implementation DoneDetailController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    [self.myDatePicker setMaximumDate:[[NSDate alloc] initWithTimeIntervalSinceNow:0]];
+    Thing* item = [[DoneModel instance] getThingByIndex:self.myIndex];
+    if (item) {
+        self.myDoneDetail.text = item.text;
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,27 +39,11 @@
 }
 */
 
+
 #pragma mark - view init
 
 #pragma mark - ui
 
-- (IBAction)onClose:(id)sender
-{
-    [self dismissViewControllerAnimated:NO completion:^{
-        
-    }];
-}
-
-- (IBAction)onSave:(id)sender
-{
-    [[HomeModel instance] setBirthDate:[self.myDatePicker date]];
-    [self onClose:sender];
-}
-
-- (IBAction)onValueChange:(id)sender
-{
-    NSLog(@"%@", [self.myDatePicker date]);
-}
 #pragma mark - delegate
 
 #pragma mark - notify

@@ -10,4 +10,7 @@
 
 @interface TimeSelectController : UIViewController
 
+
+@property (nonatomic , strong) IBOutlet UIDatePicker* myDatePicker;
+
 @end

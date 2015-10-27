@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface HomeViewController : UIViewController
 
+@property (nonatomic , strong) IBOutlet UILabel* myBirthDay;
+
+@property (nonatomic , strong) IBOutlet UILabel* myDeadDay;
 
 @end
 

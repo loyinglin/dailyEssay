@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface testTabbarControllerTests : XCTestCase
+@interface TimeFliesTests : XCTestCase
 
 @end
 
-@implementation testTabbarControllerTests
+@implementation TimeFliesTests
 
 - (void)setUp {
     [super setUp];

@@ -8,14 +8,19 @@
 
 #import "DoneTableViewController.h"
 #import "DoneTableViewCell.h"
+#import "DoneDetailController.h"
 #import "DoneModel.h"
 
 @interface DoneTableViewController ()
 
 @end
 
-@implementation DoneTableViewController
+#define const_open_done_deteail @"open_done_detail_board"
 
+@implementation DoneTableViewController
+{
+    long myIndex;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -31,6 +36,20 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
+}
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:const_open_done_deteail]) {
+        DoneDetailController* controller = segue.destinationViewController;
+        controller.myIndex = myIndex;
+    }
+}
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -62,7 +81,8 @@
 
 - (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"select %d", indexPath.row);
+    myIndex = indexPath.row;
+    [self performSegueWithIdentifier:const_open_done_deteail sender:self];
     return nil;
 }
 
