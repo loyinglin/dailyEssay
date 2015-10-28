@@ -29,6 +29,11 @@
     [[NSNotificationCenter defaultCenter] addObserverForName:@"TodoModelChange" object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
         [self.myTodos reloadData];
     }];
+    
+    
+    [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidChangeStatusBarOrientationNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
+        [self.myTodos reloadData];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

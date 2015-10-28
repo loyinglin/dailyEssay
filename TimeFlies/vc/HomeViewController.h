@@ -14,5 +14,10 @@
 
 @property (nonatomic , strong) IBOutlet UILabel* myDeadDay;
 
+@property (nonatomic , strong) IBOutlet UILabel* myDay;
+
+@property (nonatomic , strong) IBOutlet UILabel* mySecond;
+
+@property (nonatomic , strong) IBOutlet UIImageView* img;
 @end
 

@@ -21,7 +21,7 @@
     
     self.myStartTime.text = [dateFormatter stringFromDate:startTime];
     
-    NSLog(@"%@init", self);
+//    NSLog(@"%@init", self);
 //    [self layoutIfNeeded];
 }
 #pragma mark - ui
