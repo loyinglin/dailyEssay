@@ -67,7 +67,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="我的日记" id="pjv-7C-dEl">
-                        <barButtonItem key="rightBarButtonItem" title="写" id="2uR-yc-ZAU">
+                        <barButtonItem key="rightBarButtonItem" title="新建" id="2uR-yc-ZAU">
                             <connections>
                                 <action selector="onNewEssay:" destination="x1H-bL-wyH" id="k8x-tb-pGX"/>
                             </connections>
@@ -431,27 +431,47 @@
                                             </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是猪" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Px-w5-ukU">
-                                            <rect key="frame" x="310" y="24.5" width="42" height="17"/>
+                                            <rect key="frame" x="320" y="24.5" width="42" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是猪" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5n-OB-JNs">
-                                            <rect key="frame" x="247" y="24" width="42" height="17"/>
+                                            <rect key="frame" x="237" y="24" width="42" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OVb-2R-M9Y" userLabel="lineLeft">
+                                            <rect key="frame" x="279" y="32" width="20" height="1"/>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="ZIi-N5-vXL"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zX2-qz-zx7" userLabel="lineRight">
+                                            <rect key="frame" x="300" y="32" width="20" height="1"/>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="5zZ-FI-516"/>
+                                            </constraints>
+                                        </view>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="f5n-OB-JNs" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rpE-vD-f3A" secondAttribute="leading" constant="10" id="3Va-0E-3QM"/>
                                         <constraint firstItem="27L-IG-0a7" firstAttribute="top" secondItem="rpE-vD-f3A" secondAttribute="top" id="7yw-zU-yXM"/>
+                                        <constraint firstItem="OVb-2R-M9Y" firstAttribute="leading" secondItem="f5n-OB-JNs" secondAttribute="trailing" id="9Q3-zd-kMm"/>
                                         <constraint firstItem="27L-IG-0a7" firstAttribute="centerX" secondItem="rpE-vD-f3A" secondAttribute="centerX" id="CUH-nQ-s3f"/>
+                                        <constraint firstItem="zX2-qz-zx7" firstAttribute="centerY" secondItem="3Px-w5-ukU" secondAttribute="centerY" id="F6h-jO-nbu"/>
+                                        <constraint firstItem="3Px-w5-ukU" firstAttribute="leading" secondItem="zX2-qz-zx7" secondAttribute="trailing" id="IPr-Jv-MZJ"/>
                                         <constraint firstAttribute="bottom" secondItem="27L-IG-0a7" secondAttribute="bottom" id="Oyz-Kz-Vk5"/>
+                                        <constraint firstItem="zX2-qz-zx7" firstAttribute="leading" secondItem="27L-IG-0a7" secondAttribute="trailing" id="RDC-q8-HO1"/>
                                         <constraint firstItem="f5n-OB-JNs" firstAttribute="centerY" secondItem="rpE-vD-f3A" secondAttribute="centerY" id="da9-Gi-RYA"/>
-                                        <constraint firstItem="3Px-w5-ukU" firstAttribute="leading" secondItem="27L-IG-0a7" secondAttribute="trailing" constant="10" id="mtd-0f-8au"/>
+                                        <constraint firstItem="27L-IG-0a7" firstAttribute="leading" secondItem="OVb-2R-M9Y" secondAttribute="trailing" id="lMe-dg-AWE"/>
+                                        <constraint firstItem="3Px-w5-ukU" firstAttribute="leading" secondItem="27L-IG-0a7" secondAttribute="trailing" constant="20" id="mtd-0f-8au"/>
                                         <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="3Px-w5-ukU" secondAttribute="trailing" id="nIZ-SR-ujJ"/>
-                                        <constraint firstItem="27L-IG-0a7" firstAttribute="leading" secondItem="f5n-OB-JNs" secondAttribute="trailing" constant="10" id="qVz-On-RGu"/>
+                                        <constraint firstItem="27L-IG-0a7" firstAttribute="leading" secondItem="f5n-OB-JNs" secondAttribute="trailing" constant="20" id="qVz-On-RGu"/>
+                                        <constraint firstItem="OVb-2R-M9Y" firstAttribute="centerY" secondItem="f5n-OB-JNs" secondAttribute="centerY" id="rg0-N5-Bfl"/>
                                         <constraint firstItem="3Px-w5-ukU" firstAttribute="centerY" secondItem="rpE-vD-f3A" secondAttribute="centerY" id="wsy-AR-2wx"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -722,6 +742,6 @@
         <image name="write.png" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Rxg-xW-6Ra"/>
+        <segue reference="GuD-BM-gri"/>
     </inferredMetricsTieBreakers>
 </document>

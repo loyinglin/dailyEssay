@@ -66,8 +66,8 @@
     NSDate* now = [[NSDate alloc] initWithTimeIntervalSinceNow:0];
     long elapse = [now timeIntervalSinceDate:birth];
     
-    self.myBirthDay.text = [NSString stringWithFormat:@"今天是生命中的第%ld天", elapse / (24 * 3600)];
-    self.myDeadDay.text = [NSString stringWithFormat:@"还有%ld天", 365 * 70 - elapse / (24 * 3600)];
+    self.myBirthDay.text = [NSString stringWithFormat:NSLocalizedString(@"今天是生命中的第%d天", nil), elapse / (24 * 3600)];
+    self.myDeadDay.text = [NSString stringWithFormat:NSLocalizedString(@"还有%d天", nil), 365 * 70 - elapse / (24 * 3600)];
 }
 
 - (void)addTimer
@@ -80,7 +80,7 @@
     NSDate* current = [[NSDate alloc] initWithTimeIntervalSinceNow:0];
     
     NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"yyyy年MM月dd日"];
+    [dateFormatter setDateFormat:NSLocalizedString(@"yyyy年MM月dd日", nil)];
 
     self.myDay.text = [dateFormatter stringFromDate:current];
     

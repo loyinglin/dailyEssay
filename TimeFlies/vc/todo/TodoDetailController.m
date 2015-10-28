@@ -72,6 +72,27 @@
 
 - (IBAction)onDone:(id)sender
 {
+    if (![[DoneModel instance] getDoneCounts]) {
+        
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"固定到时间轴", nil) message:NSLocalizedString(@"固定后可在时间轴查看，同时不再可修改", nil) preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"否" style:UIAlertActionStyleDefault handler:nil];
+        UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"是" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [self onSure];
+        }];
+        [alertController addAction:okAction];
+        [alertController addAction:cancelAction];
+        
+        [self presentViewController:alertController animated:YES completion:nil];
+    }
+    else{
+        [self onSure];
+    }
+
+}
+
+- (void)onSure
+{
     if (self.index != -1) {
         [[TodoModel instance] deleteTodoByIndex:self.index];
     }
@@ -80,6 +101,7 @@
     
     
     [self.navigationController popViewControllerAnimated:YES];
+
 }
 
 - (IBAction)onDelte:(id)sender

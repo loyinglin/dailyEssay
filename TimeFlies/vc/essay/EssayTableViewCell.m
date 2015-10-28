@@ -27,7 +27,8 @@
     self.text.text = text;
     
     NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"yyyy年MM月dd日 HH:mm:ss"];
+//    NSString* atr;
+    [dateFormatter setDateFormat:NSLocalizedString(@"yyyy年MM月dd日 HH:mm:ss", nil)];
 
     
     self.time.text = [dateFormatter stringFromDate:time];

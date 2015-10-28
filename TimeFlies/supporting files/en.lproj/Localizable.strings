@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  TimeFlies
+
+  Created by 林伟池 on 15/10/28.
+  Copyright © 2015年 林伟池. All rights reserved.
+*/
+
+"我的日记" = "My Essays";
+"今天是生命中的第%d天" = "%d days had passed since born";
+"还有%d天" = "%d days left";
+"yyyy年MM月dd日 HH:mm:ss" = "yyyy/MM/dd HH:mm:ss";
+"yyyy年MM月dd日" = "yyyy/MM/dd";
+"固定后可在时间轴查看，同时不再可修改" = "show in timeline after attach and no more modify";
+"固定到时间轴" = "Attach to timeline";
+"是" = "Yes";
+"否" = "No";
+"日记" = "Essays";
+

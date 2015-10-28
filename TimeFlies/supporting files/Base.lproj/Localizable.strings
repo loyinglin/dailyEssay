@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  TimeFlies
+
+  Created by 林伟池 on 15/10/28.
+  Copyright © 2015年 林伟池. All rights reserved.
+*/
+"我的日记" = "我的日记";
+"今天是生命中的第%d天" = "今天是生命中的第%d天";
+"还有%d天" = "还有%d天";
+"yyyy年MM月dd日 HH:mm:ss" = "yyyy年MM月dd日 HH:mm:ss";
+"yyyy年MM月dd日" = "yyyy年MM月dd日";
+
+"日记" = "日记";
+
+
+

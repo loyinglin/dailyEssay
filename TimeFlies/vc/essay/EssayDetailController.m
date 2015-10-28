@@ -10,6 +10,8 @@
 #import "EssayModel.h"
 #import "DoneModel.h"
 #import "WeixinShare.h"
+#import "DoneModel.h"
+#import "WXApi.h"
 
 @interface EssayDetailController ()
 
@@ -28,6 +30,10 @@
         if (essay && essay.text) {
             self.text.text = essay.text;
         }
+    }
+    
+    if (![WXApi isWXAppInstalled]) {
+        self.shareToFavorite.hidden = self.shareToSession.hidden = self.shareToTimeline.hidden = YES;
     }
 }
 
@@ -76,6 +82,26 @@
 }
 
 - (IBAction)onAttachToTimeLine:(id)sender
+{
+    if (![[DoneModel instance] getDoneCounts]) {
+        
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"固定到时间轴", nil) message:NSLocalizedString(@"固定后可在时间轴查看，同时不再可修改", nil) preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"否" style:UIAlertActionStyleDefault handler:nil];
+        UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"是" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [self onSure];
+        }];
+        [alertController addAction:okAction];
+        [alertController addAction:cancelAction];
+        
+        [self presentViewController:alertController animated:YES completion:nil];
+    }
+    else{
+        [self onSure];
+    }
+}
+
+- (void)onSure
 {
     if (self.index != -1) {
         [[EssayModel instance] deleteEssayByIndex:self.index];

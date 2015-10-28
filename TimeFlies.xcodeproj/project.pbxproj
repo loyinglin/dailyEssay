@@ -23,6 +23,7 @@
 		FD4BB4C31BE0787900F4AA30 /* icon_spotlight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD4BB4BD1BE0787900F4AA30 /* icon_spotlight@3x.png */; settings = {ASSET_TAGS = (); }; };
 		FD4BB4C61BE0C51700F4AA30 /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = FD4BB4C41BE0C51700F4AA30 /* phone.png */; settings = {ASSET_TAGS = (); }; };
 		FD4BB4C71BE0C51700F4AA30 /* write.png in Resources */ = {isa = PBXBuildFile; fileRef = FD4BB4C51BE0C51700F4AA30 /* write.png */; settings = {ASSET_TAGS = (); }; };
+		FD4BB4D11BE0FB6A00F4AA30 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD4BB4D31BE0FB6A00F4AA30 /* Localizable.strings */; };
 		FDDFE1191BDCE53200865CDE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDFE1181BDCE53200865CDE /* libz.tbd */; };
 		FDDFE11B1BDCE54A00865CDE /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDFE11A1BDCE54A00865CDE /* libsqlite3.0.tbd */; };
 		FDDFE11D1BDCE57D00865CDE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDFE11C1BDCE57D00865CDE /* UIKit.framework */; };
@@ -88,6 +89,10 @@
 		FD4BB4BD1BE0787900F4AA30 /* icon_spotlight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_spotlight@3x.png"; sourceTree = "<group>"; };
 		FD4BB4C41BE0C51700F4AA30 /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phone.png; sourceTree = "<group>"; };
 		FD4BB4C51BE0C51700F4AA30 /* write.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = write.png; sourceTree = "<group>"; };
+		FD4BB4D21BE0FB6A00F4AA30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FD4BB4D41BE0FB7000F4AA30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FD4BB4D91BE0FD4300F4AA30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		FD4BB4DB1BE105B200F4AA30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		FDDFE1181BDCE53200865CDE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		FDDFE11A1BDCE54A00865CDE /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		FDDFE11C1BDCE57D00865CDE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -283,6 +288,7 @@
 				FDDFE1451BDDD8BF00865CDE /* LaunchScreen.xib */,
 				FDDFE1491BDDD8BF00865CDE /* Images.xcassets */,
 				FDDFE14B1BDDD8BF00865CDE /* main.m */,
+				FD4BB4D31BE0FB6A00F4AA30 /* Localizable.strings */,
 			);
 			path = "supporting files";
 			sourceTree = "<group>";
@@ -454,6 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD4BB4C21BE0787900F4AA30 /* icon_spotlight@2x.png in Resources */,
+				FD4BB4D11BE0FB6A00F4AA30 /* Localizable.strings in Resources */,
 				FDDFE16D1BDDD8BF00865CDE /* Images.xcassets in Resources */,
 				FD4BB4C61BE0C51700F4AA30 /* phone.png in Resources */,
 				FD4BB4BE1BE0787900F4AA30 /* icon@2x.png in Resources */,
@@ -528,10 +535,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		FD4BB4D31BE0FB6A00F4AA30 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD4BB4D21BE0FB6A00F4AA30 /* en */,
+				FD4BB4D41BE0FB7000F4AA30 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		FDDFE1451BDDD8BF00865CDE /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				FDDFE1461BDDD8BF00865CDE /* Base */,
+				FD4BB4DB1BE105B200F4AA30 /* en */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -540,6 +557,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				FDDFE1481BDDD8BF00865CDE /* Base */,
+				FD4BB4D91BE0FD4300F4AA30 /* en */,
 			);
 			name = Main.storyboard;
 			path = "../supporting files";

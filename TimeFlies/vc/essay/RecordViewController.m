@@ -25,6 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+//    [self setTitle:NSLocalizedString(@"我的日记", nil)];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -37,7 +37,7 @@
     }
     
     NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"yyyy年MM月dd日"];
+    [dateFormatter setDateFormat:NSLocalizedString(@"yyyy年MM月dd日", nil)];
 
     timeLabel.text = [dateFormatter stringFromDate:endTime];
     textLabel.text = text;
