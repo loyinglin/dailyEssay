@@ -17,9 +17,10 @@
 @implementation AppDelegate
 
 
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
+    [NSThread sleepForTimeInterval:0.5];
     //weixin
     [WXApi registerApp:APP_ID withDescription:@"LY日记"];
     

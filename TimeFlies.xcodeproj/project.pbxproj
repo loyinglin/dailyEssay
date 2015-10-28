@@ -26,6 +26,7 @@
 		FD4BB4D11BE0FB6A00F4AA30 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD4BB4D31BE0FB6A00F4AA30 /* Localizable.strings */; };
 		FD4BB4DE1BE10FCA00F4AA30 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD4BB4E01BE10FCA00F4AA30 /* InfoPlist.strings */; };
 		FD4BB4E61BE1141F00F4AA30 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD4BB4E41BE1141F00F4AA30 /* LaunchScreen.xib */; settings = {ASSET_TAGS = (); }; };
+		FD4BB4ED1BE118D700F4AA30 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4BB4EC1BE118D700F4AA30 /* LaunchViewController.m */; settings = {ASSET_TAGS = (); }; };
 		FDDFE1191BDCE53200865CDE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDFE1181BDCE53200865CDE /* libz.tbd */; };
 		FDDFE11B1BDCE54A00865CDE /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDFE11A1BDCE54A00865CDE /* libsqlite3.0.tbd */; };
 		FDDFE11D1BDCE57D00865CDE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDFE11C1BDCE57D00865CDE /* UIKit.framework */; };
@@ -97,6 +98,8 @@
 		FD4BB4E11BE1115400F4AA30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FD4BB4E51BE1141F00F4AA30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FD4BB4EA1BE114BC00F4AA30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		FD4BB4EB1BE118D700F4AA30 /* LaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
+		FD4BB4EC1BE118D700F4AA30 /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
 		FDDFE1181BDCE53200865CDE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		FDDFE11A1BDCE54A00865CDE /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		FDDFE11C1BDCE57D00865CDE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -293,6 +296,8 @@
 				FDDFE14B1BDDD8BF00865CDE /* main.m */,
 				FD4BB4D31BE0FB6A00F4AA30 /* Localizable.strings */,
 				FD4BB4E01BE10FCA00F4AA30 /* InfoPlist.strings */,
+				FD4BB4EB1BE118D700F4AA30 /* LaunchViewController.h */,
+				FD4BB4EC1BE118D700F4AA30 /* LaunchViewController.m */,
 			);
 			path = "supporting files";
 			sourceTree = "<group>";
@@ -496,6 +501,7 @@
 				FDDFE1771BDDD8BF00865CDE /* TodoViewController.m in Sources */,
 				FDDFE1741BDDD8BF00865CDE /* SecondViewController.m in Sources */,
 				FD47D4711BDE0B72000482A7 /* DoneTableViewCell.m in Sources */,
+				FD4BB4ED1BE118D700F4AA30 /* LaunchViewController.m in Sources */,
 				FDDFE1721BDDD8BF00865CDE /* RecordViewController.m in Sources */,
 				FDDFE1761BDDD8BF00865CDE /* TodoDetailController.m in Sources */,
 				FDDFE1841BDDDA7200865CDE /* DataClass.m in Sources */,
