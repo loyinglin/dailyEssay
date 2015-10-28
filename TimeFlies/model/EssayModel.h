@@ -21,6 +21,7 @@
 
 - (void)modifyEssay:(NSString*)text Index:(long)index;
 
+- (void)deleteEssayByIndex:(long)index;
 
 #pragma mark - get
 

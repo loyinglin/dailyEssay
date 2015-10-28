@@ -29,6 +29,9 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [[NSNotificationCenter defaultCenter] addObserverForName:@"DoneModelChange" object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
+        [self.tableView reloadData];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,7 +42,6 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [self.tableView reloadData];
 }
 
 
@@ -66,7 +68,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     DoneTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"done" forIndexPath:indexPath];
     
-    Thing* item = [[DoneModel instance] getThingByIndex:indexPath.row];
+    PassThing* item = [[DoneModel instance] getThingByIndex:indexPath.row];
     if (item) {
         [cell viewInitWithTime:item.endTime Text:item.text];
     }

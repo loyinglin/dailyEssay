@@ -18,11 +18,14 @@
 #pragma mark - set
 - (void)addNewDone:(Thing *)item;
 
+- (void)addNewEssay:(Essay*)item;
+
+- (void)addNewPassByText:(NSString*)text Type:(PASS_TYPE)type;
 
 #pragma mark - get
 
 
-- (Thing *)getThingByIndex:(long)index;
+- (PassThing *)getThingByIndex:(long)index;
 
 - (long)getDoneCounts;
 

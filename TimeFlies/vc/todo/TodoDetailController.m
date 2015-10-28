@@ -8,6 +8,7 @@
 
 #import "TodoDetailController.h"
 #include "TodoModel.h"
+#include "DoneModel.h"
 
 @interface TodoDetailController ()
 
@@ -71,7 +72,21 @@
 
 - (IBAction)onDone:(id)sender
 {
-    [[TodoModel instance] endTodoByIndex:self.index];
+    if (self.index != -1) {
+        [[TodoModel instance] deleteTodoByIndex:self.index];
+    }
+    
+    [[DoneModel instance] addNewPassByText:self.myText.text Type:pass_type_thing];
+    
+    
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)onDelte:(id)sender
+{
+    if (self.index != -1) {
+        [[TodoModel instance] deleteTodoByIndex:self.index];
+    }
     
     [self.navigationController popViewControllerAnimated:YES];
 }

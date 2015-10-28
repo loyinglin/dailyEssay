@@ -51,6 +51,8 @@
 {
     NSData* data = [NSKeyedArchiver archivedDataWithRootObject:myEssays];
     [[NSUserDefaults standardUserDefaults] setObject:data forKey:[[self class] description]];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"EssayModelChange" object:nil];
 }
 
 #pragma mark - set
@@ -80,6 +82,13 @@
     }
 }
 
+- (void)deleteEssayByIndex:(long)index
+{
+    if (index >= 0 && index < myEssays.count) {
+        [myEssays removeObjectAtIndex:index];
+        [self saveCache];
+    }
+}
 
 #pragma mark - get
 

@@ -10,7 +10,7 @@
 
 @implementation DoneModel
 {
-    NSMutableArray<Thing*>* myDones;
+    NSMutableArray<PassThing*>* myPassThings;
 }
 
 #pragma mark - init
@@ -30,7 +30,7 @@
 {
     self = [super init];
     
-    myDones = [NSMutableArray array];
+    myPassThings = [NSMutableArray array];
     [self loadCache];
     
     return self;
@@ -41,15 +41,28 @@
 {
     NSData* data = [[NSUserDefaults standardUserDefaults] objectForKey:[[self class] description]];
     if (data) {
-        myDones = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        NSMutableArray* arr = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        if(arr && arr.count > 0){
+            if ([arr[0] isKindOfClass:[PassThing class]]) {
+                myPassThings = arr;
+            }
+            else{
+                for (Thing* item in arr) {
+                    PassThing* pass = [self getPassByThing:item];
+                    [myPassThings insertObject:pass atIndex:0];
+                }
+            }
+        }
     }
     
 }
 
 - (void)saveCache
 {
-    NSData* data = [NSKeyedArchiver archivedDataWithRootObject:myDones];
+    NSData* data = [NSKeyedArchiver archivedDataWithRootObject:myPassThings];
     [[NSUserDefaults standardUserDefaults] setObject:data forKey:[[self class] description]];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"DoneModelChange" object:nil];
 }
 
 
@@ -57,26 +70,80 @@
 
 - (void)addNewDone:(Thing *)item
 {
-    item.endTime = [[NSDate alloc] initWithTimeIntervalSinceNow:0];
-    [myDones insertObject:item atIndex:0];
+    [myPassThings insertObject:[self getPassByThing:item] atIndex:0];
     [self saveCache];
 }
 
+- (void)addNewEssay:(Essay *)item
+{
+    PassThing* pass = [self getPassByEssay:item];
+    [myPassThings insertObject:pass atIndex:0];
+    [self saveCache];
+}
+
+- (void)addNewPassByText:(NSString *)text Type:(PASS_TYPE)type
+{
+    PassThing* pass = [PassThing new];
+    pass.startTime = pass.endTime = [[NSDate alloc] initWithTimeIntervalSinceNow:0];
+    pass.text = text;
+    pass.passType = type;
+    
+    if (!pass.text) {
+        pass.text = @"";
+    }
+    [myPassThings insertObject:pass atIndex:0];
+    [self saveCache];
+}
 #pragma mark - get
 
 
-- (Thing *)getThingByIndex:(long)index
+- (PassThing*)getPassByThing:(Thing*)item
 {
-    Thing* ret;
+    PassThing* ret = [PassThing new];
+    
+    ret.startTime = item.startTime;
+    ret.endTime = [[NSDate alloc] initWithTimeIntervalSinceNow:0];
+    ret.passType = pass_type_thing;
+    ret.text = item.text;
+    
+    if (!ret.text) {
+        ret.text = @"";
+    }
+    
+    return ret;
+}
+
+
+- (PassThing*)getPassByEssay:(Essay*)item
+{
+    PassThing* ret = [PassThing new];
+    
+    ret.startTime = item.time;
+    ret.endTime = [[NSDate alloc] initWithTimeIntervalSinceNow:0];
+    ret.passType = pass_type_essay;
+    ret.text = item.text;
+    
+    if (!ret.text) {
+        ret.text = @"";
+    }
+    
+    return ret;
+}
+
+
+
+- (PassThing *)getThingByIndex:(long)index
+{
+    PassThing* ret;
     if (index >= 0 && index < [self getDoneCounts]) {
-        ret = myDones[index];
+        ret = myPassThings[index];
     }
     return ret;
 }
 
 - (long)getDoneCounts
 {
-    return myDones.count;
+    return myPassThings.count;
 }
 
 #pragma mark - update

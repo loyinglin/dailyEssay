@@ -7,6 +7,11 @@
 //
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSInteger, PASS_TYPE){
+    pass_type_essay = 0,
+    pass_type_thing
+};
+
 @interface LYCoding : NSObject <NSCoding, NSCopying>
 
 @end
@@ -25,5 +30,17 @@
 @property (nonatomic , strong) NSDate* endTime;
 
 @property (nonatomic , strong) NSString* text;
+
+@end
+
+@interface PassThing : LYCoding
+
+@property (nonatomic , strong) NSDate* startTime;
+
+@property (nonatomic , strong) NSDate* endTime;
+
+@property (nonatomic , strong) NSString* text;
+
+@property (nonatomic) PASS_TYPE passType;
 
 @end

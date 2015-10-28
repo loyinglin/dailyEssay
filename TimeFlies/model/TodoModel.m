@@ -7,7 +7,6 @@
 //
 
 #import "TodoModel.h"
-#import "DoneModel.h"
 
 @implementation TodoModel
 {
@@ -51,6 +50,8 @@
 {
     NSData* data = [NSKeyedArchiver archivedDataWithRootObject:myTodos];
     [[NSUserDefaults standardUserDefaults] setObject:data forKey:[[self class] description]];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"TodoModelChange" object:nil];
 }
 
 
@@ -81,17 +82,12 @@
     }
 }
 
-- (void)endTodoByIndex:(long)index
+- (void)deleteTodoByIndex:(long)index
 {
-    Thing* item = [self getThingByIndex:index];
-    if (item) {
-        item.endTime = [[NSDate alloc] initWithTimeIntervalSinceNow:0];
-        [myTodos removeObject:item];
-        
-        [[DoneModel instance] addNewDone:item];
-        
+    if (index >= 0 && index < myTodos.count) {
+        [myTodos removeObjectAtIndex:index];
         [self saveCache];
-    }    
+    }
 }
 #pragma mark - get
 

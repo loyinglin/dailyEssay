@@ -26,6 +26,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 //    self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"abc" image:[UIImage imageNamed:@"first"] selectedImage:[UIImage imageNamed:@"second"]];
+    [[NSNotificationCenter defaultCenter] addObserverForName:@"TodoModelChange" object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
+        [self.myTodos reloadData];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,11 +50,9 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    [self.myTodos reloadData];
-    
     [super viewWillAppear:animated];
-
 }
+
 
 
 #pragma mark - ui

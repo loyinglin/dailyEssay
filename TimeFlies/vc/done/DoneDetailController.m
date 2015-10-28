@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    Thing* item = [[DoneModel instance] getThingByIndex:self.myIndex];
+    PassThing* item = [[DoneModel instance] getThingByIndex:self.myIndex];
     if (item) {
         self.myDoneDetail.text = item.text;
     }

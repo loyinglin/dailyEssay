@@ -8,6 +8,7 @@
 
 #import "EssayDetailController.h"
 #import "EssayModel.h"
+#import "DoneModel.h"
 #import "WeixinShare.h"
 
 @interface EssayDetailController ()
@@ -74,6 +75,14 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+- (IBAction)onAttachToTimeLine:(id)sender
+{
+    if (self.index != -1) {
+        [[EssayModel instance] deleteEssayByIndex:self.index];
+    }
+    [[DoneModel instance] addNewPassByText:self.text.text Type:pass_type_essay];
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 - (IBAction)shareToWeixin:(id)sender
 {

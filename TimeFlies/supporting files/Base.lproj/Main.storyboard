@@ -121,6 +121,13 @@
                                     <action selector="shareToWeixin:" destination="JVs-ap-Djo" eventType="touchUpInside" id="4M5-IA-MRf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rlz-l5-yKm">
+                                <rect key="frame" x="255" y="345" width="90" height="30"/>
+                                <state key="normal" title="固定到时间轴"/>
+                                <connections>
+                                    <action selector="onAttachToTimeLine:" destination="JVs-ap-Djo" eventType="touchUpInside" id="1C3-ch-UG6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -130,6 +137,8 @@
                             <constraint firstItem="Qd0-K7-5TL" firstAttribute="centerX" secondItem="H0y-gd-poU" secondAttribute="centerX" id="R82-BO-csP"/>
                             <constraint firstItem="nBk-D9-Jer" firstAttribute="top" secondItem="uKg-J1-wod" secondAttribute="bottom" constant="10" id="Rmq-J5-RFD"/>
                             <constraint firstAttribute="trailing" secondItem="uKg-J1-wod" secondAttribute="trailing" id="VRZ-Rb-nIg"/>
+                            <constraint firstItem="Rlz-l5-yKm" firstAttribute="top" secondItem="5mt-V5-QN5" secondAttribute="bottom" constant="14" id="cFb-JG-cDg"/>
+                            <constraint firstItem="Rlz-l5-yKm" firstAttribute="centerX" secondItem="H0y-gd-poU" secondAttribute="centerX" id="mlv-yc-JWd"/>
                             <constraint firstItem="nBk-D9-Jer" firstAttribute="centerX" secondItem="H0y-gd-poU" secondAttribute="centerX" id="ova-O1-QqU"/>
                             <constraint firstItem="Qd0-K7-5TL" firstAttribute="top" secondItem="nBk-D9-Jer" secondAttribute="bottom" constant="18" id="sQn-mG-apB"/>
                             <constraint firstItem="5mt-V5-QN5" firstAttribute="centerX" secondItem="H0y-gd-poU" secondAttribute="centerX" id="yGV-d5-YbZ"/>
@@ -625,8 +634,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycQ-hW-NYf">
-                                <rect key="frame" x="285" y="233" width="30" height="30"/>
-                                <state key="normal" title="完成"/>
+                                <rect key="frame" x="255" y="233" width="90" height="30"/>
+                                <state key="normal" title="固定到时间轴"/>
                                 <connections>
                                     <action selector="onDone:" destination="zEL-Rg-GHn" eventType="touchUpInside" id="jvy-PK-Q0n"/>
                                 </connections>
@@ -641,6 +650,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7P-km-ck7">
+                                <rect key="frame" x="285" y="300" width="30" height="30"/>
+                                <state key="normal" title="删除"/>
+                                <connections>
+                                    <action selector="onDelte:" destination="zEL-Rg-GHn" eventType="touchUpInside" id="PKj-xp-aIN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -648,7 +664,9 @@
                             <constraint firstAttribute="trailing" secondItem="hIg-id-YHQ" secondAttribute="trailing" id="2W4-ec-XHw"/>
                             <constraint firstItem="ycQ-hW-NYf" firstAttribute="centerX" secondItem="4dN-ku-G3U" secondAttribute="centerX" id="75c-IH-qR4"/>
                             <constraint firstItem="hIg-id-YHQ" firstAttribute="leading" secondItem="4dN-ku-G3U" secondAttribute="leading" id="COv-Rc-sOR"/>
+                            <constraint firstItem="U7P-km-ck7" firstAttribute="centerX" secondItem="4dN-ku-G3U" secondAttribute="centerX" id="Yp0-BZ-enK"/>
                             <constraint firstItem="ycQ-hW-NYf" firstAttribute="top" secondItem="hIg-id-YHQ" secondAttribute="bottom" constant="41" id="hED-kE-Jno"/>
+                            <constraint firstItem="U7P-km-ck7" firstAttribute="top" secondItem="ycQ-hW-NYf" secondAttribute="bottom" constant="37" id="iWC-HN-ZnR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="详情" id="Oji-7G-07K">

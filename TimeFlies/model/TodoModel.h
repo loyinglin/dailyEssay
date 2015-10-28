@@ -24,7 +24,7 @@
 - (void)modifyTodoByIndex:(long)index Text:(NSString*)text;
 
 
-- (void)endTodoByIndex:(long)index;
+- (void)deleteTodoByIndex:(long)index;
 
 #pragma mark - get
 
