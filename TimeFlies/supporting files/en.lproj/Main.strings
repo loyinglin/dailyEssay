@@ -62,6 +62,8 @@
 /* Class = "UINavigationItem"; title = "时间轴"; ObjectID = "Z9M-6q-t07"; */
 "Z9M-6q-t07.title" = "Timeline";
 
+/* 微信收藏 */
+"iTs-av-YFa.title" = "Favorite";
 /* Class = "UITabBarItem"; title = "流光易逝"; ObjectID = "acW-dT-cKf"; */
 "acW-dT-cKf.title" = "Pass";
 

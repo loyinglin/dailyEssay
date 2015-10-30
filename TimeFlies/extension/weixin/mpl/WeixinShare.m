@@ -107,8 +107,12 @@
                 break;
         }
     }
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:strTitle message:strMsg delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-    [alert show];
+    if (resp.type == 0) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"FavoriteSuccess" object:nil];
+    }
+    NSLog(@"%@", [resp description]);
+//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:strTitle message:strMsg delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+//    [alert show];
 }
 
 - (void) sendTextContent:(NSString *)text Scene:(enum WXScene)scene

@@ -75,6 +75,34 @@
     return myBirthDate;
 }
 
+- (long)getDaysLeft
+{
+    long ret = 0;
+    
+    NSDate* birth = myBirthDate;
+    NSDate* now = [[NSDate alloc] initWithTimeIntervalSinceNow:0];
+    long elapse = [now timeIntervalSinceDate:birth];
+    
+    ret = MAX(ret, 365 * 70 - elapse / (24 * 3600));
+    
+    return ret;
+}
+
+- (long)getDaysNow
+{
+    long ret = 0;
+    
+    NSDate* birth = myBirthDate;
+    NSDate* now = [[NSDate alloc] initWithTimeIntervalSinceNow:0];
+    long elapse = [now timeIntervalSinceDate:birth];
+    
+    
+    ret = MAX(ret, elapse / (24 * 3600));
+    
+    return ret;
+}
+
+
 #pragma mark - update
 
 

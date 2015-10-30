@@ -65,6 +65,11 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:@"DoneModelChange" object:nil];
 }
 
+- (void)clearCache
+{
+    [myPassThings removeAllObjects];
+    [self saveCache];
+}
 
 #pragma mark - set
 

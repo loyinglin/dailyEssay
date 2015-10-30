@@ -41,7 +41,7 @@
 // 账号帐户资料
 //更改商户把相关参数后可测试
 
-#define APP_ID          @"wxbd491d9489f375ef"               //APPID
+#define APP_ID          @"wx1fe582dc0ca054ff"               //APPID
 #define APP_SECRET      @"abc" //appsecret
 //商户号，填写商户对应参数
 #define MCH_ID          @"1273863201"

@@ -19,10 +19,14 @@
 
 - (void)setBirthDate:(NSDate*)date;
 
+
 #pragma mark - get
 
 - (NSDate*)getBirthDate;
 
+- (long)getDaysLeft;
+
+- (long)getDaysNow;
 #pragma mark - update
 
 

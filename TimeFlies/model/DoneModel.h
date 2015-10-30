@@ -22,8 +22,9 @@
 
 - (void)addNewPassByText:(NSString*)text Type:(PASS_TYPE)type;
 
-#pragma mark - get
+- (void)clearCache;
 
+#pragma mark - get
 
 - (PassThing *)getThingByIndex:(long)index;
 

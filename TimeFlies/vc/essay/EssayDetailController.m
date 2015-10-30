@@ -11,6 +11,7 @@
 #import "DoneModel.h"
 #import "WeixinShare.h"
 #import "DoneModel.h"
+#import "HomeModel.h"
 #import "WXApi.h"
 
 @interface EssayDetailController ()
@@ -30,6 +31,9 @@
         if (essay && essay.text) {
             self.text.text = essay.text;
         }
+    }
+    else{
+        self.text.text = [NSString stringWithFormat:@"%ld ", [[HomeModel instance] getDaysLeft]];        
     }
     
     if (![WXApi isWXAppInstalled]) {

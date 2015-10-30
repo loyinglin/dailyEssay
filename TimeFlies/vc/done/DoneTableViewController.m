@@ -7,6 +7,7 @@
 //
 
 #import "DoneTableViewController.h"
+#import "WeixinShare.h"
 #import "DoneTableViewCell.h"
 #import "DoneDetailController.h"
 #import "DoneModel.h"
@@ -32,6 +33,14 @@
     [[NSNotificationCenter defaultCenter] addObserverForName:@"DoneModelChange" object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
         [self.tableView reloadData];
     }];
+    
+    if (![WXApi isWXAppInstalled]) {
+        self.navigationItem.rightBarButtonItem = nil;
+    }
+    
+    [[NSNotificationCenter defaultCenter] addObserverForName:@"FavoriteSuccess" object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
+        [[DoneModel instance] clearCache];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,6 +60,34 @@
         DoneDetailController* controller = segue.destinationViewController;
         controller.myIndex = myIndex;
     }
+}
+
+- (IBAction)onSave:(id)sender
+{
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"分享到微信收藏", nil) message:NSLocalizedString(@"把时间轴所有的信息收藏到微信，同时清除时间轴的信息", nil) preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"否" style:UIAlertActionStyleDefault handler:nil];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"是" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+        
+        NSString* str = @"";
+        for (int i = 0; i < [[DoneModel instance] getDoneCounts]; ++i) {
+            PassThing* item = [[DoneModel instance] getThingByIndex:i];
+            if (item) {
+                NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
+                [dateFormatter setDateFormat:NSLocalizedString(@"yyyy年MM月dd日", nil)];
+                
+                str = [NSString stringWithFormat:@"%@%@ -- %@\n%@\n", str, [dateFormatter stringFromDate:item.startTime], [dateFormatter stringFromDate:item.endTime], item.text];
+            }
+        }
+        
+        [[WeixinShare instance] sendTextContent:str Scene:WXSceneFavorite];
+        
+    }];
+    [alertController addAction:okAction];
+    [alertController addAction:cancelAction];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
 }
 #pragma mark - Table view data source
 
@@ -80,6 +117,10 @@
     return cell;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    return 0.01;
+}
 
 - (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
