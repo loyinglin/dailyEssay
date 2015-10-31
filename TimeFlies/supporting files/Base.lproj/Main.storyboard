@@ -195,81 +195,122 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="如果这辈子只有70岁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRF-RS-ORF">
-                                <rect key="frame" x="222" y="145" width="155.5" height="20.5"/>
+                                <rect key="frame" x="223" y="99" width="155.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="还有10480天" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xrx-aM-7WD">
-                                <rect key="frame" x="250" y="188" width="100.5" height="20.5"/>
+                                <rect key="frame" x="181" y="174" width="100.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kie-du-QWF">
-                                <rect key="frame" x="255" y="248" width="90" height="30"/>
-                                <state key="normal" title="设置出生日期"/>
+                                <rect key="frame" x="186" y="233" width="90" height="30"/>
+                                <state key="normal" title="设置出生日期">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="onSelect:" destination="9pv-A4-QxB" eventType="touchUpInside" id="UFf-vv-ObP"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="生命中的第10202天" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awE-rg-tSO">
-                                <rect key="frame" x="225" y="91" width="150" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015年10月28日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHS-qe-5Jw">
+                                <rect key="frame" x="236.5" y="393.5" width="127.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015年10月28日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHS-qe-5Jw">
-                                <rect key="frame" x="229" y="339" width="142" height="23"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:44:17" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTV-Dx-pbC">
-                                <rect key="frame" x="264" y="387" width="72.5" height="23"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <rect key="frame" x="267.5" y="444" width="65.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fst-J2-q1d">
-                                <rect key="frame" x="175" y="464" width="250" height="50"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="first" translatesAutoresizingMaskIntoConstraints="NO" id="z3u-25-VUS">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="imn-pT-k0m">
+                                <rect key="frame" x="315" y="150" width="140" height="140"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="2s2-9m-zLv"/>
-                                    <constraint firstAttribute="width" constant="250" id="N7o-qZ-K3q"/>
+                                    <constraint firstAttribute="height" constant="140" id="mfo-qa-dD7"/>
+                                    <constraint firstAttribute="width" constant="140" id="qCa-BR-5Yf"/>
                                 </constraints>
                             </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="H0o-KG-jaP">
+                                <rect key="frame" x="326" y="298" width="118" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="Y9R-pJ-IQG"/>
+                                </constraints>
+                                <color key="minimumTrackTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="handleValueChanged:" destination="9pv-A4-QxB" eventType="valueChanged" id="o8h-1B-l0D"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="生" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KT6-Aj-wkP">
+                                <rect key="frame" x="350" y="253" width="15" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="死" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ol8-az-wt4">
+                                <rect key="frame" x="400" y="253" width="15" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="生命中的第10202天" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awE-rg-tSO">
+                                <rect key="frame" x="225" y="50" width="150" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Xrx-aM-7WD" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="2Ou-4K-M3L"/>
-                            <constraint firstItem="awE-rg-tSO" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="71" id="3Gu-pI-ud0"/>
-                            <constraint firstItem="dHS-qe-5Jw" firstAttribute="top" secondItem="Kie-du-QWF" secondAttribute="bottom" constant="61" id="7cN-0c-eOg"/>
-                            <constraint firstItem="Kie-du-QWF" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="8Dt-mF-daN"/>
-                            <constraint firstItem="iRF-RS-ORF" firstAttribute="top" secondItem="awE-rg-tSO" secondAttribute="bottom" constant="34" id="8EF-8Q-xZz"/>
+                            <constraint firstItem="Xrx-aM-7WD" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" constant="-68.75" id="2Ou-4K-M3L"/>
+                            <constraint firstItem="awE-rg-tSO" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="30" id="3Gu-pI-ud0"/>
+                            <constraint firstItem="dHS-qe-5Jw" firstAttribute="top" secondItem="Kie-du-QWF" secondAttribute="bottom" constant="130" id="7cN-0c-eOg"/>
+                            <constraint firstItem="Kie-du-QWF" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" constant="-69" id="8Dt-mF-daN"/>
+                            <constraint firstItem="iRF-RS-ORF" firstAttribute="top" secondItem="awE-rg-tSO" secondAttribute="bottom" constant="28.5" id="8EF-8Q-xZz"/>
+                            <constraint firstItem="H0o-KG-jaP" firstAttribute="top" secondItem="imn-pT-k0m" secondAttribute="bottom" constant="8" id="ATb-ib-jjH"/>
+                            <constraint firstItem="imn-pT-k0m" firstAttribute="leading" secondItem="awE-rg-tSO" secondAttribute="trailing" constant="-50.5" id="Akg-nd-xEa"/>
+                            <constraint firstItem="H0o-KG-jaP" firstAttribute="centerX" secondItem="imn-pT-k0m" secondAttribute="centerX" id="Cjx-ws-Pv2"/>
+                            <constraint firstItem="Ol8-az-wt4" firstAttribute="top" secondItem="imn-pT-k0m" secondAttribute="bottom" constant="-37" id="Crc-iA-2BU"/>
                             <constraint firstItem="yTV-Dx-pbC" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="FQK-BE-Cof"/>
-                            <constraint firstItem="iRF-RS-ORF" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="Ff4-C9-pX0"/>
-                            <constraint firstItem="awE-rg-tSO" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="HvJ-2R-Ve1"/>
-                            <constraint firstItem="yTV-Dx-pbC" firstAttribute="top" secondItem="dHS-qe-5Jw" secondAttribute="bottom" constant="25" id="Hyh-ce-lMz"/>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="fst-J2-q1d" secondAttribute="bottom" constant="37" id="KbQ-3e-PJD"/>
-                            <constraint firstItem="Xrx-aM-7WD" firstAttribute="top" secondItem="iRF-RS-ORF" secondAttribute="bottom" constant="22.5" id="S3F-GQ-bgc"/>
-                            <constraint firstItem="fst-J2-q1d" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="bMW-MB-rOw"/>
-                            <constraint firstItem="Kie-du-QWF" firstAttribute="top" secondItem="Xrx-aM-7WD" secondAttribute="bottom" constant="39.5" id="iUd-B4-0Xo"/>
+                            <constraint firstItem="iRF-RS-ORF" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" constant="-84.25" id="Ff4-C9-pX0"/>
+                            <constraint firstItem="awE-rg-tSO" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="G3s-Vj-6d4"/>
+                            <constraint firstItem="awE-rg-tSO" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" constant="-84" id="HvJ-2R-Ve1"/>
+                            <constraint firstItem="yTV-Dx-pbC" firstAttribute="top" secondItem="dHS-qe-5Jw" secondAttribute="bottom" constant="30" id="Hyh-ce-lMz"/>
+                            <constraint firstItem="imn-pT-k0m" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="130" id="Q8o-zl-icB"/>
+                            <constraint firstItem="iRF-RS-ORF" firstAttribute="leading" secondItem="awE-rg-tSO" secondAttribute="leading" constant="-76" id="QRw-O9-W65"/>
+                            <constraint firstItem="Xrx-aM-7WD" firstAttribute="top" secondItem="iRF-RS-ORF" secondAttribute="bottom" constant="55" id="S3F-GQ-bgc"/>
+                            <constraint firstItem="imn-pT-k0m" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" constant="85" id="Yeb-SB-Zzk"/>
+                            <constraint firstItem="awE-rg-tSO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tsR-hK-woN" secondAttribute="leading" id="dmV-lZ-Pkp"/>
+                            <constraint firstItem="Kie-du-QWF" firstAttribute="top" secondItem="Xrx-aM-7WD" secondAttribute="bottom" constant="38.5" id="iUd-B4-0Xo"/>
+                            <constraint firstItem="iRF-RS-ORF" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="jCe-MY-Ttm"/>
                             <constraint firstItem="dHS-qe-5Jw" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="n5s-Vo-E32"/>
+                            <constraint firstItem="KT6-Aj-wkP" firstAttribute="top" secondItem="imn-pT-k0m" secondAttribute="bottom" constant="-37" id="pMK-ra-s2u"/>
+                            <constraint firstItem="KT6-Aj-wkP" firstAttribute="centerX" secondItem="imn-pT-k0m" secondAttribute="centerX" constant="-27.5" id="qV7-Ia-FwQ"/>
+                            <constraint firstItem="iRF-RS-ORF" firstAttribute="trailing" secondItem="awE-rg-tSO" secondAttribute="trailing" constant="-76" id="ul1-dF-dO9"/>
+                            <constraint firstItem="Ol8-az-wt4" firstAttribute="centerX" secondItem="imn-pT-k0m" secondAttribute="centerX" constant="22.5" id="vQk-IT-ei7"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="HvJ-2R-Ve1"/>
+                                <exclude reference="dmV-lZ-Pkp"/>
+                                <exclude reference="Ff4-C9-pX0"/>
+                                <exclude reference="QRw-O9-W65"/>
+                                <exclude reference="ul1-dF-dO9"/>
+                                <exclude reference="Akg-nd-xEa"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="流光易逝" image="second" selectedImage="first" id="acW-dT-cKf"/>
                     <connections>
-                        <outlet property="img" destination="z3u-25-VUS" id="NSJ-1J-vmt"/>
+                        <outlet property="knobPlaceholder" destination="imn-pT-k0m" id="j5c-7x-QEm"/>
                         <outlet property="myBirthDay" destination="awE-rg-tSO" id="Gw3-mL-bbo"/>
                         <outlet property="myDay" destination="dHS-qe-5Jw" id="skn-4T-o5x"/>
                         <outlet property="myDeadDay" destination="Xrx-aM-7WD" id="bRg-qe-BKx"/>
                         <outlet property="mySecond" destination="yTV-Dx-pbC" id="3vM-RN-kA9"/>
+                        <outlet property="valueSlider" destination="H0o-KG-jaP" id="9Vh-dp-Ziy"/>
                         <segue destination="vUQ-uD-LRS" kind="presentation" identifier="open_select_time_board" animates="NO" id="thw-eT-aho"/>
                     </connections>
                 </viewController>
@@ -414,7 +455,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" style="plain" rowHeight="66" sectionHeaderHeight="28" sectionFooterHeight="28" id="A9o-sx-0YM">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="done" rowHeight="66" id="gvJ-5U-kMf" customClass="DoneTableViewCell">
                                 <rect key="frame" x="0.0" y="92" width="600" height="66"/>
@@ -748,6 +789,6 @@
         <image name="write.png" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GuD-BM-gri"/>
+        <segue reference="Rxg-xW-6Ra"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		FD15A1EC1BAAB1D70048B4D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15A1EB1BAAB1D70048B4D2 /* AppDelegate.m */; };
 		FD15A2061BAAB1D70048B4D2 /* TimeFliesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15A2051BAAB1D70048B4D2 /* TimeFliesTests.m */; };
+		FD4077201BE46ADC00423A93 /* RWKnobControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40771B1BE46ADC00423A93 /* RWKnobControl.m */; settings = {ASSET_TAGS = (); }; };
+		FD4077211BE46ADC00423A93 /* RWKnobRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40771D1BE46ADC00423A93 /* RWKnobRenderer.m */; settings = {ASSET_TAGS = (); }; };
+		FD4077221BE46ADC00423A93 /* RWRotationGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40771F1BE46ADC00423A93 /* RWRotationGestureRecognizer.m */; settings = {ASSET_TAGS = (); }; };
 		FD47D4681BDDE1C5000482A7 /* TodoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD47D4671BDDE1C5000482A7 /* TodoCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		FD47D46B1BDE0076000482A7 /* TimeSelectController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD47D46A1BDE0076000482A7 /* TimeSelectController.m */; settings = {ASSET_TAGS = (); }; };
 		FD47D46E1BDE0AEB000482A7 /* DoneTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD47D46D1BDE0AEB000482A7 /* DoneTableViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -71,6 +74,16 @@
 		FD15A1FF1BAAB1D70048B4D2 /* TimeFlies.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeFlies.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD15A2041BAAB1D70048B4D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD15A2051BAAB1D70048B4D2 /* TimeFliesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeFliesTests.m; sourceTree = "<group>"; };
+		FD4077141BE3517800423A93 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		FD4077151BE3517800423A93 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		FD4077161BE3517800423A93 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		FD4077171BE3517800423A93 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		FD40771A1BE46ADC00423A93 /* RWKnobControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWKnobControl.h; sourceTree = "<group>"; };
+		FD40771B1BE46ADC00423A93 /* RWKnobControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWKnobControl.m; sourceTree = "<group>"; };
+		FD40771C1BE46ADC00423A93 /* RWKnobRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWKnobRenderer.h; sourceTree = "<group>"; };
+		FD40771D1BE46ADC00423A93 /* RWKnobRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWKnobRenderer.m; sourceTree = "<group>"; };
+		FD40771E1BE46ADC00423A93 /* RWRotationGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWRotationGestureRecognizer.h; sourceTree = "<group>"; };
+		FD40771F1BE46ADC00423A93 /* RWRotationGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWRotationGestureRecognizer.m; sourceTree = "<group>"; };
 		FD47D4661BDDE1C5000482A7 /* TodoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoCollectionViewCell.h; sourceTree = "<group>"; };
 		FD47D4671BDDE1C5000482A7 /* TodoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoCollectionViewCell.m; sourceTree = "<group>"; };
 		FD47D4691BDE0076000482A7 /* TimeSelectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeSelectController.h; sourceTree = "<group>"; };
@@ -194,6 +207,7 @@
 		FD15A1E51BAAB1D70048B4D2 /* TimeFlies */ = {
 			isa = PBXGroup;
 			children = (
+				FD4077181BE46ADC00423A93 /* vender */,
 				FD4BB4B71BE0787900F4AA30 /* img */,
 				FDDFE1781BDDDA7200865CDE /* model */,
 				FDDFE1291BDDD8BF00865CDE /* extension */,
@@ -220,6 +234,27 @@
 				FD15A2041BAAB1D70048B4D2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD4077181BE46ADC00423A93 /* vender */ = {
+			isa = PBXGroup;
+			children = (
+				FD4077191BE46ADC00423A93 /* knob */,
+			);
+			path = vender;
+			sourceTree = "<group>";
+		};
+		FD4077191BE46ADC00423A93 /* knob */ = {
+			isa = PBXGroup;
+			children = (
+				FD40771A1BE46ADC00423A93 /* RWKnobControl.h */,
+				FD40771B1BE46ADC00423A93 /* RWKnobControl.m */,
+				FD40771C1BE46ADC00423A93 /* RWKnobRenderer.h */,
+				FD40771D1BE46ADC00423A93 /* RWKnobRenderer.m */,
+				FD40771E1BE46ADC00423A93 /* RWRotationGestureRecognizer.h */,
+				FD40771F1BE46ADC00423A93 /* RWRotationGestureRecognizer.m */,
+			);
+			path = knob;
 			sourceTree = "<group>";
 		};
 		FD4BB4B71BE0787900F4AA30 /* img */ = {
@@ -451,6 +486,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = FD15A1DA1BAAB1D70048B4D2;
 			productRefGroup = FD15A1E41BAAB1D70048B4D2 /* Products */;
@@ -503,7 +539,9 @@
 				FD47D4711BDE0B72000482A7 /* DoneTableViewCell.m in Sources */,
 				FD4BB4ED1BE118D700F4AA30 /* LaunchViewController.m in Sources */,
 				FDDFE1721BDDD8BF00865CDE /* RecordViewController.m in Sources */,
+				FD4077211BE46ADC00423A93 /* RWKnobRenderer.m in Sources */,
 				FDDFE1761BDDD8BF00865CDE /* TodoDetailController.m in Sources */,
+				FD4077201BE46ADC00423A93 /* RWKnobControl.m in Sources */,
 				FDDFE1841BDDDA7200865CDE /* DataClass.m in Sources */,
 				FD15A1EC1BAAB1D70048B4D2 /* AppDelegate.m in Sources */,
 				FDDFE1731BDDD8BF00865CDE /* HomeViewController.m in Sources */,
@@ -524,6 +562,7 @@
 				FDDFE1831BDDDA7200865CDE /* BaseModel.m in Sources */,
 				FDDFE1631BDDD8BF00865CDE /* WXUtil.mm in Sources */,
 				FDDFE1871BDDDA7200865CDE /* TodoModel.m in Sources */,
+				FD4077221BE46ADC00423A93 /* RWRotationGestureRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,6 +590,7 @@
 			children = (
 				FD4BB4D21BE0FB6A00F4AA30 /* en */,
 				FD4BB4D41BE0FB7000F4AA30 /* Base */,
+				FD4077161BE3517800423A93 /* zh-Hans */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -560,6 +600,7 @@
 			children = (
 				FD4BB4DF1BE10FCA00F4AA30 /* en */,
 				FD4BB4E11BE1115400F4AA30 /* Base */,
+				FD4077171BE3517800423A93 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -569,6 +610,7 @@
 			children = (
 				FD4BB4E51BE1141F00F4AA30 /* Base */,
 				FD4BB4EA1BE114BC00F4AA30 /* en */,
+				FD4077141BE3517800423A93 /* zh-Hans */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -578,6 +620,7 @@
 			children = (
 				FDDFE1481BDDD8BF00865CDE /* Base */,
 				FD4BB4D91BE0FD4300F4AA30 /* en */,
+				FD4077151BE3517800423A93 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			path = "../supporting files";
@@ -670,8 +713,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Xinmin Li (5362VTFEZL)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "TimeFlies/supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -688,8 +731,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Xinmin Li (HF83WH5SDV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Xinmin Li (HF83WH5SDV)";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "TimeFlies/supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

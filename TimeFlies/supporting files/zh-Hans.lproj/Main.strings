@@ -1,57 +1,57 @@
 
 /* Class = "UILabel"; text = "开始时间"; ObjectID = "0M0-w9-Sbc"; */
-"0M0-w9-Sbc.text" = "StartTime";
+"0M0-w9-Sbc.text" = "开始时间";
 
 /* Class = "UITabBarItem"; title = "朝朝暮暮"; ObjectID = "292-Gu-8Ov"; */
-"292-Gu-8Ov.title" = "Days";
+"292-Gu-8Ov.title" = "朝朝暮暮";
 
-/* Class = "UIBarButtonItem"; title = "写"; ObjectID = "2uR-yc-ZAU"; */
-"2uR-yc-ZAU.title" = "New";
+/* Class = "UIBarButtonItem"; title = "新建"; ObjectID = "2uR-yc-ZAU"; */
+"2uR-yc-ZAU.title" = "新建";
 
 /* Class = "UILabel"; text = "我是猪"; ObjectID = "3Px-w5-ukU"; */
 "3Px-w5-ukU.text" = "我是猪";
 
 /* Class = "UIButton"; normalTitle = "分享到收藏"; ObjectID = "5mt-V5-QN5"; */
-"5mt-V5-QN5.normalTitle" = "Share To Weixin Favorite";
+"5mt-V5-QN5.normalTitle" = "分享到收藏";
 
 /* Class = "UITabBarItem"; title = "时过境迁"; ObjectID = "6Y2-b3-aZM"; */
-"6Y2-b3-aZM.title" = "Pass";
+"6Y2-b3-aZM.title" = "时过境迁";
 
 /* Class = "UIButton"; normalTitle = "保存"; ObjectID = "AxN-7B-ZRa"; */
-"AxN-7B-ZRa.normalTitle" = "Save";
+"AxN-7B-ZRa.normalTitle" = "保存";
 
 /* Class = "UINavigationItem"; title = "详情"; ObjectID = "BHJ-Qj-ezB"; */
-"BHJ-Qj-ezB.title" = "Detail";
+"BHJ-Qj-ezB.title" = "详情";
 
 /* Class = "UITabBarItem"; title = "时过境迁"; ObjectID = "Fnu-JY-hcc"; */
-"Fnu-JY-hcc.title" = "Line";
+"Fnu-JY-hcc.title" = "时过境迁";
 
 /* Class = "UIBarButtonItem"; title = "新建"; ObjectID = "JxY-QA-UZo"; */
-"JxY-QA-UZo.title" = "New";
+"JxY-QA-UZo.title" = "新建";
 
 /* Class = "UIButton"; normalTitle = "设置出生日期"; ObjectID = "Kie-du-QWF"; */
-"Kie-du-QWF.normalTitle" = "SetBirth";
+"Kie-du-QWF.normalTitle" = "设置出生日期";
 
 /* Class = "UILabel"; text = "2015年10月25日13:21:50"; ObjectID = "MUb-o6-lkb"; */
 "MUb-o6-lkb.text" = "2015年10月25日13:21:50";
 
 /* Class = "UINavigationItem"; title = "详情"; ObjectID = "Oji-7G-07K"; */
-"Oji-7G-07K.title" = "Detail";
+"Oji-7G-07K.title" = "详情";
 
 /* Class = "UIButton"; normalTitle = "分享到朋友圈"; ObjectID = "Qd0-K7-5TL"; */
-"Qd0-K7-5TL.normalTitle" = "Share To Weixin Timeline";
+"Qd0-K7-5TL.normalTitle" = "分享到朋友圈";
 
 /* Class = "UIButton"; normalTitle = "固定到时间轴"; ObjectID = "Rlz-l5-yKm"; */
-"Rlz-l5-yKm.normalTitle" = "Attach To My Timeline";
+"Rlz-l5-yKm.normalTitle" = "固定到时间轴";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "TQx-HK-uUQ"; */
 "TQx-HK-uUQ.text" = "Label";
 
 /* Class = "UIButton"; normalTitle = "删除"; ObjectID = "U7P-km-ck7"; */
-"U7P-km-ck7.normalTitle" = "Delete";
+"U7P-km-ck7.normalTitle" = "删除";
 
 /* Class = "UITabBarItem"; title = "只争朝夕"; ObjectID = "Xog-Ve-ZvY"; */
-"Xog-Ve-ZvY.title" = "Now";
+"Xog-Ve-ZvY.title" = "只争朝夕";
 
 /* Class = "UILabel"; text = "还有10480天"; ObjectID = "Xrx-aM-7WD"; */
 "Xrx-aM-7WD.text" = "还有10480天";
@@ -60,12 +60,10 @@
 "YGI-cA-mPO.text" = "我是日记内容我是日记内容我是日记内容我是日记内容我是日记内容我是日记内容我是日记内容我是日记内容我是日记内容我是日记内容我是日记内容我是日记内容我是日记内容我是日记内容我是日记内容我是日记内容我是日记内容我是日记内容我是日记内容我是日记内容我是日记内容我是日记内容我是日记内容我是日记内容";
 
 /* Class = "UINavigationItem"; title = "时间轴"; ObjectID = "Z9M-6q-t07"; */
-"Z9M-6q-t07.title" = "Timeline";
+"Z9M-6q-t07.title" = "时间轴";
 
-/* 微信收藏 */
-"iTs-av-YFa.title" = "Favorite";
 /* Class = "UITabBarItem"; title = "流光易逝"; ObjectID = "acW-dT-cKf"; */
-"acW-dT-cKf.title" = "Pass";
+"acW-dT-cKf.title" = "流光易逝";
 
 /* Class = "UILabel"; text = "生命中的第10202天"; ObjectID = "awE-rg-tSO"; */
 "awE-rg-tSO.text" = "生命中的第10202天";
@@ -73,47 +71,44 @@
 /* Class = "UILabel"; text = "2015年10月28日"; ObjectID = "dHS-qe-5Jw"; */
 "dHS-qe-5Jw.text" = "2015年10月28日";
 
-/* 生 */
-"KT6-Aj-wkP.text" = "born";
-
-/* 死 */
-"Ol8-az-wt4.text" = "death";
-
 /* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "dg7-nd-7qL"; */
 "dg7-nd-7qL.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
 
 /* Class = "UINavigationItem"; title = "详情"; ObjectID = "eAY-FT-u8t"; */
-"eAY-FT-u8t.title" = "Detail";
+"eAY-FT-u8t.title" = "详情";
 
 /* Class = "UILabel"; text = "我是猪"; ObjectID = "f5n-OB-JNs"; */
 "f5n-OB-JNs.text" = "我是猪";
 
 /* Class = "UILabel"; text = "如果这辈子只有70岁"; ObjectID = "iRF-RS-ORF"; */
-"iRF-RS-ORF.text" = "If can live to 70 years old";
+"iRF-RS-ORF.text" = "如果这辈子只有70岁";
+
+/* Class = "UIBarButtonItem"; title = "收藏"; ObjectID = "iTs-av-YFa"; */
+"iTs-av-YFa.title" = "收藏";
 
 /* Class = "UINavigationItem"; title = "待办事件"; ObjectID = "mkD-vf-3KU"; */
-"mkD-vf-3KU.title" = "Waiting";
+"mkD-vf-3KU.title" = "待办事件";
 
 /* Class = "UIButton"; normalTitle = "分享到微信"; ObjectID = "nBk-D9-Jer"; */
-"nBk-D9-Jer.normalTitle" = "Share To Weixin Talk";
+"nBk-D9-Jer.normalTitle" = "分享到微信";
 
 /* Class = "UINavigationItem"; title = "我的日记"; ObjectID = "pjv-7C-dEl"; */
-"pjv-7C-dEl.title" = "My esssays";
+"pjv-7C-dEl.title" = "我的日记";
 
 /* Class = "UIBarButtonItem"; title = "保存"; ObjectID = "wTL-HF-gzH"; */
-"wTL-HF-gzH.title" = "Save";
+"wTL-HF-gzH.title" = "保存";
 
 /* Class = "UITableViewController"; title = "记录"; ObjectID = "x1H-bL-wyH"; */
-"x1H-bL-wyH.title" = "Record";
+"x1H-bL-wyH.title" = "记录";
 
 /* Class = "UILabel"; text = "10:44:17"; ObjectID = "yTV-Dx-pbC"; */
 "yTV-Dx-pbC.text" = "10:44:17";
 
 /* Class = "UIButton"; normalTitle = "固定到时间轴"; ObjectID = "ycQ-hW-NYf"; */
-"ycQ-hW-NYf.normalTitle" = "Attach To Timeline";
+"ycQ-hW-NYf.normalTitle" = "固定到时间轴";
 
 /* Class = "UIBarButtonItem"; title = "保存"; ObjectID = "z85-dR-LF3"; */
-"z85-dR-LF3.title" = "Save";
+"z85-dR-LF3.title" = "保存";
 
 /* Class = "UITextView"; text = "123456789101234567891012345678910"; ObjectID = "zkD-Jf-ose"; */
 "zkD-Jf-ose.text" = "123456789101234567891012345678910";

@@ -7,10 +7,13 @@
 //
 
 #import "HomeViewController.h"
+#import "RWKnobControl.h"
 #import "HomeModel.h"
 
 @interface HomeViewController ()
-
+{
+    RWKnobControl* _knobControl;
+}
 @end
 
 #define const_select_time @"open_select_time_board"
@@ -32,6 +35,22 @@
         [self viewInit];
     }];
     [self onTimer:nil];
+    
+    
+    _knobControl = [[RWKnobControl alloc] initWithFrame:self.knobPlaceholder.bounds];
+    [self.knobPlaceholder addSubview:_knobControl];
+    
+    _knobControl.lineWidth = 4.0;
+    _knobControl.pointerLength = 8.0;
+    self.view.tintColor = [UIColor lightGrayColor];
+    
+    [_knobControl addObserver:self forKeyPath:@"value" options:0 context:NULL];
+    
+    // Hooks up the knob control
+    [_knobControl addTarget:self
+                     action:@selector(handleValueChanged:)
+           forControlEvents:UIControlEventValueChanged];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -49,6 +68,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    [self viewInit];
     [self addTimer];
 //    [self startMove];
 }
@@ -62,12 +82,19 @@
 
 - (void)viewInit
 {
-    NSDate* birth = [[HomeModel instance] getBirthDate];
-    NSDate* now = [[NSDate alloc] initWithTimeIntervalSinceNow:0];
-    long elapse = [now timeIntervalSinceDate:birth];
+    self.myBirthDay.text = [NSString stringWithFormat:NSLocalizedString(@"今天是生命中的第%d天", nil), [[HomeModel instance] getDaysNow]];
+    self.myDeadDay.text = [NSString stringWithFormat:NSLocalizedString(@"还有%d天", nil), [[HomeModel instance] getDaysLeft]];
+    float per = [[HomeModel instance] getDaysLeft] / (365 * 70.0);
+    self.valueSlider.value = (1 - per);
+    [_knobControl setValue:(1 - per) animated:YES];
     
-    self.myBirthDay.text = [NSString stringWithFormat:NSLocalizedString(@"今天是生命中的第%d天", nil), elapse / (24 * 3600)];
-    self.myDeadDay.text = [NSString stringWithFormat:NSLocalizedString(@"还有%d天", nil), 365 * 70 - elapse / (24 * 3600)];
+    
+    NSDate* current = [[NSDate alloc] initWithTimeIntervalSinceNow:0];
+    
+    NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:NSLocalizedString(@"yyyy年MM月dd日", nil)];
+    
+    self.myDay.text = [dateFormatter stringFromDate:current];
 }
 
 - (void)addTimer
@@ -80,9 +107,6 @@
     NSDate* current = [[NSDate alloc] initWithTimeIntervalSinceNow:0];
     
     NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:NSLocalizedString(@"yyyy年MM月dd日", nil)];
-
-    self.myDay.text = [dateFormatter stringFromDate:current];
     
     [dateFormatter setDateFormat:@"hh:mm:ss"];
     self.mySecond.text = [dateFormatter stringFromDate:current];
@@ -116,6 +140,31 @@
 - (void)endMove
 {
     myMoveEnd = YES;
+}
+
+
+- (IBAction)handleValueChanged:(id)sender {
+    if(sender == self.valueSlider) {
+        _knobControl.value = self.valueSlider.value;
+    } else if(sender == _knobControl) {
+        self.valueSlider.value = _knobControl.value;
+    }
+}
+
+
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    if(object == _knobControl && [keyPath isEqualToString:@"value"]) {
+        self.myDeadDay.text = [NSString stringWithFormat:NSLocalizedString(@"还有%d天", nil), (long)(365 * 70 * (1- _knobControl.value))];
+        NSDate* date = [[HomeModel instance] getBirthDate];
+        date = [[NSDate alloc] initWithTimeInterval:((long)(365 * 70 * (_knobControl.value)) * 24 * 3600) sinceDate:date];
+        
+        NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:NSLocalizedString(@"yyyy年MM月dd日", nil)];
+        
+        self.myDay.text = [dateFormatter stringFromDate:date];
+    }
 }
 #pragma mark - delegate
 
