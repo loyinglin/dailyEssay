@@ -62,6 +62,15 @@
 
 #pragma mark - ui
 
+- (IBAction)onSwipeLeft:(id)sender
+{
+    [self.tabBarController setSelectedIndex:2];
+}
+
+- (IBAction)onSwipeRight:(id)sender
+{
+    [self.tabBarController setSelectedIndex:0];
+}
 
 - (IBAction)onNewTodo:(id)sender
 {

@@ -14,6 +14,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="detail" rowHeight="128" id="svd-g5-q3l" customClass="EssayTableViewCell">
                                 <rect key="frame" x="0.0" y="92" width="600" height="128"/>
@@ -64,6 +65,8 @@
                         <connections>
                             <outlet property="dataSource" destination="x1H-bL-wyH" id="kpa-hy-dGu"/>
                             <outlet property="delegate" destination="x1H-bL-wyH" id="cL4-Lo-EEx"/>
+                            <outletCollection property="gestureRecognizers" destination="I1S-iS-PmY" appends="YES" id="nIC-Tp-aeH"/>
+                            <outletCollection property="gestureRecognizers" destination="Onc-3T-8qJ" appends="YES" id="BYc-hn-qcL"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="我的日记" id="pjv-7C-dEl">
@@ -78,6 +81,16 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UfZ-bu-aXW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="I1S-iS-PmY">
+                    <connections>
+                        <action selector="onSwipeLeft:" destination="x1H-bL-wyH" id="7dN-yi-MtV"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="Onc-3T-8qJ">
+                    <connections>
+                        <action selector="onSwipeRight:" destination="x1H-bL-wyH" id="GwY-Sa-mko"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-241" y="-1042"/>
         </scene>
@@ -264,10 +277,11 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="Xrx-aM-7WD" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" constant="-68.75" id="2Ou-4K-M3L"/>
                             <constraint firstItem="awE-rg-tSO" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="30" id="3Gu-pI-ud0"/>
-                            <constraint firstItem="dHS-qe-5Jw" firstAttribute="top" secondItem="Kie-du-QWF" secondAttribute="bottom" constant="130" id="7cN-0c-eOg"/>
+                            <constraint firstItem="dHS-qe-5Jw" firstAttribute="top" secondItem="Kie-du-QWF" secondAttribute="bottom" priority="750" constant="130" id="7cN-0c-eOg"/>
                             <constraint firstItem="Kie-du-QWF" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" constant="-69" id="8Dt-mF-daN"/>
                             <constraint firstItem="iRF-RS-ORF" firstAttribute="top" secondItem="awE-rg-tSO" secondAttribute="bottom" constant="28.5" id="8EF-8Q-xZz"/>
                             <constraint firstItem="H0o-KG-jaP" firstAttribute="top" secondItem="imn-pT-k0m" secondAttribute="bottom" constant="8" id="ATb-ib-jjH"/>
@@ -289,6 +303,7 @@
                             <constraint firstItem="dHS-qe-5Jw" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="n5s-Vo-E32"/>
                             <constraint firstItem="KT6-Aj-wkP" firstAttribute="top" secondItem="imn-pT-k0m" secondAttribute="bottom" constant="-37" id="pMK-ra-s2u"/>
                             <constraint firstItem="KT6-Aj-wkP" firstAttribute="centerX" secondItem="imn-pT-k0m" secondAttribute="centerX" constant="-27.5" id="qV7-Ia-FwQ"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" relation="greaterThanOrEqual" secondItem="yTV-Dx-pbC" secondAttribute="bottom" constant="10" id="uCD-aZ-0Ou"/>
                             <constraint firstItem="iRF-RS-ORF" firstAttribute="trailing" secondItem="awE-rg-tSO" secondAttribute="trailing" constant="-76" id="ul1-dF-dO9"/>
                             <constraint firstItem="Ol8-az-wt4" firstAttribute="centerX" secondItem="imn-pT-k0m" secondAttribute="centerX" constant="22.5" id="vQk-IT-ei7"/>
                         </constraints>
@@ -302,6 +317,9 @@
                                 <exclude reference="Akg-nd-xEa"/>
                             </mask>
                         </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="4S0-Il-Fk9" appends="YES" id="Dqq-QF-fEf"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="流光易逝" image="second" selectedImage="first" id="acW-dT-cKf"/>
                     <connections>
@@ -315,6 +333,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="4S0-Il-Fk9">
+                    <connections>
+                        <action selector="onSwipe:" destination="9pv-A4-QxB" id="GAx-TJ-0fK"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-1054" y="-2490"/>
         </scene>
@@ -456,6 +479,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="done" rowHeight="66" id="gvJ-5U-kMf" customClass="DoneTableViewCell">
                                 <rect key="frame" x="0.0" y="92" width="600" height="66"/>
@@ -465,56 +489,46 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="27L-IG-0a7">
-                                            <rect key="frame" x="299" y="0.0" width="1" height="66"/>
+                                            <rect key="frame" x="132" y="0.0" width="1" height="66"/>
                                             <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="1" id="1pe-2I-pfO"/>
                                             </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是猪" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Px-w5-ukU">
-                                            <rect key="frame" x="320" y="24.5" width="42" height="17"/>
+                                            <rect key="frame" x="153" y="24" width="42" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是猪" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5n-OB-JNs">
-                                            <rect key="frame" x="237" y="24" width="42" height="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015年11月01日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5n-OB-JNs">
+                                            <rect key="frame" x="10" y="24" width="102" height="17"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="102" id="fI4-0W-ppF"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OVb-2R-M9Y" userLabel="lineLeft">
-                                            <rect key="frame" x="279" y="32" width="20" height="1"/>
-                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="1" id="ZIi-N5-vXL"/>
-                                            </constraints>
-                                        </view>
-                                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zX2-qz-zx7" userLabel="lineRight">
-                                            <rect key="frame" x="300" y="32" width="20" height="1"/>
-                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="1" id="5zZ-FI-516"/>
-                                            </constraints>
-                                        </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="f5n-OB-JNs" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rpE-vD-f3A" secondAttribute="leading" constant="10" id="3Va-0E-3QM"/>
+                                        <constraint firstItem="f5n-OB-JNs" firstAttribute="leading" secondItem="rpE-vD-f3A" secondAttribute="leading" constant="10" id="3Va-0E-3QM"/>
                                         <constraint firstItem="27L-IG-0a7" firstAttribute="top" secondItem="rpE-vD-f3A" secondAttribute="top" id="7yw-zU-yXM"/>
-                                        <constraint firstItem="OVb-2R-M9Y" firstAttribute="leading" secondItem="f5n-OB-JNs" secondAttribute="trailing" id="9Q3-zd-kMm"/>
                                         <constraint firstItem="27L-IG-0a7" firstAttribute="centerX" secondItem="rpE-vD-f3A" secondAttribute="centerX" id="CUH-nQ-s3f"/>
-                                        <constraint firstItem="zX2-qz-zx7" firstAttribute="centerY" secondItem="3Px-w5-ukU" secondAttribute="centerY" id="F6h-jO-nbu"/>
-                                        <constraint firstItem="3Px-w5-ukU" firstAttribute="leading" secondItem="zX2-qz-zx7" secondAttribute="trailing" id="IPr-Jv-MZJ"/>
+                                        <constraint firstItem="27L-IG-0a7" firstAttribute="leading" secondItem="f5n-OB-JNs" secondAttribute="trailing" constant="20" id="Mmu-Ae-Lxd"/>
                                         <constraint firstAttribute="bottom" secondItem="27L-IG-0a7" secondAttribute="bottom" id="Oyz-Kz-Vk5"/>
-                                        <constraint firstItem="zX2-qz-zx7" firstAttribute="leading" secondItem="27L-IG-0a7" secondAttribute="trailing" id="RDC-q8-HO1"/>
                                         <constraint firstItem="f5n-OB-JNs" firstAttribute="centerY" secondItem="rpE-vD-f3A" secondAttribute="centerY" id="da9-Gi-RYA"/>
-                                        <constraint firstItem="27L-IG-0a7" firstAttribute="leading" secondItem="OVb-2R-M9Y" secondAttribute="trailing" id="lMe-dg-AWE"/>
                                         <constraint firstItem="3Px-w5-ukU" firstAttribute="leading" secondItem="27L-IG-0a7" secondAttribute="trailing" constant="20" id="mtd-0f-8au"/>
                                         <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="3Px-w5-ukU" secondAttribute="trailing" id="nIZ-SR-ujJ"/>
                                         <constraint firstItem="27L-IG-0a7" firstAttribute="leading" secondItem="f5n-OB-JNs" secondAttribute="trailing" constant="20" id="qVz-On-RGu"/>
-                                        <constraint firstItem="OVb-2R-M9Y" firstAttribute="centerY" secondItem="f5n-OB-JNs" secondAttribute="centerY" id="rg0-N5-Bfl"/>
                                         <constraint firstItem="3Px-w5-ukU" firstAttribute="centerY" secondItem="rpE-vD-f3A" secondAttribute="centerY" id="wsy-AR-2wx"/>
                                     </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="CUH-nQ-s3f"/>
+                                            <exclude reference="qVz-On-RGu"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="myLeftText" destination="f5n-OB-JNs" id="R4l-h2-drc"/>
@@ -525,6 +539,7 @@
                         <connections>
                             <outlet property="dataSource" destination="QUw-nT-RbL" id="kin-OC-F5s"/>
                             <outlet property="delegate" destination="QUw-nT-RbL" id="DYS-Tn-A2M"/>
+                            <outletCollection property="gestureRecognizers" destination="WFl-3t-VVf" appends="YES" id="89h-EY-HXV"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="时间轴" id="Z9M-6q-t07">
@@ -539,6 +554,11 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9lb-we-r7N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="WFl-3t-VVf">
+                    <connections>
+                        <action selector="onSwipeRight:" destination="QUw-nT-RbL" id="3ge-t8-aE6"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-173" y="304"/>
         </scene>
@@ -694,7 +714,7 @@
                                 </connections>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="MUY-qk-vht" secondAttribute="trailing" id="74I-Qv-mEY"/>
@@ -702,6 +722,10 @@
                             <constraint firstItem="WAt-NI-y6r" firstAttribute="top" secondItem="MUY-qk-vht" secondAttribute="bottom" id="fNK-fx-6uN"/>
                             <constraint firstItem="MUY-qk-vht" firstAttribute="top" secondItem="UOR-jm-rzv" secondAttribute="bottom" id="lrw-ib-7IQ"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="E1w-d5-5HI" appends="YES" id="eLs-7y-r6B"/>
+                            <outletCollection property="gestureRecognizers" destination="xvK-b0-Jxc" appends="YES" id="YSu-Bv-UYr"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="待办事件" id="mkD-vf-3KU">
                         <barButtonItem key="rightBarButtonItem" title="新建" id="JxY-QA-UZo">
@@ -716,6 +740,16 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="igw-o7-IXk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer cancelsTouchesInView="NO" direction="left" id="E1w-d5-5HI">
+                    <connections>
+                        <action selector="onSwipeLeft:" destination="H8B-nG-ldt" id="ckV-l0-a1r"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="xvK-b0-Jxc">
+                    <connections>
+                        <action selector="onSwipeRight:" destination="H8B-nG-ldt" id="F6F-xD-Esj"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-338" y="-1770"/>
         </scene>

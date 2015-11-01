@@ -260,14 +260,14 @@
 		FD4BB4B71BE0787900F4AA30 /* img */ = {
 			isa = PBXGroup;
 			children = (
-				FD4BB4B81BE0787900F4AA30 /* icon@2x.png */,
-				FD4BB4C41BE0C51700F4AA30 /* phone.png */,
-				FD4BB4C51BE0C51700F4AA30 /* write.png */,
-				FD4BB4B91BE0787900F4AA30 /* icon@3x.png */,
 				FD4BB4BA1BE0787900F4AA30 /* icon_settings@2x.png */,
 				FD4BB4BB1BE0787900F4AA30 /* icon_settings@3x.png */,
 				FD4BB4BC1BE0787900F4AA30 /* icon_spotlight@2x.png */,
 				FD4BB4BD1BE0787900F4AA30 /* icon_spotlight@3x.png */,
+				FD4BB4B81BE0787900F4AA30 /* icon@2x.png */,
+				FD4BB4B91BE0787900F4AA30 /* icon@3x.png */,
+				FD4BB4C41BE0C51700F4AA30 /* phone.png */,
+				FD4BB4C51BE0C51700F4AA30 /* write.png */,
 			);
 			name = img;
 			path = TimeFlies/img;
@@ -646,7 +646,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Xinmin Li (HF83WH5SDV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Xinmin Li (HF83WH5SDV)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -668,6 +669,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "38203503-0b6c-447e-98db-5a055fd2e5b7";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -689,7 +691,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Xinmin Li (HF83WH5SDV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Xinmin Li (HF83WH5SDV)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -704,6 +707,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "38203503-0b6c-447e-98db-5a055fd2e5b7";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -713,8 +717,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Xinmin Li (5362VTFEZL)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Xinmin Li (HF83WH5SDV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Xinmin Li (HF83WH5SDV)";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "TimeFlies/supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -723,7 +727,7 @@
 					"$(PROJECT_DIR)/TimeFlies/extension/weixin/SDKExport",
 				);
 				PRODUCT_NAME = TimeFlies;
-				PROVISIONING_PROFILE = "0d8f46a3-b2dd-4f9c-a1d5-5aa8311c8d50";
+				PROVISIONING_PROFILE = "38203503-0b6c-447e-98db-5a055fd2e5b7";
 			};
 			name = Debug;
 		};
@@ -741,7 +745,7 @@
 					"$(PROJECT_DIR)/TimeFlies/extension/weixin/SDKExport",
 				);
 				PRODUCT_NAME = TimeFlies;
-				PROVISIONING_PROFILE = "0d8f46a3-b2dd-4f9c-a1d5-5aa8311c8d50";
+				PROVISIONING_PROFILE = "38203503-0b6c-447e-98db-5a055fd2e5b7";
 			};
 			name = Release;
 		};

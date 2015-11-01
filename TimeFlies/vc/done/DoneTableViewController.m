@@ -89,6 +89,13 @@
     
     [self presentViewController:alertController animated:YES completion:nil];
 }
+
+- (IBAction)onSwipeRight:(id)sender
+{
+    [self.tabBarController setSelectedIndex:2];
+}
+
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

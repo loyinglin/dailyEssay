@@ -113,6 +113,12 @@
 }
 
 #pragma mark - ui
+
+-(IBAction)onSwipe:(UISwipeGestureRecognizer*)sender
+{
+    [self.tabBarController setSelectedIndex:1];
+}
+
 -(IBAction)onSelect:(id)sender
 {
     [self performSegueWithIdentifier:const_select_time sender:self];

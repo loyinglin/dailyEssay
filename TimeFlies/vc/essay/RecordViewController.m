@@ -71,6 +71,18 @@
     [self performSegueWithIdentifier:open_str sender:self];
 }
 
+
+- (IBAction)onSwipeLeft:(id)sender
+{
+    [self.tabBarController setSelectedIndex:3];
+}
+
+- (IBAction)onSwipeRight:(id)sender
+{
+    [self.tabBarController setSelectedIndex:1];
+}
+
+
 #pragma mark - delegate
 
 

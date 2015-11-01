@@ -27,14 +27,14 @@
     long time = endTime.timeIntervalSince1970;
     UILabel* timeLabel;
     UILabel* textLabel;
-    if (time % 2) {
+
         timeLabel = self.myLeftText;
         textLabel = self.myRightText;
-    }
-    else{
-        timeLabel = self.myRightText;
-        textLabel = self.myLeftText;
-    }
+//    }
+//    else{
+//        timeLabel = self.myRightText;
+//        textLabel = self.myLeftText;
+//    }
     
     NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:NSLocalizedString(@"yyyy年MM月dd日", nil)];
