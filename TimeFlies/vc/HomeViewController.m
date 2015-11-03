@@ -117,6 +117,7 @@
 -(IBAction)onSwipe:(UISwipeGestureRecognizer*)sender
 {
     [self.tabBarController setSelectedIndex:1];
+    [self.tabBarController tabBar:self.tabBarController.tabBar didSelectItem:self.tabBarController.tabBar.items[1]];
 }
 
 -(IBAction)onSelect:(id)sender

@@ -421,7 +421,7 @@
             </objects>
             <point key="canvasLocation" x="-379" y="-2486"/>
         </scene>
-        <!--Test Tab Bar Controller-->
+        <!--Tabbar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" customClass="TestTabBarController" sceneMemberID="viewController">
@@ -431,6 +431,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
+                        <outlet property="delegate" destination="wT8-HV-WDu" id="JT2-GL-Vlv"/>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="5KD-sU-mfQ"/>
                         <segue destination="w7V-uq-Wgu" kind="relationship" relationship="viewControllers" id="tfc-kf-Ey6"/>
                         <segue destination="C7L-Xk-qYp" kind="relationship" relationship="viewControllers" id="fus-uU-mkB"/>
@@ -438,6 +439,11 @@
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+                <customObject id="wT8-HV-WDu" customClass="TabbarControllerDelegate">
+                    <connections>
+                        <outlet property="tabbarController" destination="49e-Tb-3d3" id="gdS-wA-UmA"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="-2206" y="-1080"/>
         </scene>
