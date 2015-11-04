@@ -29,7 +29,7 @@
             [ret setValue:value forKey:propertyName];
         }
     }
-    
+    free(properties);
     return ret;
 }
 
@@ -48,6 +48,7 @@
         //        [tempValue conformsToProtocol:@protocol(NSCoding)];
         [coder encodeObject:tempValue forKey:propertyName];
     }
+    free(properties);
 }
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder
@@ -63,6 +64,7 @@
             
             [self setValue:[aDecoder decodeObjectForKey:propertyName] forKey:propertyName];
         }
+        free(properties);
     }
     
     return self;

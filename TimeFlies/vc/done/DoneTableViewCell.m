@@ -24,7 +24,6 @@
 
 - (void)viewInitWithTime:(NSDate *)endTime Text:(NSString *)text
 {
-    long time = endTime.timeIntervalSince1970;
     UILabel* timeLabel;
     UILabel* textLabel;
 
