@@ -13,7 +13,7 @@
 @implementation TabbarTransitionLeftAnimation
 
 - (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning>)transitionContext {
-    return 0.7;
+    return 0.6;
 }
 
 - (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext {

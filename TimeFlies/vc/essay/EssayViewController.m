@@ -6,18 +6,18 @@
 //  Copyright © 2015年 林伟池. All rights reserved.
 //
 
-#import "RecordViewController.h"
+#import "EssayViewController.h"
 #import "EssayDetailController.h"
 #import "EssayTableViewCell.h"
 #import "EssayModel.h"
 
 #define open_str @"open_essay_detail_board"
 
-@interface RecordViewController ()
+@interface EssayViewController ()
 
 @end
 
-@implementation RecordViewController
+@implementation EssayViewController
 {
     long myDetailIndex;
 }
@@ -26,6 +26,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 //    [self setTitle:NSLocalizedString(@"我的日记", nil)];
+//    [self.tableView setEditing:YES animated:YES];
+    self.tableView.allowsMultipleSelectionDuringEditing = NO;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -85,6 +87,38 @@
 
 #pragma mark - delegate
 
+//-(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath{
+//    NSLog(@"abc");
+//    UITableViewCellEditingStyle result = UITableViewCellEditingStyleNone;//默认没有编辑风格
+//
+//        result = UITableViewCellEditingStyleDelete;//设置编辑风格为删除风格
+//
+//    return result;
+//}
+
+-(NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return @"删除";
+}
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Return NO if you do not want the specified item to be editable.
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+
+        // Delete the row from the data source.
+        [[EssayModel instance] deleteEssayByIndex:indexPath.row];
+        [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+        
+    }
+    else if (editingStyle == UITableViewCellEditingStyleInsert) {
+        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+    }
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {

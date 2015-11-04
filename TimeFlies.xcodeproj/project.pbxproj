@@ -33,6 +33,8 @@
 		FD4BB4E61BE1141F00F4AA30 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD4BB4E41BE1141F00F4AA30 /* LaunchScreen.xib */; settings = {ASSET_TAGS = (); }; };
 		FD4BB4ED1BE118D700F4AA30 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4BB4EC1BE118D700F4AA30 /* LaunchViewController.m */; settings = {ASSET_TAGS = (); }; };
 		FD6C044F1BE8A46C009F056F /* TabbarTransitionLeftAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6C044E1BE8A46C009F056F /* TabbarTransitionLeftAnimation.m */; settings = {ASSET_TAGS = (); }; };
+		FDA7FBCD1BE99EB20005C4DC /* NavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA7FBCC1BE99EB20005C4DC /* NavigationControllerDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		FDA7FBD01BE99F400005C4DC /* NavigationTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA7FBCF1BE99F400005C4DC /* NavigationTransitionAnimation.m */; settings = {ASSET_TAGS = (); }; };
 		FDDFE1191BDCE53200865CDE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDFE1181BDCE53200865CDE /* libz.tbd */; };
 		FDDFE11B1BDCE54A00865CDE /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDFE11A1BDCE54A00865CDE /* libsqlite3.0.tbd */; };
 		FDDFE11D1BDCE57D00865CDE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDFE11C1BDCE57D00865CDE /* UIKit.framework */; };
@@ -47,7 +49,7 @@
 		FDDFE16F1BDDD8BF00865CDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE14B1BDDD8BF00865CDE /* main.m */; settings = {ASSET_TAGS = (); }; };
 		FDDFE1701BDDD8BF00865CDE /* EssayDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE1501BDDD8BF00865CDE /* EssayDetailController.m */; settings = {ASSET_TAGS = (); }; };
 		FDDFE1711BDDD8BF00865CDE /* EssayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE1521BDDD8BF00865CDE /* EssayTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		FDDFE1721BDDD8BF00865CDE /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE1541BDDD8BF00865CDE /* RecordViewController.m */; settings = {ASSET_TAGS = (); }; };
+		FDDFE1721BDDD8BF00865CDE /* EssayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE1541BDDD8BF00865CDE /* EssayViewController.m */; settings = {ASSET_TAGS = (); }; };
 		FDDFE1731BDDD8BF00865CDE /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE1561BDDD8BF00865CDE /* HomeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		FDDFE1741BDDD8BF00865CDE /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE1591BDDD8BF00865CDE /* SecondViewController.m */; settings = {ASSET_TAGS = (); }; };
 		FDDFE1751BDDD8BF00865CDE /* TestTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE15B1BDDD8BF00865CDE /* TestTabBarController.m */; settings = {ASSET_TAGS = (); }; };
@@ -122,6 +124,10 @@
 		FD4BB4EC1BE118D700F4AA30 /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
 		FD6C044D1BE8A46C009F056F /* TabbarTransitionLeftAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarTransitionLeftAnimation.h; sourceTree = "<group>"; };
 		FD6C044E1BE8A46C009F056F /* TabbarTransitionLeftAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarTransitionLeftAnimation.m; sourceTree = "<group>"; };
+		FDA7FBCB1BE99EB20005C4DC /* NavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationControllerDelegate.h; sourceTree = "<group>"; };
+		FDA7FBCC1BE99EB20005C4DC /* NavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationControllerDelegate.m; sourceTree = "<group>"; };
+		FDA7FBCE1BE99F400005C4DC /* NavigationTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationTransitionAnimation.h; sourceTree = "<group>"; };
+		FDA7FBCF1BE99F400005C4DC /* NavigationTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationTransitionAnimation.m; sourceTree = "<group>"; };
 		FDDFE1181BDCE53200865CDE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		FDDFE11A1BDCE54A00865CDE /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		FDDFE11C1BDCE57D00865CDE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -144,8 +150,8 @@
 		FDDFE1501BDDD8BF00865CDE /* EssayDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EssayDetailController.m; sourceTree = "<group>"; };
 		FDDFE1511BDDD8BF00865CDE /* EssayTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EssayTableViewCell.h; sourceTree = "<group>"; };
 		FDDFE1521BDDD8BF00865CDE /* EssayTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EssayTableViewCell.m; sourceTree = "<group>"; };
-		FDDFE1531BDDD8BF00865CDE /* RecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordViewController.h; sourceTree = "<group>"; };
-		FDDFE1541BDDD8BF00865CDE /* RecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordViewController.m; sourceTree = "<group>"; };
+		FDDFE1531BDDD8BF00865CDE /* EssayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EssayViewController.h; sourceTree = "<group>"; };
+		FDDFE1541BDDD8BF00865CDE /* EssayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EssayViewController.m; sourceTree = "<group>"; };
 		FDDFE1551BDDD8BF00865CDE /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = ../HomeViewController.h; sourceTree = "<group>"; };
 		FDDFE1561BDDD8BF00865CDE /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = ../HomeViewController.m; sourceTree = "<group>"; };
 		FDDFE1581BDDD8BF00865CDE /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
@@ -275,6 +281,10 @@
 				FD40776A1BE89E0100423A93 /* TabbarControllerDelegate.m */,
 				FD6C044D1BE8A46C009F056F /* TabbarTransitionLeftAnimation.h */,
 				FD6C044E1BE8A46C009F056F /* TabbarTransitionLeftAnimation.m */,
+				FDA7FBCB1BE99EB20005C4DC /* NavigationControllerDelegate.h */,
+				FDA7FBCC1BE99EB20005C4DC /* NavigationControllerDelegate.m */,
+				FDA7FBCE1BE99F400005C4DC /* NavigationTransitionAnimation.h */,
+				FDA7FBCF1BE99F400005C4DC /* NavigationTransitionAnimation.m */,
 			);
 			path = animation;
 			sourceTree = "<group>";
@@ -396,8 +406,8 @@
 				FDDFE1501BDDD8BF00865CDE /* EssayDetailController.m */,
 				FDDFE1511BDDD8BF00865CDE /* EssayTableViewCell.h */,
 				FDDFE1521BDDD8BF00865CDE /* EssayTableViewCell.m */,
-				FDDFE1531BDDD8BF00865CDE /* RecordViewController.h */,
-				FDDFE1541BDDD8BF00865CDE /* RecordViewController.m */,
+				FDDFE1531BDDD8BF00865CDE /* EssayViewController.h */,
+				FDDFE1541BDDD8BF00865CDE /* EssayViewController.m */,
 			);
 			path = essay;
 			sourceTree = "<group>";
@@ -561,14 +571,16 @@
 				FDDFE1741BDDD8BF00865CDE /* SecondViewController.m in Sources */,
 				FD47D4711BDE0B72000482A7 /* DoneTableViewCell.m in Sources */,
 				FD4BB4ED1BE118D700F4AA30 /* LaunchViewController.m in Sources */,
-				FDDFE1721BDDD8BF00865CDE /* RecordViewController.m in Sources */,
+				FDDFE1721BDDD8BF00865CDE /* EssayViewController.m in Sources */,
 				FD4077211BE46ADC00423A93 /* RWKnobRenderer.m in Sources */,
 				FDDFE1761BDDD8BF00865CDE /* TodoDetailController.m in Sources */,
 				FD4077201BE46ADC00423A93 /* RWKnobControl.m in Sources */,
 				FDDFE1841BDDDA7200865CDE /* DataClass.m in Sources */,
 				FD15A1EC1BAAB1D70048B4D2 /* AppDelegate.m in Sources */,
 				FDDFE1731BDDD8BF00865CDE /* HomeViewController.m in Sources */,
+				FDA7FBCD1BE99EB20005C4DC /* NavigationControllerDelegate.m in Sources */,
 				FD4BB4B01BDE27AD00F4AA30 /* HomeModel.m in Sources */,
+				FDA7FBD01BE99F400005C4DC /* NavigationTransitionAnimation.m in Sources */,
 				FD47D46E1BDE0AEB000482A7 /* DoneTableViewController.m in Sources */,
 				FD47D46B1BDE0076000482A7 /* TimeSelectController.m in Sources */,
 				FDDFE1641BDDD8BF00865CDE /* WeixinShare.m in Sources */,

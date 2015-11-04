@@ -12,7 +12,7 @@
 
 
 @interface TabbarControllerDelegate()
-@property (weak, nonatomic) IBOutlet UITabBarController *tabbarController;
+//@property (weak, nonatomic) IBOutlet UITabBarController *tabbarController;
 @property(nonatomic,strong)TabbarTransitionRightAnimation *myRight;
 @property(nonatomic,strong)TabbarTransitionLeftAnimation *myLeft;
 @end

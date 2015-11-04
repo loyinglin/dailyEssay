@@ -9,8 +9,8 @@
         <!--记录-->
         <scene sceneID="PbJ-zM-nfx">
             <objects>
-                <tableViewController title="记录" id="x1H-bL-wyH" customClass="RecordViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="128" sectionHeaderHeight="28" sectionFooterHeight="28" id="K2n-An-5Ih">
+                <tableViewController title="记录" id="x1H-bL-wyH" customClass="EssayViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="128" sectionHeaderHeight="28" sectionFooterHeight="28" id="K2n-An-5Ih">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
@@ -178,7 +178,7 @@
             </objects>
             <point key="canvasLocation" x="695" y="-1048"/>
         </scene>
-        <!--朝朝暮暮-->
+        <!--Navigation Controller-->
         <scene sceneID="a2J-fU-Npr">
             <objects>
                 <navigationController id="C7L-Xk-qYp" sceneMemberID="viewController">
@@ -188,10 +188,16 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
+                        <outlet property="delegate" destination="gvF-mO-YEK" id="54S-eM-QSH"/>
                         <segue destination="x1H-bL-wyH" kind="relationship" relationship="rootViewController" id="CfM-5t-GWj"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bvY-Y0-m13" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="gvF-mO-YEK" customClass="NavigationControllerDelegate">
+                    <connections>
+                        <outlet property="navigationController" destination="C7L-Xk-qYp" id="ssr-b1-h2o"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="-1057" y="-1042"/>
         </scene>
@@ -421,7 +427,7 @@
             </objects>
             <point key="canvasLocation" x="-379" y="-2486"/>
         </scene>
-        <!--Tabbar Controller-->
+        <!--Test Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" customClass="TestTabBarController" sceneMemberID="viewController">
@@ -439,11 +445,7 @@
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
-                <customObject id="wT8-HV-WDu" customClass="TabbarControllerDelegate">
-                    <connections>
-                        <outlet property="tabbarController" destination="49e-Tb-3d3" id="gdS-wA-UmA"/>
-                    </connections>
-                </customObject>
+                <customObject id="wT8-HV-WDu" customClass="TabbarControllerDelegate"/>
             </objects>
             <point key="canvasLocation" x="-2206" y="-1080"/>
         </scene>
