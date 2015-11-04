@@ -26,9 +26,7 @@
     
     UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     UIViewController *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
-    NSLog(@"%@", fromVC.view);
-    NSLog(@"%@", toVC.view);
-    
+
     UIView *container = [transitionContext containerView];
     
     [fromVC.view.layer setAnchorPoint:CGPointMake(0, 0.5)];

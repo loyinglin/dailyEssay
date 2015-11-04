@@ -178,7 +178,7 @@
             </objects>
             <point key="canvasLocation" x="695" y="-1048"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--朝朝暮暮-->
         <scene sceneID="a2J-fU-Npr">
             <objects>
                 <navigationController id="C7L-Xk-qYp" sceneMemberID="viewController">
@@ -188,16 +188,10 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <outlet property="delegate" destination="gvF-mO-YEK" id="54S-eM-QSH"/>
                         <segue destination="x1H-bL-wyH" kind="relationship" relationship="rootViewController" id="CfM-5t-GWj"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bvY-Y0-m13" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="gvF-mO-YEK" customClass="NavigationControllerDelegate">
-                    <connections>
-                        <outlet property="navigationController" destination="C7L-Xk-qYp" id="ssr-b1-h2o"/>
-                    </connections>
-                </customObject>
             </objects>
             <point key="canvasLocation" x="-1057" y="-1042"/>
         </scene>
