@@ -9,11 +9,13 @@
 #import "HomeViewController.h"
 #import "RWKnobControl.h"
 #import "HomeModel.h"
-
+#import "TimeSelectController.h"
+#import "UIViewControllerDelegate.h"
 @interface HomeViewController ()
-{
-    RWKnobControl* _knobControl;
-}
+
+@property (nonatomic , strong) IBOutlet UIViewControllerDelegate* lyDelegate;
+
+
 @end
 
 #define const_select_time @"open_select_time_board"
@@ -22,10 +24,12 @@
 {
     NSTimer* timer;
     BOOL myMoveEnd;
+    RWKnobControl* _knobControl;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     myMoveEnd = NO;
     // Do any additional setup after loading the view, typically from a nib.
     NSLog(@"%@ first", [self description]);
@@ -122,7 +126,14 @@
 
 -(IBAction)onSelect:(id)sender
 {
-    [self performSegueWithIdentifier:const_select_time sender:self];
+    
+    TimeSelectController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"TimeSelect"];
+    controller.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    controller.transitioningDelegate = self.lyDelegate;
+    [self.lyDelegate.interActive wireToViewController:controller];
+    
+    [self presentViewController:controller animated:YES completion:nil];
+//    [self performSegueWithIdentifier:const_select_time sender:self];
 }
 
 
@@ -173,8 +184,13 @@
         self.myDay.text = [dateFormatter stringFromDate:date];
     }
 }
+
 #pragma mark - delegate
 
+- (void)dismissViewController:(TimeSelectController *)mcv
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 #pragma mark - notify
 
 @end

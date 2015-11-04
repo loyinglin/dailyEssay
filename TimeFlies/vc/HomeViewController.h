@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TimeSelectController.h"
 
-@interface HomeViewController : UIViewController
+@interface HomeViewController : UIViewController<ModalViewControllerDelegate>
 
 @property (nonatomic , strong) IBOutlet UILabel* myBirthDay;
 

@@ -43,9 +43,8 @@
 
 - (IBAction)onClose:(id)sender
 {
-    [self dismissViewControllerAnimated:NO completion:^{
-        
-    }];
+    [self dismissViewControllerAnimated:NO completion:nil];
+//    [self.lyDelegate dismissViewController:self];
 }
 
 - (IBAction)onSave:(id)sender

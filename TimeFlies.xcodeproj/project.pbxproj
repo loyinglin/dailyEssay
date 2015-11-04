@@ -33,6 +33,10 @@
 		FD4BB4E61BE1141F00F4AA30 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD4BB4E41BE1141F00F4AA30 /* LaunchScreen.xib */; settings = {ASSET_TAGS = (); }; };
 		FD4BB4ED1BE118D700F4AA30 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4BB4EC1BE118D700F4AA30 /* LaunchViewController.m */; settings = {ASSET_TAGS = (); }; };
 		FD6C044F1BE8A46C009F056F /* TabbarTransitionLeftAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6C044E1BE8A46C009F056F /* TabbarTransitionLeftAnimation.m */; settings = {ASSET_TAGS = (); }; };
+		FD7D9B881BE9FDED0012B41D /* ModalTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7D9B871BE9FDED0012B41D /* ModalTransitionAnimation.m */; settings = {ASSET_TAGS = (); }; };
+		FD7D9B8B1BEA023D0012B41D /* UIViewControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7D9B8A1BEA023D0012B41D /* UIViewControllerDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		FD7D9B8E1BEA050A0012B41D /* ModalMoveTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7D9B8D1BEA050A0012B41D /* ModalMoveTransitionAnimation.m */; settings = {ASSET_TAGS = (); }; };
+		FD7D9B911BEA054D0012B41D /* ModalInterActiveTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7D9B901BEA054D0012B41D /* ModalInterActiveTransitionAnimation.m */; settings = {ASSET_TAGS = (); }; };
 		FDA7FBCD1BE99EB20005C4DC /* NavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA7FBCC1BE99EB20005C4DC /* NavigationControllerDelegate.m */; settings = {ASSET_TAGS = (); }; };
 		FDA7FBD01BE99F400005C4DC /* NavigationTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA7FBCF1BE99F400005C4DC /* NavigationTransitionAnimation.m */; settings = {ASSET_TAGS = (); }; };
 		FDDFE1191BDCE53200865CDE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDFE1181BDCE53200865CDE /* libz.tbd */; };
@@ -124,6 +128,14 @@
 		FD4BB4EC1BE118D700F4AA30 /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
 		FD6C044D1BE8A46C009F056F /* TabbarTransitionLeftAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarTransitionLeftAnimation.h; sourceTree = "<group>"; };
 		FD6C044E1BE8A46C009F056F /* TabbarTransitionLeftAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarTransitionLeftAnimation.m; sourceTree = "<group>"; };
+		FD7D9B861BE9FDED0012B41D /* ModalTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalTransitionAnimation.h; sourceTree = "<group>"; };
+		FD7D9B871BE9FDED0012B41D /* ModalTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalTransitionAnimation.m; sourceTree = "<group>"; };
+		FD7D9B891BEA023D0012B41D /* UIViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewControllerDelegate.h; sourceTree = "<group>"; };
+		FD7D9B8A1BEA023D0012B41D /* UIViewControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewControllerDelegate.m; sourceTree = "<group>"; };
+		FD7D9B8C1BEA050A0012B41D /* ModalMoveTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalMoveTransitionAnimation.h; sourceTree = "<group>"; };
+		FD7D9B8D1BEA050A0012B41D /* ModalMoveTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalMoveTransitionAnimation.m; sourceTree = "<group>"; };
+		FD7D9B8F1BEA054D0012B41D /* ModalInterActiveTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalInterActiveTransitionAnimation.h; sourceTree = "<group>"; };
+		FD7D9B901BEA054D0012B41D /* ModalInterActiveTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalInterActiveTransitionAnimation.m; sourceTree = "<group>"; };
 		FDA7FBCB1BE99EB20005C4DC /* NavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationControllerDelegate.h; sourceTree = "<group>"; };
 		FDA7FBCC1BE99EB20005C4DC /* NavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationControllerDelegate.m; sourceTree = "<group>"; };
 		FDA7FBCE1BE99F400005C4DC /* NavigationTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationTransitionAnimation.h; sourceTree = "<group>"; };
@@ -275,16 +287,24 @@
 		FD4077651BE89D6300423A93 /* animation */ = {
 			isa = PBXGroup;
 			children = (
-				FD4077661BE89D7000423A93 /* TabbarTransitionRightAnimation.h */,
-				FD4077671BE89D7000423A93 /* TabbarTransitionRightAnimation.m */,
-				FD4077691BE89E0100423A93 /* TabbarControllerDelegate.h */,
-				FD40776A1BE89E0100423A93 /* TabbarControllerDelegate.m */,
-				FD6C044D1BE8A46C009F056F /* TabbarTransitionLeftAnimation.h */,
-				FD6C044E1BE8A46C009F056F /* TabbarTransitionLeftAnimation.m */,
+				FD7D9B8F1BEA054D0012B41D /* ModalInterActiveTransitionAnimation.h */,
+				FD7D9B901BEA054D0012B41D /* ModalInterActiveTransitionAnimation.m */,
+				FD7D9B8C1BEA050A0012B41D /* ModalMoveTransitionAnimation.h */,
+				FD7D9B8D1BEA050A0012B41D /* ModalMoveTransitionAnimation.m */,
+				FD7D9B861BE9FDED0012B41D /* ModalTransitionAnimation.h */,
+				FD7D9B871BE9FDED0012B41D /* ModalTransitionAnimation.m */,
 				FDA7FBCB1BE99EB20005C4DC /* NavigationControllerDelegate.h */,
 				FDA7FBCC1BE99EB20005C4DC /* NavigationControllerDelegate.m */,
 				FDA7FBCE1BE99F400005C4DC /* NavigationTransitionAnimation.h */,
 				FDA7FBCF1BE99F400005C4DC /* NavigationTransitionAnimation.m */,
+				FD4077691BE89E0100423A93 /* TabbarControllerDelegate.h */,
+				FD40776A1BE89E0100423A93 /* TabbarControllerDelegate.m */,
+				FD6C044D1BE8A46C009F056F /* TabbarTransitionLeftAnimation.h */,
+				FD6C044E1BE8A46C009F056F /* TabbarTransitionLeftAnimation.m */,
+				FD4077661BE89D7000423A93 /* TabbarTransitionRightAnimation.h */,
+				FD4077671BE89D7000423A93 /* TabbarTransitionRightAnimation.m */,
+				FD7D9B891BEA023D0012B41D /* UIViewControllerDelegate.h */,
+				FD7D9B8A1BEA023D0012B41D /* UIViewControllerDelegate.m */,
 			);
 			path = animation;
 			sourceTree = "<group>";
@@ -580,9 +600,12 @@
 				FDDFE1731BDDD8BF00865CDE /* HomeViewController.m in Sources */,
 				FDA7FBCD1BE99EB20005C4DC /* NavigationControllerDelegate.m in Sources */,
 				FD4BB4B01BDE27AD00F4AA30 /* HomeModel.m in Sources */,
+				FD7D9B8B1BEA023D0012B41D /* UIViewControllerDelegate.m in Sources */,
+				FD7D9B911BEA054D0012B41D /* ModalInterActiveTransitionAnimation.m in Sources */,
 				FDA7FBD01BE99F400005C4DC /* NavigationTransitionAnimation.m in Sources */,
 				FD47D46E1BDE0AEB000482A7 /* DoneTableViewController.m in Sources */,
 				FD47D46B1BDE0076000482A7 /* TimeSelectController.m in Sources */,
+				FD7D9B881BE9FDED0012B41D /* ModalTransitionAnimation.m in Sources */,
 				FDDFE1641BDDD8BF00865CDE /* WeixinShare.m in Sources */,
 				FD47D4681BDDE1C5000482A7 /* TodoCollectionViewCell.m in Sources */,
 				FDDFE16F1BDDD8BF00865CDE /* main.m in Sources */,
@@ -590,6 +613,7 @@
 				FDDFE1711BDDD8BF00865CDE /* EssayTableViewCell.m in Sources */,
 				FDDFE1851BDDDA7200865CDE /* DoneModel.m in Sources */,
 				FDDFE1701BDDD8BF00865CDE /* EssayDetailController.m in Sources */,
+				FD7D9B8E1BEA050A0012B41D /* ModalMoveTransitionAnimation.m in Sources */,
 				FD40776B1BE89E0100423A93 /* TabbarControllerDelegate.m in Sources */,
 				FDDFE1751BDDD8BF00865CDE /* TestTabBarController.m in Sources */,
 				FD4BB4B31BDF20B500F4AA30 /* DoneDetailController.m in Sources */,

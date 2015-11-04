@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+@class TimeSelectController;
+@protocol ModalViewControllerDelegate <NSObject>
+-(void)dismissViewController:(TimeSelectController *)mcv;
+@end
 
 @interface TimeSelectController : UIViewController
 
-
 @property (nonatomic , strong) IBOutlet UIDatePicker* myDatePicker;
+@property (nonatomic , weak) id<ModalViewControllerDelegate> lyDelegate;
 
 @end
