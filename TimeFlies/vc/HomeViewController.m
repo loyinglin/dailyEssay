@@ -12,10 +12,6 @@
 #import "TimeSelectController.h"
 #import "UIViewControllerDelegate.h"
 @interface HomeViewController ()
-
-@property (nonatomic , strong) IBOutlet UIViewControllerDelegate* lyDelegate;
-
-
 @end
 
 #define const_select_time @"open_select_time_board"
@@ -23,16 +19,14 @@
 @implementation HomeViewController
 {
     NSTimer* timer;
-    BOOL myMoveEnd;
     RWKnobControl* _knobControl;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    myMoveEnd = NO;
     // Do any additional setup after loading the view, typically from a nib.
-    NSLog(@"%@ first", [self description]);
+
     [self viewInit];
     
     [[NSNotificationCenter defaultCenter] addObserverForName:@"HomeModelChange" object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
@@ -62,10 +56,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)dealloc
-{
-    NSLog(@"dealc");
-}
+
 
 #pragma mark - view init
 
@@ -74,14 +65,12 @@
     [super viewWillAppear:animated];
     [self viewInit];
     [self addTimer];
-//    [self startMove];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
     [timer invalidate];
-    [self endMove];
 }
 
 - (void)viewInit
@@ -124,43 +113,6 @@
     [self.tabBarController tabBar:self.tabBarController.tabBar didSelectItem:self.tabBarController.tabBar.items[1]];
 }
 
--(IBAction)onSelect:(id)sender
-{
-    
-    TimeSelectController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"TimeSelect"];
-    controller.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-    controller.transitioningDelegate = self.lyDelegate;
-    [self.lyDelegate.interActive wireToViewController:controller];
-    
-    [self presentViewController:controller animated:YES completion:nil];
-//    [self performSegueWithIdentifier:const_select_time sender:self];
-}
-
-
-- (void)startMove
-{
-    myMoveEnd = NO;
-    CGRect frame = self.img.frame;
-    frame.origin.x = 0;
-    [self.img setFrame:frame];
-//    [UIView setAnimationCurve:UIViewAnimationCurveLinear];
-    [UIView animateWithDuration:2.0 animations:^{
-        CGRect move = self.img.frame;
-        move.origin.x = 150;
-        [self.img setFrame:move];
-    } completion:^(BOOL finished) {
-        if (!myMoveEnd) {
-            [self startMove];
-        }
-    }];
-}
-
-- (void)endMove
-{
-    myMoveEnd = YES;
-}
-
-
 - (IBAction)handleValueChanged:(id)sender {
     if(sender == self.valueSlider) {
         _knobControl.value = self.valueSlider.value;
@@ -168,8 +120,6 @@
         self.valueSlider.value = _knobControl.value;
     }
 }
-
-
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {

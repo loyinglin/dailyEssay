@@ -19,8 +19,6 @@
 
 @property (nonatomic , strong) IBOutlet UILabel* mySecond;
 
-@property (nonatomic , strong) IBOutlet UIImageView* img;
-
 @property (nonatomic , strong) IBOutlet UISlider* valueSlider;
 
 @property (nonatomic , strong) IBOutlet UIView* knobPlaceholder;

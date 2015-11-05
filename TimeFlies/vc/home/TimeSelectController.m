@@ -39,11 +39,22 @@
 
 #pragma mark - view init
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+//    NSLog(@"appear");
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+//    NSLog(@"dis");
+}
 #pragma mark - ui
 
 - (IBAction)onClose:(id)sender
 {
-    [self dismissViewControllerAnimated:NO completion:nil];
+    [self dismissViewControllerAnimated:YES completion:nil];
 //    [self.lyDelegate dismissViewController:self];
 }
 

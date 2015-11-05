@@ -21,18 +21,23 @@
     _interActive = [[ModalInterActiveTransitionAnimation alloc] init];
     _interActiveAnimation = [[ModalMoveTransitionAnimation alloc] init];
     
+    self.lyController.transitioningDelegate = self;
 }
 
 
 
 
 - (id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
+//    NSLog(@"presented %@", presented);
+//    NSLog(@"presenting %@", presenting);
+//    NSLog(@"source %@", source);
+    [self.interActive wireToViewController:presented];
     return _animation;
 }
 
 - (id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
-    NSLog(@"ask for dismiss");
-    return self.interActive.interacting ? _interActiveAnimation : _animation;
+//    NSLog(@"ask for dismiss %d", self.interActive.interacting);
+    return self.interActive.interacting ? _interActiveAnimation : nil;
     
 }
 

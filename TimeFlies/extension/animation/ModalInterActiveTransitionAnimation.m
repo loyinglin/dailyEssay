@@ -36,7 +36,7 @@
     switch (gestureRecognizer.state) {
         case UIGestureRecognizerStateBegan:{
             _interacting = YES;
-            NSLog(@"began dis miss");
+//            NSLog(@"began dis miss");
             [self.presentingVC dismissViewControllerAnimated:YES completion:nil];
             break;
         }
@@ -53,7 +53,7 @@
         case UIGestureRecognizerStateEnded:
         case UIGestureRecognizerStateCancelled: {
             _interacting = NO;
-            NSLog(@"end dis miss");
+//            NSLog(@"end dis miss");
             if (!_shouldComplete || gestureRecognizer.state == UIGestureRecognizerStateCancelled || [gestureRecognizer velocityInView:gestureRecognizer.view].y < 0 ) {
                 [self cancelInteractiveTransition];
             } else {

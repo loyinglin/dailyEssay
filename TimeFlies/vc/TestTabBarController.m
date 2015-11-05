@@ -47,7 +47,7 @@
 //    [animation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut]];
 //    [[self.view layer] addAnimation:animation forKey:@"switchView"];
     
-    NSLog(@"slect");
+//    NSLog(@"slect");
 //    [super tabBar:tabBar didSelectItem:item];
 }
 

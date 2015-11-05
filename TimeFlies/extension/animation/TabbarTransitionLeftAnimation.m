@@ -46,7 +46,7 @@
         
         
     } completion:^(BOOL finished) {
-        NSLog(@"end");
+//        NSLog(@"end");
         
         fromVC.view.layer.transform = CATransform3DIdentity;
         toVC.view.layer.transform = CATransform3DIdentity;

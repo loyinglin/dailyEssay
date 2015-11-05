@@ -37,12 +37,12 @@
     UIView *containerView = [transitionContext containerView];
     [containerView addSubview:toVC.view];
     
-    NSLog(@"modal show");
+//    NSLog(@"modal show");
     
     //开始动画，这里使用了UIKit提供的弹簧效果动画，usingSpringWithDamping越接近1弹性效果越不明显，此API在IOS7之后才能使用
     [UIView animateWithDuration:[self transitionDuration:transitionContext]
                           delay:0
-         usingSpringWithDamping:0.8
+         usingSpringWithDamping:0.6
           initialSpringVelocity:0
                         options:UIViewAnimationOptionCurveEaseIn
                      animations:^{

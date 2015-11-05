@@ -195,7 +195,7 @@
             </objects>
             <point key="canvasLocation" x="-1057" y="-1042"/>
         </scene>
-        <!--Ly Controller-->
+        <!--流光易逝-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="HomeViewController" sceneMemberID="viewController">
@@ -225,7 +225,7 @@
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="onSelect:" destination="9pv-A4-QxB" eventType="touchUpInside" id="UFf-vv-ObP"/>
+                                    <segue destination="vUQ-uD-LRS" kind="show" id="Idb-lE-ga9"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015年10月28日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHS-qe-5Jw">
@@ -324,7 +324,6 @@
                     <tabBarItem key="tabBarItem" title="流光易逝" image="second" selectedImage="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="knobPlaceholder" destination="imn-pT-k0m" id="j5c-7x-QEm"/>
-                        <outlet property="lyDelegate" destination="2Ni-JX-dwX" id="N76-yh-aL2"/>
                         <outlet property="myBirthDay" destination="awE-rg-tSO" id="Gw3-mL-bbo"/>
                         <outlet property="myDay" destination="dHS-qe-5Jw" id="skn-4T-o5x"/>
                         <outlet property="myDeadDay" destination="Xrx-aM-7WD" id="bRg-qe-BKx"/>
@@ -333,11 +332,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
-                <customObject id="2Ni-JX-dwX" customClass="UIViewControllerDelegate">
-                    <connections>
-                        <outlet property="lyController" destination="9pv-A4-QxB" id="wBq-nE-QhJ"/>
-                    </connections>
-                </customObject>
                 <swipeGestureRecognizer direction="left" id="4S0-Il-Fk9">
                     <connections>
                         <action selector="onSwipe:" destination="9pv-A4-QxB" id="GAx-TJ-0fK"/>
@@ -346,7 +340,7 @@
             </objects>
             <point key="canvasLocation" x="-1054" y="-2490"/>
         </scene>
-        <!--Time Select Controller-->
+        <!--Ly Controller-->
         <scene sceneID="odK-wL-fig">
             <objects>
                 <viewController storyboardIdentifier="TimeSelect" extendedLayoutIncludesOpaqueBars="YES" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vUQ-uD-LRS" customClass="TimeSelectController" sceneMemberID="viewController">
@@ -360,7 +354,7 @@
                         <subviews>
                             <view opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gnf-nR-137">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="344"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="ie5-Vb-a7B" appends="YES" id="OyA-Qe-pHo"/>
@@ -423,6 +417,11 @@
                         <action selector="onClose:" destination="vUQ-uD-LRS" id="Pgl-Jw-ZNN"/>
                     </connections>
                 </tapGestureRecognizer>
+                <customObject id="eI4-iz-9A6" customClass="UIViewControllerDelegate">
+                    <connections>
+                        <outlet property="lyController" destination="vUQ-uD-LRS" id="vJ7-qN-FH8"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="-379" y="-2486"/>
         </scene>
