@@ -120,6 +120,10 @@
     [self.tabBarController tabBar:self.tabBarController.tabBar didSelectItem:self.tabBarController.tabBar.items[1]];
 }
 
+-(IBAction)onSwipeRigth:(id)sender{
+//    [self.tabBarController setSelectedIndex:3];
+}
+
 - (IBAction)handleValueChanged:(id)sender {
     if(sender == self.valueSlider) {
         _knobControl.value = self.valueSlider.value;

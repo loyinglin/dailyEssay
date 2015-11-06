@@ -96,6 +96,10 @@
 }
 
 
+- (IBAction)onSwipeLeft:(id)sender
+{
+//    [self.tabBarController setSelectedIndex:0];
+}
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

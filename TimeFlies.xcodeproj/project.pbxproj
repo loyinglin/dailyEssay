@@ -797,7 +797,7 @@
 					"$(PROJECT_DIR)/TimeFlies/extension/weixin/SDKExport",
 				);
 				PRODUCT_NAME = TimeFlies;
-				PROVISIONING_PROFILE = "38203503-0b6c-447e-98db-5a055fd2e5b7";
+				PROVISIONING_PROFILE = "0d8f46a3-b2dd-4f9c-a1d5-5aa8311c8d50";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -816,7 +816,7 @@
 					"$(PROJECT_DIR)/TimeFlies/extension/weixin/SDKExport",
 				);
 				PRODUCT_NAME = TimeFlies;
-				PROVISIONING_PROFILE = "38203503-0b6c-447e-98db-5a055fd2e5b7";
+				PROVISIONING_PROFILE = "0d8f46a3-b2dd-4f9c-a1d5-5aa8311c8d50";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

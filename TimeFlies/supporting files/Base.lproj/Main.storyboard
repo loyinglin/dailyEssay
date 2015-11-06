@@ -319,6 +319,7 @@
                         </variation>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="4S0-Il-Fk9" appends="YES" id="Dqq-QF-fEf"/>
+                            <outletCollection property="gestureRecognizers" destination="PHb-qX-e0H" appends="YES" id="eug-TT-MKY"/>
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="流光易逝" image="second" selectedImage="first" id="acW-dT-cKf"/>
@@ -337,13 +338,18 @@
                         <action selector="onSwipe:" destination="9pv-A4-QxB" id="GAx-TJ-0fK"/>
                     </connections>
                 </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="PHb-qX-e0H">
+                    <connections>
+                        <action selector="onSwipeRigth:" destination="9pv-A4-QxB" id="DBn-ee-cbh"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-1054" y="-2490"/>
         </scene>
         <!--Ly Controller-->
         <scene sceneID="odK-wL-fig">
             <objects>
-                <viewController storyboardIdentifier="TimeSelect" extendedLayoutIncludesOpaqueBars="YES" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vUQ-uD-LRS" customClass="TimeSelectController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TimeSelect" extendedLayoutIncludesOpaqueBars="YES" modalTransitionStyle="flipHorizontal" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vUQ-uD-LRS" customClass="TimeSelectController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ss8-Ua-BmE"/>
                         <viewControllerLayoutGuide type="bottom" id="Ivc-7I-efe"/>
@@ -352,7 +358,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gnf-nR-137">
+                            <view opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gnf-nR-137">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="344"/>
                                 <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
@@ -360,7 +366,7 @@
                                     <outletCollection property="gestureRecognizers" destination="ie5-Vb-a7B" appends="YES" id="OyA-Qe-pHo"/>
                                 </connections>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="riB-bC-A2q" userLabel="time">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="riB-bC-A2q" userLabel="time">
                                 <rect key="frame" x="0.0" y="344" width="600" height="256"/>
                                 <subviews>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="gjZ-G9-t1O">
@@ -516,6 +522,7 @@
                             <outlet property="dataSource" destination="QUw-nT-RbL" id="kin-OC-F5s"/>
                             <outlet property="delegate" destination="QUw-nT-RbL" id="DYS-Tn-A2M"/>
                             <outletCollection property="gestureRecognizers" destination="WFl-3t-VVf" appends="YES" id="89h-EY-HXV"/>
+                            <outletCollection property="gestureRecognizers" destination="8qa-BC-Vln" appends="YES" id="Nzo-Z2-zAQ"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="时间轴" id="Z9M-6q-t07">
@@ -533,6 +540,11 @@
                 <swipeGestureRecognizer direction="right" id="WFl-3t-VVf">
                     <connections>
                         <action selector="onSwipeRight:" destination="QUw-nT-RbL" id="3ge-t8-aE6"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="8qa-BC-Vln">
+                    <connections>
+                        <action selector="onSwipeLeft:" destination="QUw-nT-RbL" id="fQ6-0z-Zbf"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
