@@ -73,6 +73,13 @@
     [timer invalidate];
 }
 
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+//    UIView* item = self.view.superview;
+//    NSLog(@"dis ape %@", item);
+}
+
 - (void)viewInit
 {
     self.myBirthDay.text = [NSString stringWithFormat:NSLocalizedString(@"今天是生命中的第%d天", nil), [[HomeModel instance] getDaysNow]];

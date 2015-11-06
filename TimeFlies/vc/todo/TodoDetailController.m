@@ -26,6 +26,7 @@
             self.myText.text = item.text;
         }
     }
+    [self.myText becomeFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning {

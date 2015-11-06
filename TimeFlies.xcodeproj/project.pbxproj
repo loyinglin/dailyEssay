@@ -64,6 +64,8 @@
 		FDDFE1851BDDDA7200865CDE /* DoneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE17E1BDDDA7200865CDE /* DoneModel.m */; settings = {ASSET_TAGS = (); }; };
 		FDDFE1861BDDDA7200865CDE /* EssayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE1801BDDDA7200865CDE /* EssayModel.m */; settings = {ASSET_TAGS = (); }; };
 		FDDFE1871BDDDA7200865CDE /* TodoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDFE1821BDDDA7200865CDE /* TodoModel.m */; settings = {ASSET_TAGS = (); }; };
+		FDE5098B1BEBAB2300011276 /* 76.png in Resources */ = {isa = PBXBuildFile; fileRef = FDE509891BEBAB2200011276 /* 76.png */; settings = {ASSET_TAGS = (); }; };
+		FDE5098C1BEBAB2300011276 /* 152.png in Resources */ = {isa = PBXBuildFile; fileRef = FDE5098A1BEBAB2300011276 /* 152.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -184,6 +186,8 @@
 		FDDFE1801BDDDA7200865CDE /* EssayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EssayModel.m; sourceTree = "<group>"; };
 		FDDFE1811BDDDA7200865CDE /* TodoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoModel.h; sourceTree = "<group>"; };
 		FDDFE1821BDDDA7200865CDE /* TodoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoModel.m; sourceTree = "<group>"; };
+		FDE509891BEBAB2200011276 /* 76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 76.png; sourceTree = "<group>"; };
+		FDE5098A1BEBAB2300011276 /* 152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 152.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -312,6 +316,8 @@
 		FD4BB4B71BE0787900F4AA30 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				FDE509891BEBAB2200011276 /* 76.png */,
+				FDE5098A1BEBAB2300011276 /* 152.png */,
 				FD4BB4BA1BE0787900F4AA30 /* icon_settings@2x.png */,
 				FD4BB4BB1BE0787900F4AA30 /* icon_settings@3x.png */,
 				FD4BB4BC1BE0787900F4AA30 /* icon_spotlight@2x.png */,
@@ -397,11 +403,11 @@
 				FDDFE14D1BDDD8BF00865CDE /* done */,
 				FDDFE14E1BDDD8BF00865CDE /* essay */,
 				FDDFE1571BDDD8BF00865CDE /* home */,
+				FDDFE15C1BDDD8BF00865CDE /* todo */,
 				FDDFE1581BDDD8BF00865CDE /* SecondViewController.h */,
 				FDDFE1591BDDD8BF00865CDE /* SecondViewController.m */,
 				FDDFE15A1BDDD8BF00865CDE /* TestTabBarController.h */,
 				FDDFE15B1BDDD8BF00865CDE /* TestTabBarController.m */,
-				FDDFE15C1BDDD8BF00865CDE /* todo */,
 			);
 			path = vc;
 			sourceTree = "<group>";
@@ -566,9 +572,11 @@
 				FD4BB4C11BE0787900F4AA30 /* icon_settings@3x.png in Resources */,
 				FD4BB4C01BE0787900F4AA30 /* icon_settings@2x.png in Resources */,
 				FD4BB4C31BE0787900F4AA30 /* icon_spotlight@3x.png in Resources */,
+				FDE5098C1BEBAB2300011276 /* 152.png in Resources */,
 				FD4BB4E61BE1141F00F4AA30 /* LaunchScreen.xib in Resources */,
 				FD4BB4BF1BE0787900F4AA30 /* icon@3x.png in Resources */,
 				FDDFE16C1BDDD8BF00865CDE /* Main.storyboard in Resources */,
+				FDE5098B1BEBAB2300011276 /* 76.png in Resources */,
 				FD4BB4C71BE0C51700F4AA30 /* write.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -789,7 +797,7 @@
 					"$(PROJECT_DIR)/TimeFlies/extension/weixin/SDKExport",
 				);
 				PRODUCT_NAME = TimeFlies;
-				PROVISIONING_PROFILE = "0c7f1de5-c51e-4910-a78d-ac7715f1f85c";
+				PROVISIONING_PROFILE = "38203503-0b6c-447e-98db-5a055fd2e5b7";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -808,7 +816,7 @@
 					"$(PROJECT_DIR)/TimeFlies/extension/weixin/SDKExport",
 				);
 				PRODUCT_NAME = TimeFlies;
-				PROVISIONING_PROFILE = "0c7f1de5-c51e-4910-a78d-ac7715f1f85c";
+				PROVISIONING_PROFILE = "38203503-0b6c-447e-98db-5a055fd2e5b7";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -50,6 +50,12 @@
     [super viewWillDisappear:animated];
 //    NSLog(@"dis");
 }
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+//    NSLog(@"dis %@", self.view.superview);
+}
 #pragma mark - ui
 
 - (IBAction)onClose:(id)sender

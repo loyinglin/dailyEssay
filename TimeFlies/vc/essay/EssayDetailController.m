@@ -39,6 +39,8 @@
     if (![WXApi isWXAppInstalled]) {
         self.shareToFavorite.hidden = self.shareToSession.hidden = self.shareToTimeline.hidden = YES;
     }
+    
+    [self.text becomeFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning {

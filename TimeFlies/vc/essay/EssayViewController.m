@@ -122,9 +122,26 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    [self lyShowEmptyTips];
     return [[EssayModel instance] getEssaysCount];
 }
 
+
+- (void)lyShowEmptyTips
+{
+    if ([[EssayModel instance] getEssaysCount]) {
+        self.tableView.backgroundView = nil;
+    }
+    else{
+        UILabel* messageLabel = [UILabel new];
+        messageLabel.text = NSLocalizedString(@"没有日记，请新建", nil);
+        messageLabel.textColor = [UIColor lightGrayColor];
+        messageLabel.textAlignment = NSTextAlignmentCenter;
+        [messageLabel sizeToFit];
+        
+        self.tableView.backgroundView = messageLabel;
+    }
+}
 // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
 // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
 

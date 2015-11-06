@@ -36,7 +36,7 @@
 }
 
 - (id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
-//    NSLog(@"ask for dismiss %d", self.interActive.interacting);
+    NSLog(@"ask for dismiss %d", self.interActive.interacting);
     return self.interActive.interacting ? _interActiveAnimation : nil;
     
 }

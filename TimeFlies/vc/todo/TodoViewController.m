@@ -89,8 +89,27 @@
 
 #pragma mark - delegate
 
+
+- (void)lyShowEmptyTips
+{
+    if ([[TodoModel instance] getTodoCounts]) {
+        self.myTodos.backgroundView = nil;
+    }
+    else{
+        UILabel* messageLabel = [UILabel new];
+        messageLabel.text = NSLocalizedString(@"没有待办事件，请新建", nil);
+        messageLabel.textColor = [UIColor lightGrayColor];
+        messageLabel.textAlignment = NSTextAlignmentCenter;
+        [messageLabel sizeToFit];
+        
+        self.myTodos.backgroundView = messageLabel;
+    }
+}
+
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
+    [self lyShowEmptyTips];
     return [[TodoModel instance] getTodoCounts];
 }
 

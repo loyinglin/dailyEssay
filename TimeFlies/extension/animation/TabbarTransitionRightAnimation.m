@@ -45,7 +45,8 @@
         
         
     } completion:^(BOOL finished) {
-        
+//        NSLog(@"an %@", fromVC.view.superview);
+//        [fromVC.view removeFromSuperview];
         
         fromVC.view.layer.transform = CATransform3DIdentity;
         toVC.view.layer.transform = CATransform3DIdentity;

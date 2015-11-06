@@ -27,7 +27,7 @@
     CGRect finalFrame = CGRectOffset(initFrame, 0, screenBounds.size.height);
     
     UIView *containerView = [transitionContext containerView];
-    [containerView addSubview:toVC.view];
+//    [containerView addSubview:toVC.view];
 //    [containerView sendSubviewToBack:toVC.view];
     
     [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
