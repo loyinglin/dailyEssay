@@ -51,6 +51,7 @@
 {
     NSData* data = [NSKeyedArchiver archivedDataWithRootObject:myEssays];
     [[NSUserDefaults standardUserDefaults] setObject:data forKey:[[self class] description]];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     
     [[NSNotificationCenter defaultCenter] postNotificationName:@"EssayModelChange" object:nil];
 }

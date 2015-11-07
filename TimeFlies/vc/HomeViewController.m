@@ -108,7 +108,7 @@
     
     NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
     
-    [dateFormatter setDateFormat:@"hh:mm:ss"];
+    [dateFormatter setDateFormat:@"HH:mm:ss"];
     self.mySecond.text = [dateFormatter stringFromDate:current];
 }
 

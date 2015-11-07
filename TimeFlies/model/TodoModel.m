@@ -50,6 +50,7 @@
 {
     NSData* data = [NSKeyedArchiver archivedDataWithRootObject:myTodos];
     [[NSUserDefaults standardUserDefaults] setObject:data forKey:[[self class] description]];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     
     [[NSNotificationCenter defaultCenter] postNotificationName:@"TodoModelChange" object:nil];
 }
