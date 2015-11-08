@@ -20,6 +20,7 @@
 @implementation EssayViewController
 {
     long myDetailIndex;
+    BOOL myDelete;
 }
 
 - (void)viewDidLoad {
@@ -28,6 +29,15 @@
 //    [self setTitle:NSLocalizedString(@"我的日记", nil)];
 //    [self.tableView setEditing:YES animated:YES];
     self.tableView.allowsMultipleSelectionDuringEditing = NO;
+    
+    myDelete = NO;
+    __weak typeof (self) controller = self;
+    [[NSNotificationCenter defaultCenter] addObserverForName:@"EssayModelChange" object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
+        if (myDelete) { //删除有特定的动画
+            return ;
+        }
+        [controller.tableView reloadData];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -111,8 +121,10 @@
     if (editingStyle == UITableViewCellEditingStyleDelete) {
 
         // Delete the row from the data source.
+        myDelete = YES;
         [[EssayModel instance] deleteEssayByIndex:indexPath.row];
         [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+        myDelete = NO;
         
     }
     else if (editingStyle == UITableViewCellEditingStyleInsert) {

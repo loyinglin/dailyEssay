@@ -30,8 +30,9 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    __weak typeof(self) controller = self;
     [[NSNotificationCenter defaultCenter] addObserverForName:@"DoneModelChange" object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
-        [self.tableView reloadData];
+        [controller.tableView reloadData];
     }];
     
     if (![WXApi isWXAppInstalled]) {

@@ -128,6 +128,7 @@
 		FD4BB4EA1BE114BC00F4AA30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		FD4BB4EB1BE118D700F4AA30 /* LaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
 		FD4BB4EC1BE118D700F4AA30 /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
+		FD68E9A31BEEEAA2007DD9E2 /* TimeFlies.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TimeFlies.entitlements; sourceTree = "<group>"; };
 		FD6C044D1BE8A46C009F056F /* TabbarTransitionLeftAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarTransitionLeftAnimation.h; sourceTree = "<group>"; };
 		FD6C044E1BE8A46C009F056F /* TabbarTransitionLeftAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarTransitionLeftAnimation.m; sourceTree = "<group>"; };
 		FD7D9B861BE9FDED0012B41D /* ModalTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalTransitionAnimation.h; sourceTree = "<group>"; };
@@ -238,6 +239,7 @@
 		FD15A1E51BAAB1D70048B4D2 /* TimeFlies */ = {
 			isa = PBXGroup;
 			children = (
+				FD68E9A31BEEEAA2007DD9E2 /* TimeFlies.entitlements */,
 				FD4077181BE46ADC00423A93 /* vender */,
 				FD4BB4B71BE0787900F4AA30 /* img */,
 				FDDFE1781BDDDA7200865CDE /* model */,
@@ -531,6 +533,11 @@
 					FD15A1E21BAAB1D70048B4D2 = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = HF83WH5SDV;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					FD15A1FE1BAAB1D70048B4D2 = {
 						CreatedOnToolsVersion = 6.4;
@@ -787,8 +794,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Xinmin Li (HF83WH5SDV)";
+				CODE_SIGN_ENTITLEMENTS = TimeFlies/TimeFlies.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "TimeFlies/supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -797,7 +805,7 @@
 					"$(PROJECT_DIR)/TimeFlies/extension/weixin/SDKExport",
 				);
 				PRODUCT_NAME = TimeFlies;
-				PROVISIONING_PROFILE = "0d8f46a3-b2dd-4f9c-a1d5-5aa8311c8d50";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -806,8 +814,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Xinmin Li (HF83WH5SDV)";
+				CODE_SIGN_ENTITLEMENTS = TimeFlies/TimeFlies.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "TimeFlies/supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -816,7 +825,7 @@
 					"$(PROJECT_DIR)/TimeFlies/extension/weixin/SDKExport",
 				);
 				PRODUCT_NAME = TimeFlies;
-				PROVISIONING_PROFILE = "0d8f46a3-b2dd-4f9c-a1d5-5aa8311c8d50";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

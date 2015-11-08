@@ -13,7 +13,7 @@
     NSMutableArray<Essay*>* myEssays;
 }
 
-
+#define lyCloud @"iCloud.loying.lin.TimeFlies"
 
 #pragma mark - init
 
@@ -32,6 +32,10 @@
     self = [super init];
     
     myEssays = [NSMutableArray array];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyValueStoreChange:) name:NSUbiquitousKeyValueStoreDidChangeExternallyNotification object:nil];
+    
+    
     [self loadCache];
     
     return self;
@@ -40,11 +44,20 @@
 
 - (void)loadCache
 {
-    NSData* data = [[NSUserDefaults standardUserDefaults] objectForKey:[[self class] description]];
-    if (data) {
-        myEssays = [NSKeyedUnarchiver unarchiveObjectWithData:data];
-    }
+//    NSData* data = [[NSUserDefaults standardUserDefaults] objectForKey:[[self class] description]];
+//    if (data) {
+//        myEssays = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+//    }
     
+    NSData* data = [[NSUbiquitousKeyValueStore defaultStore] objectForKey:[[self class] description]];
+    if (data) {
+
+        myEssays = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        NSLog(@"arr %ld", myEssays.count);
+    }
+    else{
+        NSLog(@"essay empty");
+    }
 }
 
 - (void)saveCache
@@ -53,6 +66,16 @@
     [[NSUserDefaults standardUserDefaults] setObject:data forKey:[[self class] description]];
     [[NSUserDefaults standardUserDefaults] synchronize];
     
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"EssayModelChange" object:nil];
+    
+    [[NSUbiquitousKeyValueStore defaultStore] setObject:data forKey:[[self class] description]];
+    [[NSUbiquitousKeyValueStore defaultStore] synchronize];
+}
+
+- (void)keyValueStoreChange:(NSNotification*)sender{
+    NSLog(@"key- value change");
+
+    [self loadCache];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"EssayModelChange" object:nil];
 }
 

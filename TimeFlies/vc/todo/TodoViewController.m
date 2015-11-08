@@ -26,8 +26,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 //    self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"abc" image:[UIImage imageNamed:@"first"] selectedImage:[UIImage imageNamed:@"second"]];
+    
+    __weak typeof(self) controller = self;
     [[NSNotificationCenter defaultCenter] addObserverForName:@"TodoModelChange" object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
-        [self.myTodos reloadData];
+        [controller.myTodos reloadData];
     }];
     
     

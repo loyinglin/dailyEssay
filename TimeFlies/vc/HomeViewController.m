@@ -29,8 +29,9 @@
 
     [self viewInit];
     
+    __weak typeof(self) controller = self;
     [[NSNotificationCenter defaultCenter] addObserverForName:@"HomeModelChange" object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
-        [self viewInit];
+        [controller viewInit];
     }];
     [self onTimer:nil];
     
