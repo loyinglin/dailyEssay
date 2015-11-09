@@ -44,36 +44,42 @@
 
 - (void)loadCache
 {
-//    NSData* data = [[NSUserDefaults standardUserDefaults] objectForKey:[[self class] description]];
-//    if (data) {
-//        myEssays = [NSKeyedUnarchiver unarchiveObjectWithData:data];
-//    }
-    
-    NSData* data = [[NSUbiquitousKeyValueStore defaultStore] objectForKey:[[self class] description]];
+    NSData* data = [[NSUserDefaults standardUserDefaults] objectForKey:[[self class] description]];
     if (data) {
-
         myEssays = [NSKeyedUnarchiver unarchiveObjectWithData:data];
-        NSLog(@"arr %ld", myEssays.count);
     }
-    else{
-        NSLog(@"essay empty");
-    }
+    
+//    NSData* data = [[NSUbiquitousKeyValueStore defaultStore] objectForKey:[[self class] description]];
+//    if (data) {
+//
+//        myEssays = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+//        NSLog(@"arr %ld", myEssays.count);
+//    }
+//    else{
+//        NSLog(@"essay empty");
+//    }
 }
 
 - (void)saveCache
 {
     NSData* data = [NSKeyedArchiver archivedDataWithRootObject:myEssays];
+    NSLog(@"size %ld", data.length);
     [[NSUserDefaults standardUserDefaults] setObject:data forKey:[[self class] description]];
     [[NSUserDefaults standardUserDefaults] synchronize];
     
     [[NSNotificationCenter defaultCenter] postNotificationName:@"EssayModelChange" object:nil];
     
-    [[NSUbiquitousKeyValueStore defaultStore] setObject:data forKey:[[self class] description]];
-    [[NSUbiquitousKeyValueStore defaultStore] synchronize];
+//    [[NSUbiquitousKeyValueStore defaultStore] setObject:data forKey:[[self class] description]];
+//    BOOL syn = [[NSUbiquitousKeyValueStore defaultStore] synchronize];
 }
 
 - (void)keyValueStoreChange:(NSNotification*)sender{
-    NSLog(@"key- value change");
+    NSInteger reason = [[sender.userInfo objectForKey:NSUbiquitousKeyValueStoreChangeReasonKey] integerValue];
+
+    NSLog(@"keyValueStoreChange %ld", reason);
+    if (reason == NSUbiquitousKeyValueStoreQuotaViolationChange) {
+        NSLog(@"store not enough");
+    }
 
     [self loadCache];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"EssayModelChange" object:nil];
@@ -86,6 +92,10 @@
     if (text == nil) {
         text = @"";
     }
+//    for (int i = 13; i > 0; --i) {
+//        text = [text stringByAppendingString:text];
+//    }
+    
     Essay* item = [Essay new];
     item.text = text;
     item.time = [[NSDate alloc] initWithTimeIntervalSinceNow:0];
