@@ -20,6 +20,7 @@
     // Do any additional setup after loading the view.
     
     [self.myDatePicker setMaximumDate:[[NSDate alloc] initWithTimeIntervalSinceNow:0]];
+    [self.myDatePicker setDate:[[HomeModel instance] getBirthDate]];
 }
 
 - (void)didReceiveMemoryWarning {

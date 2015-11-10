@@ -33,15 +33,39 @@
     self = [super init];
     
     myBirthDate = [[NSDate alloc] initWithTimeIntervalSinceNow:0];
+    
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onSettingChange:) name:NSUbiquitousKeyValueStoreDidChangeExternallyNotification object:nil];
+    
+    
     [self loadCache];
     
     return self;
 }
 
+-(void)onSettingChange:(NSNotification*)notify{
+    
+    NSInteger reason = [[notify.userInfo objectForKey:NSUbiquitousKeyValueStoreChangeReasonKey] integerValue];
+    
+    NSLog(@"keyValueStoreChange %ld", reason);
+    if (reason == NSUbiquitousKeyValueStoreQuotaViolationChange) {
+        NSLog(@"store not enough");
+    }
+    
+    [self loadCache];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"HomeModelChange" object:nil];
+
+}
 
 - (void)loadCache
 {
-    NSData* data = [[NSUserDefaults standardUserDefaults] objectForKey:[[self class] description]];
+//    NSData* data = [[NSUserDefaults standardUserDefaults] objectForKey:[[self class] description]];
+//    if (data) {
+//        myBirthDate = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+//    }
+    
+    
+    NSData* data = [[NSUbiquitousKeyValueStore defaultStore] objectForKey:[[self class] description]];
     if (data) {
         myBirthDate = [NSKeyedUnarchiver unarchiveObjectWithData:data];
     }
@@ -51,8 +75,11 @@
 - (void)saveCache
 {
     NSData* data = [NSKeyedArchiver archivedDataWithRootObject:myBirthDate];
-    [[NSUserDefaults standardUserDefaults] setObject:data forKey:[[self class] description]];
-    [[NSUserDefaults standardUserDefaults] synchronize];
+//    [[NSUserDefaults standardUserDefaults] setObject:data forKey:[[self class] description]];
+//    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    [[NSUbiquitousKeyValueStore defaultStore] setObject:data forKey:[[self class] description]];
+    [[NSUbiquitousKeyValueStore defaultStore] synchronize];
     
     [[NSNotificationCenter defaultCenter] postNotificationName:@"HomeModelChange" object:nil];
 }

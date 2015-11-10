@@ -795,8 +795,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TimeFlies/TimeFlies.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "TimeFlies/supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -805,7 +805,7 @@
 					"$(PROJECT_DIR)/TimeFlies/extension/weixin/SDKExport",
 				);
 				PRODUCT_NAME = TimeFlies;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "fc8d3839-703e-4c50-a654-8bf866e71df2";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -815,8 +815,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TimeFlies/TimeFlies.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "TimeFlies/supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -825,7 +825,7 @@
 					"$(PROJECT_DIR)/TimeFlies/extension/weixin/SDKExport",
 				);
 				PRODUCT_NAME = TimeFlies;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "fc8d3839-703e-4c50-a654-8bf866e71df2";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
