@@ -13,6 +13,8 @@
 #import "DoneModel.h"
 #import "HomeModel.h"
 #import "WXApi.h"
+#import "RACEXTScope.h"
+#import <ReactiveCocoa.h>
 
 @interface EssayDetailController ()
 
@@ -41,6 +43,12 @@
     }
     
     [self.text becomeFirstResponder];
+    @weakify(self);
+    self.attachButton.rac_command = [[RACCommand alloc] initWithEnabled:[self isEssayVaildSignal] signalBlock:^RACSignal *(id input) {
+        @strongify(self)
+        return [self onAttachToTimeLine];
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -59,6 +67,37 @@
 */
 
 
+- (RACSignal*) isEssayVaildSignal{
+    return [RACObserve(self, text.text) map:^id(NSString* str) {
+        return @(str.length != 0);
+    }];
+}
+
+- (RACSignal*) onAttachToTimeLine{
+    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        
+        if (![[DoneModel instance] getDoneCounts]) {
+            
+            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"固定到时间轴", nil) message:NSLocalizedString(@"固定后可在时间轴查看，同时不再可修改", nil) preferredStyle:UIAlertControllerStyleAlert];
+            
+            UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"否", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                [subscriber sendCompleted];
+            }];
+            UIAlertAction *okAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"是", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                [self onSure];
+            }];
+            [alertController addAction:okAction];
+            [alertController addAction:cancelAction];
+            
+            [self presentViewController:alertController animated:YES completion:nil];
+        }
+        else{
+            [self onSure];
+        }
+
+        return nil;
+    }];
+}
 #pragma mark - view init
 
 - (void)viewWillAppear:(BOOL)animated
@@ -87,25 +126,7 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (IBAction)onAttachToTimeLine:(id)sender
-{
-    if (![[DoneModel instance] getDoneCounts]) {
-        
-        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"固定到时间轴", nil) message:NSLocalizedString(@"固定后可在时间轴查看，同时不再可修改", nil) preferredStyle:UIAlertControllerStyleAlert];
-        
-        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"否", nil) style:UIAlertActionStyleDefault handler:nil];
-        UIAlertAction *okAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"是", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-            [self onSure];
-        }];
-        [alertController addAction:okAction];
-        [alertController addAction:cancelAction];
-        
-        [self presentViewController:alertController animated:YES completion:nil];
-    }
-    else{
-        [self onSure];
-    }
-}
+
 
 - (void)onSure
 {
