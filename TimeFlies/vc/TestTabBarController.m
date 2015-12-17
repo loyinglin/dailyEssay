@@ -20,7 +20,7 @@
 //    self.tabBar.hidden = YES;
 
 //    [self setSelectedIndex:3];
-    self.tabBar.tintColor = [UIColor darkGrayColor];
+//    self.tabBar.tintColor = [UIColor darkGrayColor];
 
 }
 

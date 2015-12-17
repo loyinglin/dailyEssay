@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -194,7 +194,7 @@
         <scene sceneID="a2J-fU-Npr">
             <objects>
                 <navigationController id="C7L-Xk-qYp" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="朝朝暮暮" image="second" selectedImage="first" id="292-Gu-8Ov"/>
+                    <tabBarItem key="tabBarItem" title="朝朝暮暮" image="tab_finance_normal.png" id="292-Gu-8Ov"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="SrB-lX-Itj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -334,7 +334,7 @@
                             <outletCollection property="gestureRecognizers" destination="PHb-qX-e0H" appends="YES" id="eug-TT-MKY"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="流光易逝" image="second" selectedImage="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="流光易逝" image="tab_around_normal.png" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="knobPlaceholder" destination="imn-pT-k0m" id="j5c-7x-QEm"/>
                         <outlet property="myBirthDay" destination="awE-rg-tSO" id="Gw3-mL-bbo"/>
@@ -605,7 +605,7 @@
         <scene sceneID="TP3-gQ-Tvg">
             <objects>
                 <navigationController id="w7V-uq-Wgu" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="只争朝夕" image="second" selectedImage="first" id="Xog-Ve-ZvY"/>
+                    <tabBarItem key="tabBarItem" title="只争朝夕" image="tab_chat_normal.png" id="Xog-Ve-ZvY"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pu9-ME-Kg0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -623,7 +623,7 @@
         <scene sceneID="gut-BT-e5p">
             <objects>
                 <navigationController id="exT-ye-Cip" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="时过境迁" image="second" selectedImage="first" id="6Y2-b3-aZM"/>
+                    <tabBarItem key="tabBarItem" title="时过境迁" image="tab_mycenter_normal.png" id="6Y2-b3-aZM"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="BBn-tG-dVU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -806,9 +806,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="tab_around_normal.png" width="22" height="22"/>
+        <image name="tab_chat_normal.png" width="22" height="22"/>
+        <image name="tab_finance_normal.png" width="22" height="22"/>
+        <image name="tab_mycenter_normal.png" width="22" height="22"/>
         <image name="write.png" width="32" height="32"/>
     </resources>
-    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+    <color key="tintColor" red="0.31372549020000001" green="0.75294117650000003" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
 </document>
