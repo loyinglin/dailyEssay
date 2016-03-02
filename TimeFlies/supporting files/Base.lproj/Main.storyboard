@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
@@ -107,45 +107,71 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uKg-J1-wod">
-                                <rect key="frame" x="0.0" y="64" width="600" height="364"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="366"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="0.36862745098039218" green="0.36862745098039218" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBk-D9-Jer">
-                                <rect key="frame" x="70" y="512" width="86" height="30"/>
-                                <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="分享到微信"/>
+                                <rect key="frame" x="40" y="514" width="83" height="28"/>
+                                <color key="backgroundColor" red="0.31372549020000001" green="0.75294117650000003" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="   分享到微信  ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="shareToWeixin:" destination="JVs-ap-Djo" eventType="touchUpInside" id="3pp-Lm-HZb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qd0-K7-5TL">
-                                <rect key="frame" x="255" y="512" width="90" height="30"/>
-                                <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="分享到朋友圈"/>
+                                <rect key="frame" x="253" y="514" width="93" height="28"/>
+                                <color key="backgroundColor" red="0.31372549020000001" green="0.75294117650000003" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="  分享到朋友圈  ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="shareToWeixin:" destination="JVs-ap-Djo" eventType="touchUpInside" id="j0G-qA-eEq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mt-V5-QN5">
-                                <rect key="frame" x="455" y="512" width="75" height="30"/>
-                                <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="分享到收藏"/>
+                                <rect key="frame" x="480" y="514" width="80" height="28"/>
+                                <color key="backgroundColor" red="0.31372549020000001" green="0.75294117650000003" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="  分享到收藏  ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="shareToWeixin:" destination="JVs-ap-Djo" eventType="touchUpInside" id="4M5-IA-MRf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rlz-l5-yKm">
-                                <rect key="frame" x="200" y="448" width="200" height="40"/>
-                                <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="200" y="450" width="200" height="40"/>
+                                <color key="backgroundColor" red="0.31372549020000001" green="0.75294117650000003" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="6ub-Ry-Xps"/>
                                     <constraint firstAttribute="width" priority="750" constant="200" id="mbN-8V-wH7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="固定到时间轴"/>
+                                <state key="normal" title="固定到时间轴">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="5"/>
@@ -157,17 +183,17 @@
                         <constraints>
                             <constraint firstItem="uKg-J1-wod" firstAttribute="leading" secondItem="H0y-gd-poU" secondAttribute="leading" id="50F-db-WLg"/>
                             <constraint firstItem="uKg-J1-wod" firstAttribute="top" secondItem="V6p-HX-kO3" secondAttribute="bottom" id="K9D-CV-ofR"/>
-                            <constraint firstItem="5mt-V5-QN5" firstAttribute="leading" secondItem="Qd0-K7-5TL" secondAttribute="trailing" priority="750" constant="115" id="QdM-8q-BUt"/>
+                            <constraint firstItem="5mt-V5-QN5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Qd0-K7-5TL" secondAttribute="trailing" priority="250" constant="90" id="QdM-8q-BUt"/>
                             <constraint firstItem="Qd0-K7-5TL" firstAttribute="centerX" secondItem="H0y-gd-poU" secondAttribute="centerX" id="R82-BO-csP"/>
                             <constraint firstAttribute="trailing" secondItem="uKg-J1-wod" secondAttribute="trailing" id="VRZ-Rb-nIg"/>
-                            <constraint firstItem="Qd0-K7-5TL" firstAttribute="leading" secondItem="nBk-D9-Jer" secondAttribute="trailing" priority="750" constant="99" id="eAp-fO-NV2"/>
+                            <constraint firstItem="Qd0-K7-5TL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nBk-D9-Jer" secondAttribute="trailing" priority="250" constant="99" id="eAp-fO-NV2"/>
                             <constraint firstItem="5mt-V5-QN5" firstAttribute="centerY" secondItem="Qd0-K7-5TL" secondAttribute="centerY" id="hJJ-rL-PBL"/>
                             <constraint firstItem="Qd0-K7-5TL" firstAttribute="top" secondItem="Rlz-l5-yKm" secondAttribute="bottom" constant="24" id="jtu-mo-6BQ"/>
                             <constraint firstItem="Rlz-l5-yKm" firstAttribute="centerX" secondItem="H0y-gd-poU" secondAttribute="centerX" id="mlv-yc-JWd"/>
                             <constraint firstItem="p6X-Lg-vpL" firstAttribute="top" secondItem="Qd0-K7-5TL" secondAttribute="bottom" constant="9" id="rJH-Oq-1bC"/>
                             <constraint firstItem="Rlz-l5-yKm" firstAttribute="top" secondItem="uKg-J1-wod" secondAttribute="bottom" constant="20" id="sJw-s8-Nwj"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="5mt-V5-QN5" secondAttribute="trailing" constant="50" id="sT0-Ge-yhA"/>
-                            <constraint firstItem="nBk-D9-Jer" firstAttribute="leading" secondItem="H0y-gd-poU" secondAttribute="leadingMargin" constant="50" id="uXc-LW-ALn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5mt-V5-QN5" secondAttribute="trailing" constant="20" id="sT0-Ge-yhA"/>
+                            <constraint firstItem="nBk-D9-Jer" firstAttribute="leading" secondItem="H0y-gd-poU" secondAttribute="leadingMargin" constant="20" id="uXc-LW-ALn"/>
                             <constraint firstItem="nBk-D9-Jer" firstAttribute="centerY" secondItem="Qd0-K7-5TL" secondAttribute="centerY" id="vMZ-Pu-zEi"/>
                         </constraints>
                     </view>
@@ -457,149 +483,13 @@
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="5KD-sU-mfQ"/>
                         <segue destination="w7V-uq-Wgu" kind="relationship" relationship="viewControllers" id="tfc-kf-Ey6"/>
                         <segue destination="C7L-Xk-qYp" kind="relationship" relationship="viewControllers" id="fus-uU-mkB"/>
-                        <segue destination="exT-ye-Cip" kind="relationship" relationship="viewControllers" id="Rxg-xW-6Ra"/>
+                        <segue destination="Bgh-fs-Qqg" kind="relationship" relationship="viewControllers" id="Av5-1D-Gd3"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
                 <customObject id="wT8-HV-WDu" customClass="TabbarControllerDelegate"/>
             </objects>
             <point key="canvasLocation" x="-2206" y="-1080"/>
-        </scene>
-        <!--时间轴-->
-        <scene sceneID="tuu-yt-Vxy">
-            <objects>
-                <tableViewController clearsSelectionOnViewWillAppear="NO" id="QUw-nT-RbL" customClass="DoneTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" style="plain" rowHeight="66" sectionHeaderHeight="28" sectionFooterHeight="28" id="A9o-sx-0YM">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
-                        <gestureRecognizers/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="done" rowHeight="66" id="gvJ-5U-kMf" customClass="DoneTableViewCell">
-                                <rect key="frame" x="0.0" y="92" width="600" height="66"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gvJ-5U-kMf" id="rpE-vD-f3A">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="65.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="27L-IG-0a7">
-                                            <rect key="frame" x="130" y="0.0" width="1" height="66"/>
-                                            <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="1" id="1pe-2I-pfO"/>
-                                            </constraints>
-                                        </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是猪" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Px-w5-ukU">
-                                            <rect key="frame" x="141" y="24" width="42" height="17"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015年00月06日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5n-OB-JNs">
-                                            <rect key="frame" x="10" y="24" width="110" height="17"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="110" id="fI4-0W-ppF"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="f5n-OB-JNs" firstAttribute="leading" secondItem="rpE-vD-f3A" secondAttribute="leading" constant="10" id="3Va-0E-3QM"/>
-                                        <constraint firstItem="27L-IG-0a7" firstAttribute="top" secondItem="rpE-vD-f3A" secondAttribute="top" id="7yw-zU-yXM"/>
-                                        <constraint firstItem="27L-IG-0a7" firstAttribute="centerX" secondItem="rpE-vD-f3A" secondAttribute="centerX" id="CUH-nQ-s3f"/>
-                                        <constraint firstItem="27L-IG-0a7" firstAttribute="leading" secondItem="f5n-OB-JNs" secondAttribute="trailing" constant="10" id="Mmu-Ae-Lxd"/>
-                                        <constraint firstAttribute="bottom" secondItem="27L-IG-0a7" secondAttribute="bottom" id="Oyz-Kz-Vk5"/>
-                                        <constraint firstItem="f5n-OB-JNs" firstAttribute="centerY" secondItem="rpE-vD-f3A" secondAttribute="centerY" id="da9-Gi-RYA"/>
-                                        <constraint firstItem="3Px-w5-ukU" firstAttribute="leading" secondItem="27L-IG-0a7" secondAttribute="trailing" constant="10" id="mtd-0f-8au"/>
-                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="3Px-w5-ukU" secondAttribute="trailing" id="nIZ-SR-ujJ"/>
-                                        <constraint firstItem="27L-IG-0a7" firstAttribute="leading" secondItem="f5n-OB-JNs" secondAttribute="trailing" constant="20" id="qVz-On-RGu"/>
-                                        <constraint firstItem="3Px-w5-ukU" firstAttribute="centerY" secondItem="rpE-vD-f3A" secondAttribute="centerY" id="wsy-AR-2wx"/>
-                                    </constraints>
-                                    <variation key="default">
-                                        <mask key="constraints">
-                                            <exclude reference="CUH-nQ-s3f"/>
-                                            <exclude reference="qVz-On-RGu"/>
-                                        </mask>
-                                    </variation>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="myLeftText" destination="f5n-OB-JNs" id="R4l-h2-drc"/>
-                                    <outlet property="myRightText" destination="3Px-w5-ukU" id="Tku-lU-4Iq"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="QUw-nT-RbL" id="kin-OC-F5s"/>
-                            <outlet property="delegate" destination="QUw-nT-RbL" id="DYS-Tn-A2M"/>
-                            <outletCollection property="gestureRecognizers" destination="WFl-3t-VVf" appends="YES" id="89h-EY-HXV"/>
-                            <outletCollection property="gestureRecognizers" destination="8qa-BC-Vln" appends="YES" id="Nzo-Z2-zAQ"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="时间轴" id="Z9M-6q-t07">
-                        <barButtonItem key="rightBarButtonItem" title="收藏" id="iTs-av-YFa">
-                            <connections>
-                                <action selector="onSave:" destination="QUw-nT-RbL" id="Xgz-R6-gs3"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <segue destination="6js-iW-ed2" kind="show" identifier="open_done_detail_board" id="uD0-si-zZq"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9lb-we-r7N" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="WFl-3t-VVf">
-                    <connections>
-                        <action selector="onSwipeRight:" destination="QUw-nT-RbL" id="3ge-t8-aE6"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="left" id="8qa-BC-Vln">
-                    <connections>
-                        <action selector="onSwipeLeft:" destination="QUw-nT-RbL" id="fQ6-0z-Zbf"/>
-                    </connections>
-                </swipeGestureRecognizer>
-            </objects>
-            <point key="canvasLocation" x="-173" y="304"/>
-        </scene>
-        <!--详情-->
-        <scene sceneID="k6b-XF-pCC">
-            <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="6js-iW-ed2" customClass="DoneDetailController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ndp-Dy-ler"/>
-                        <viewControllerLayoutGuide type="bottom" id="lPT-Fj-Xm8"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="gAI-2V-hRX">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dg7-nd-7qL">
-                                <rect key="frame" x="0.0" y="64" width="600" height="154"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="154" id="xtx-oV-fEb"/>
-                                </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="dg7-nd-7qL" secondAttribute="trailing" id="g9L-MB-dlt"/>
-                            <constraint firstItem="dg7-nd-7qL" firstAttribute="top" secondItem="ndp-Dy-ler" secondAttribute="bottom" id="xzJ-mc-x1t"/>
-                            <constraint firstItem="dg7-nd-7qL" firstAttribute="leading" secondItem="gAI-2V-hRX" secondAttribute="leading" id="yi4-4M-GpP"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="详情" id="BHJ-Qj-ezB"/>
-                    <connections>
-                        <outlet property="myDoneDetail" destination="dg7-nd-7qL" id="s9C-I1-dJe"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vBO-3x-9Fe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="521" y="299"/>
         </scene>
         <!--只争朝夕-->
         <scene sceneID="TP3-gQ-Tvg">
@@ -618,23 +508,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Me-9g-Ozt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1026" y="-1770"/>
-        </scene>
-        <!--时过境迁-->
-        <scene sceneID="gut-BT-e5p">
-            <objects>
-                <navigationController id="exT-ye-Cip" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="时过境迁" image="tab_mycenter_normal.png" id="6Y2-b3-aZM"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BBn-tG-dVU">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="QUw-nT-RbL" kind="relationship" relationship="rootViewController" id="ISC-iM-ijj"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7Q3-l6-0WW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1013" y="13"/>
         </scene>
         <!--three-->
         <scene sceneID="Ci4-B7-nlE">
@@ -752,9 +625,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycQ-hW-NYf">
-                                <rect key="frame" x="255" y="233" width="90" height="30"/>
-                                <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="固定到时间轴"/>
+                                <rect key="frame" x="247" y="233" width="106" height="30"/>
+                                <color key="backgroundColor" red="0.31372549020000001" green="0.75294117650000003" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="  固定到时间轴  ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onDone:" destination="zEL-Rg-GHn" eventType="touchUpInside" id="jvy-PK-Q0n"/>
                                 </connections>
@@ -770,9 +650,16 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7P-km-ck7">
-                                <rect key="frame" x="285" y="300" width="30" height="30"/>
-                                <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="删除"/>
+                                <rect key="frame" x="277" y="300" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.31372549020000001" green="0.75294117650000003" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="  删除  ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onDelte:" destination="zEL-Rg-GHn" eventType="touchUpInside" id="PKj-xp-aIN"/>
                                 </connections>
@@ -804,12 +691,21 @@
             </objects>
             <point key="canvasLocation" x="449" y="-1770"/>
         </scene>
+        <!--done-->
+        <scene sceneID="EfZ-GN-zZL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="done" id="Bgh-fs-Qqg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="more" id="UtC-N8-bOi"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hXK-FZ-6lS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1655.5" y="-465"/>
+        </scene>
     </scenes>
     <resources>
         <image name="tab_around_normal.png" width="22" height="22"/>
         <image name="tab_chat_normal.png" width="22" height="22"/>
         <image name="tab_finance_normal.png" width="22" height="22"/>
-        <image name="tab_mycenter_normal.png" width="22" height="22"/>
         <image name="write.png" width="32" height="32"/>
     </resources>
     <color key="tintColor" red="0.31372549020000001" green="0.75294117650000003" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>

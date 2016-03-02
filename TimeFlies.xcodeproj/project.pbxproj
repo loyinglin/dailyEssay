@@ -10,6 +10,9 @@
 		910CE3DEFC0E0136F320E5DB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5977DB92A45656A693A56867 /* libPods.a */; };
 		FD15A1EC1BAAB1D70048B4D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15A1EB1BAAB1D70048B4D2 /* AppDelegate.m */; };
 		FD15A2061BAAB1D70048B4D2 /* TimeFliesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15A2051BAAB1D70048B4D2 /* TimeFliesTests.m */; };
+		FD2928821C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2928811C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.m */; };
+		FD2928851C8688C4001A41F3 /* LYColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2928841C8688C4001A41F3 /* LYColor.m */; };
+		FD2928871C86BE40001A41F3 /* done.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD2928861C86BE40001A41F3 /* done.storyboard */; };
 		FD4077201BE46ADC00423A93 /* RWKnobControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40771B1BE46ADC00423A93 /* RWKnobControl.m */; };
 		FD4077211BE46ADC00423A93 /* RWKnobRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40771D1BE46ADC00423A93 /* RWKnobRenderer.m */; };
 		FD4077221BE46ADC00423A93 /* RWRotationGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = FD40771F1BE46ADC00423A93 /* RWRotationGestureRecognizer.m */; };
@@ -95,8 +98,12 @@
 		FD15A1FF1BAAB1D70048B4D2 /* TimeFlies.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeFlies.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD15A2041BAAB1D70048B4D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD15A2051BAAB1D70048B4D2 /* TimeFliesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeFliesTests.m; sourceTree = "<group>"; };
+		FD2928801C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TimeFliesNavigationItem.h"; sourceTree = "<group>"; };
+		FD2928811C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TimeFliesNavigationItem.m"; sourceTree = "<group>"; };
+		FD2928831C8688C4001A41F3 /* LYColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYColor.h; sourceTree = "<group>"; };
+		FD2928841C8688C4001A41F3 /* LYColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYColor.m; sourceTree = "<group>"; };
+		FD2928861C86BE40001A41F3 /* done.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = done.storyboard; path = done/done.storyboard; sourceTree = "<group>"; };
 		FD4077141BE3517800423A93 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		FD4077151BE3517800423A93 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		FD4077161BE3517800423A93 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		FD4077171BE3517800423A93 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		FD40771A1BE46ADC00423A93 /* RWKnobControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWKnobControl.h; sourceTree = "<group>"; };
@@ -202,6 +209,7 @@
 		FDDFE1801BDDDA7200865CDE /* EssayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EssayModel.m; sourceTree = "<group>"; };
 		FDDFE1811BDDDA7200865CDE /* TodoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoModel.h; sourceTree = "<group>"; };
 		FDDFE1821BDDDA7200865CDE /* TodoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoModel.m; sourceTree = "<group>"; };
+		FDE11C0F1C2CFA490097CD46 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		FDE509891BEBAB2200011276 /* 76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 76.png; sourceTree = "<group>"; };
 		FDE5098A1BEBAB2300011276 /* 152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 152.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -303,6 +311,17 @@
 				FD15A2041BAAB1D70048B4D2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD29287F1C868839001A41F3 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				FD2928831C8688C4001A41F3 /* LYColor.h */,
+				FD2928841C8688C4001A41F3 /* LYColor.m */,
+				FD2928801C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.h */,
+				FD2928811C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.m */,
+			);
+			path = base;
 			sourceTree = "<group>";
 		};
 		FD4077181BE46ADC00423A93 /* vender */ = {
@@ -450,7 +469,9 @@
 		FDDFE14C1BDDD8BF00865CDE /* vc */ = {
 			isa = PBXGroup;
 			children = (
+				FD29287F1C868839001A41F3 /* base */,
 				FDDFE1471BDDD8BF00865CDE /* Main.storyboard */,
+				FD2928861C86BE40001A41F3 /* done.storyboard */,
 				FDDFE14D1BDDD8BF00865CDE /* done */,
 				FDDFE14E1BDDD8BF00865CDE /* essay */,
 				FDDFE1571BDDD8BF00865CDE /* home */,
@@ -626,6 +647,7 @@
 				FD54DDC81C22F1AC009A8AD5 /* tab_finance_normal@2x.png in Resources */,
 				FDDFE16D1BDDD8BF00865CDE /* Images.xcassets in Resources */,
 				FD4BB4DE1BE10FCA00F4AA30 /* InfoPlist.strings in Resources */,
+				FD2928871C86BE40001A41F3 /* done.storyboard in Resources */,
 				FD4BB4C61BE0C51700F4AA30 /* phone.png in Resources */,
 				FD4BB4BE1BE0787900F4AA30 /* icon@2x.png in Resources */,
 				FD4BB4C11BE0787900F4AA30 /* icon_settings@3x.png in Resources */,
@@ -707,6 +729,7 @@
 				FD7D9B8B1BEA023D0012B41D /* UIViewControllerDelegate.m in Sources */,
 				FD7D9B911BEA054D0012B41D /* ModalInterActiveTransitionAnimation.m in Sources */,
 				FDA7FBD01BE99F400005C4DC /* NavigationTransitionAnimation.m in Sources */,
+				FD2928851C8688C4001A41F3 /* LYColor.m in Sources */,
 				FD47D46E1BDE0AEB000482A7 /* DoneTableViewController.m in Sources */,
 				FD47D46B1BDE0076000482A7 /* TimeSelectController.m in Sources */,
 				FD7D9B881BE9FDED0012B41D /* ModalTransitionAnimation.m in Sources */,
@@ -727,6 +750,7 @@
 				FDDFE1631BDDD8BF00865CDE /* WXUtil.mm in Sources */,
 				FD6C044F1BE8A46C009F056F /* TabbarTransitionLeftAnimation.m in Sources */,
 				FD4077681BE89D7000423A93 /* TabbarTransitionRightAnimation.m in Sources */,
+				FD2928821C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.m in Sources */,
 				FDDFE1871BDDDA7200865CDE /* TodoModel.m in Sources */,
 				FD4077221BE46ADC00423A93 /* RWRotationGestureRecognizer.m in Sources */,
 			);
@@ -786,7 +810,7 @@
 			children = (
 				FDDFE1481BDDD8BF00865CDE /* Base */,
 				FD4BB4D91BE0FD4300F4AA30 /* en */,
-				FD4077151BE3517800423A93 /* zh-Hans */,
+				FDE11C0F1C2CFA490097CD46 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			path = "../supporting files";
@@ -889,6 +913,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "TimeFlies/supporting files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -911,6 +936,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "TimeFlies/supporting files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
