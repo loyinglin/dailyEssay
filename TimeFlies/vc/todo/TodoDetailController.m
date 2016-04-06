@@ -29,6 +29,8 @@
     }
 //    [self.myText becomeFirstResponder];
     [self customView];
+    
+//    CIImage* image;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,7 +39,7 @@
 }
 
 - (void)customView {
-    [self lySetupRightItem];
+//    [self lySetupRightItem];
 }
 #pragma mark - view init
 

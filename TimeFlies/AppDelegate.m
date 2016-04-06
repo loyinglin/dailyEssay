@@ -37,7 +37,9 @@
 //       }
 //     forState:UIControlStateNormal];
     
-//    [[UIBarButtonItem appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14], NSForegroundColorAttributeName:[UIColor blackColor]} forState:UIControlStateNormal];
+    [[UIBarButtonItem appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14], NSForegroundColorAttributeName:[UIColor blackColor]} forState:UIControlStateNormal];
+//    [[UIBarButtonItem appearance] setTintColor:[UIColor blackColor]];
+//    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:[UIImage imageNamed:@"write"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
 
     return YES;
 }
