@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		910CE3DEFC0E0136F320E5DB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5977DB92A45656A693A56867 /* libPods.a */; };
+		FD0F49AE1CB6799F00C2155E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0F49AD1CB6799F00C2155E /* HomeViewController.swift */; };
 		FD15A1EC1BAAB1D70048B4D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15A1EB1BAAB1D70048B4D2 /* AppDelegate.m */; };
 		FD15A2061BAAB1D70048B4D2 /* TimeFliesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15A2051BAAB1D70048B4D2 /* TimeFliesTests.m */; };
 		FD2928821C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2928811C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.m */; };
@@ -92,6 +93,8 @@
 		2A7EF087E37BFC5C871140F4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		5977DB92A45656A693A56867 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		70F8191E3721DCFC2F9F102E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FD0F49AA1CB6796700C2155E /* TimeFlies-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TimeFlies-Bridging-Header.h"; sourceTree = "<group>"; };
+		FD0F49AD1CB6799F00C2155E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FD15A1E31BAAB1D70048B4D2 /* TimeFlies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeFlies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD15A1EA1BAAB1D70048B4D2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FD15A1EB1BAAB1D70048B4D2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -292,6 +295,7 @@
 				FDDFE14C1BDDD8BF00865CDE /* vc */,
 				FD15A1EA1BAAB1D70048B4D2 /* AppDelegate.h */,
 				FD15A1EB1BAAB1D70048B4D2 /* AppDelegate.m */,
+				FD0F49AA1CB6796700C2155E /* TimeFlies-Bridging-Header.h */,
 			);
 			path = TimeFlies;
 			sourceTree = "<group>";
@@ -515,6 +519,7 @@
 			children = (
 				FDDFE1551BDDD8BF00865CDE /* HomeViewController.h */,
 				FDDFE1561BDDD8BF00865CDE /* HomeViewController.m */,
+				FD0F49AD1CB6799F00C2155E /* HomeViewController.swift */,
 				FD47D4691BDE0076000482A7 /* TimeSelectController.h */,
 				FD47D46A1BDE0076000482A7 /* TimeSelectController.m */,
 			);
@@ -599,6 +604,7 @@
 		FD15A1DB1BAAB1D70048B4D2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "林伟池";
 				TargetAttributes = {
@@ -749,6 +755,7 @@
 				FDDFE1831BDDDA7200865CDE /* BaseModel.m in Sources */,
 				FDDFE1631BDDD8BF00865CDE /* WXUtil.mm in Sources */,
 				FD6C044F1BE8A46C009F056F /* TabbarTransitionLeftAnimation.m in Sources */,
+				FD0F49AE1CB6799F00C2155E /* HomeViewController.swift in Sources */,
 				FD4077681BE89D7000423A93 /* TabbarTransitionRightAnimation.m in Sources */,
 				FD2928821C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.m in Sources */,
 				FDDFE1871BDDDA7200865CDE /* TodoModel.m in Sources */,
@@ -908,6 +915,7 @@
 			baseConfigurationReference = 70F8191E3721DCFC2F9F102E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "TimeFlies/supporting files/TimeFlies.entitlements";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -922,6 +930,8 @@
 				);
 				PRODUCT_NAME = TimeFlies;
 				PROVISIONING_PROFILE = "fc8d3839-703e-4c50-a654-8bf866e71df2";
+				SWIFT_OBJC_BRIDGING_HEADER = "TimeFlies/TimeFlies-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -931,6 +941,7 @@
 			baseConfigurationReference = 2A7EF087E37BFC5C871140F4 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "TimeFlies/supporting files/TimeFlies.entitlements";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -945,6 +956,7 @@
 				);
 				PRODUCT_NAME = TimeFlies;
 				PROVISIONING_PROFILE = "fc8d3839-703e-4c50-a654-8bf866e71df2";
+				SWIFT_OBJC_BRIDGING_HEADER = "TimeFlies/TimeFlies-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

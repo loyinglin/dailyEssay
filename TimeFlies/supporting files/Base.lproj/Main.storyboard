@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -235,7 +235,7 @@
         <!--流光易逝-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="HomeViewController" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="SwiftHomeViewController" customModule="TimeFlies" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -361,12 +361,12 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="流光易逝" image="tab_around_normal.png" id="acW-dT-cKf"/>
                     <connections>
-                        <outlet property="knobPlaceholder" destination="imn-pT-k0m" id="j5c-7x-QEm"/>
                         <outlet property="myBirthDay" destination="awE-rg-tSO" id="Gw3-mL-bbo"/>
                         <outlet property="myDay" destination="dHS-qe-5Jw" id="skn-4T-o5x"/>
                         <outlet property="myDeadDay" destination="Xrx-aM-7WD" id="bRg-qe-BKx"/>
+                        <outlet property="myKnobPlaceholder" destination="imn-pT-k0m" id="Dog-cG-Ns2"/>
                         <outlet property="mySecond" destination="yTV-Dx-pbC" id="3vM-RN-kA9"/>
-                        <outlet property="valueSlider" destination="H0o-KG-jaP" id="9Vh-dp-Ziy"/>
+                        <outlet property="myValueSlider" destination="H0o-KG-jaP" id="aAh-6g-9tJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -377,7 +377,7 @@
                 </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="right" id="PHb-qX-e0H">
                     <connections>
-                        <action selector="onSwipeRigth:" destination="9pv-A4-QxB" id="DBn-ee-cbh"/>
+                        <action selector="onSwipeRight:" destination="9pv-A4-QxB" id="rgU-CL-ogz"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
