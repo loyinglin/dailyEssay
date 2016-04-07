@@ -24,6 +24,23 @@
     //weixin
     [WXApi registerApp:APP_ID withDescription:@"LY日记"];
     
+    
+//    NSShadow *shadow = [[NSShadow alloc] init];
+//    shadow.shadowOffset = CGSizeMake(0.0, 1.0);
+//    shadow.shadowColor = [UIColor whiteColor];
+//    
+//    [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UINavigationBar class]]]
+//     setTitleTextAttributes:
+//     @{NSForegroundColorAttributeName:[UIColor blackColor],
+//       NSShadowAttributeName:shadow,
+//       NSFontAttributeName:[UIFont boldSystemFontOfSize:14.0]
+//       }
+//     forState:UIControlStateNormal];
+    
+    [[UIBarButtonItem appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14], NSForegroundColorAttributeName:[UIColor blackColor]} forState:UIControlStateNormal];
+//    [[UIBarButtonItem appearance] setTintColor:[UIColor blackColor]];
+//    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:[UIImage imageNamed:@"write"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+
     return YES;
 }
 

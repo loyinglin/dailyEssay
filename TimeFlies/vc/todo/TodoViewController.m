@@ -1,3 +1,4 @@
+
 //
 //  ThreeViewController.m
 //  testTabbarController
@@ -9,6 +10,7 @@
 #import "TodoViewController.h"
 #import "TodoDetailController.h"
 #import "TodoCollectionViewCell.h"
+#import "UIViewController+TimeFliesNavigationItem.h"
 #import "TodoModel.h"
 
 @interface TodoViewController ()
@@ -25,8 +27,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-//    self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"abc" image:[UIImage imageNamed:@"first"] selectedImage:[UIImage imageNamed:@"second"]];
-    
     __weak typeof(self) controller = self;
     [[NSNotificationCenter defaultCenter] addObserverForName:@"TodoModelChange" object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
         [controller.myTodos reloadData];
@@ -36,6 +36,8 @@
     [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidChangeStatusBarOrientationNotification object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
         [self.myTodos reloadData];
     }];
+    
+    [self customView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,15 +45,21 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)customView {
+//    [self lySetupRightItem];
+    
+//    UIBarButtonItem* item = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"back", nil) style:UIBarButtonItemStylePlain target:nil action:nil];
+//
+//    [item setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14], NSForegroundColorAttributeName:[UIColor whiteColor]} forState:UIControlStateNormal];
+//    
+//    self.navigationItem.backBarButtonItem = item;
+    
+//    [item setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14], NSForegroundColorAttributeName:[UIColor blackColor]} forState:UIControlStateNormal];
+//    
+//    
+//    self.navigationItem.backBarButtonItem = item;
+    
 }
-*/
 
 #pragma mark - view init
 

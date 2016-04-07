@@ -17,9 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-//    self.tabBar.hidden = YES;
+    self.tabBar.hidden = YES;
 
 //    [self setSelectedIndex:3];
+//    self.tabBar.tintColor = [UIColor darkGrayColor];
 
 }
 

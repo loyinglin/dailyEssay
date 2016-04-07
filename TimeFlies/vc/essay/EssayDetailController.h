@@ -19,6 +19,8 @@
 
 @property (nonatomic , strong) IBOutlet UIButton* shareToFavorite;
 
+@property (nonatomic , strong) IBOutlet UIButton*   attachButton;
+
 @property (nonatomic) long index;
 
 @end

@@ -16,3 +16,7 @@
 7，icloud 同步设置；
 
 8，闭包(Block)导致循环引用问题；
+
+
+2015年11月21日
+引入ReactiveCocoa

@@ -11,8 +11,8 @@
 /* Class = "UILabel"; text = "我是猪"; ObjectID = "3Px-w5-ukU"; */
 "3Px-w5-ukU.text" = "我是猪";
 
-/* Class = "UIButton"; normalTitle = "分享到收藏"; ObjectID = "5mt-V5-QN5"; */
-"5mt-V5-QN5.normalTitle" = "分享到收藏";
+/* Class = "UIButton"; normalTitle = "  分享到收藏  "; ObjectID = "5mt-V5-QN5"; */
+"5mt-V5-QN5.normalTitle" = "  分享到收藏  ";
 
 /* Class = "UITabBarItem"; title = "时过境迁"; ObjectID = "6Y2-b3-aZM"; */
 "6Y2-b3-aZM.title" = "时过境迁";
@@ -23,11 +23,11 @@
 /* Class = "UINavigationItem"; title = "详情"; ObjectID = "BHJ-Qj-ezB"; */
 "BHJ-Qj-ezB.title" = "详情";
 
-/* Class = "UITabBarItem"; title = "时过境迁"; ObjectID = "Fnu-JY-hcc"; */
-"Fnu-JY-hcc.title" = "时过境迁";
-
 /* Class = "UIBarButtonItem"; title = "新建"; ObjectID = "JxY-QA-UZo"; */
 "JxY-QA-UZo.title" = "新建";
+
+/* Class = "UILabel"; text = "生"; ObjectID = "KT6-Aj-wkP"; */
+"KT6-Aj-wkP.text" = "生";
 
 /* Class = "UIButton"; normalTitle = "设置出生日期"; ObjectID = "Kie-du-QWF"; */
 "Kie-du-QWF.normalTitle" = "设置出生日期";
@@ -38,17 +38,17 @@
 /* Class = "UINavigationItem"; title = "详情"; ObjectID = "Oji-7G-07K"; */
 "Oji-7G-07K.title" = "详情";
 
-/* Class = "UIButton"; normalTitle = "分享到朋友圈"; ObjectID = "Qd0-K7-5TL"; */
-"Qd0-K7-5TL.normalTitle" = "分享到朋友圈";
+/* Class = "UILabel"; text = "死"; ObjectID = "Ol8-az-wt4"; */
+"Ol8-az-wt4.text" = "死";
+
+/* Class = "UIButton"; normalTitle = "  分享到朋友圈  "; ObjectID = "Qd0-K7-5TL"; */
+"Qd0-K7-5TL.normalTitle" = "  分享到朋友圈  ";
 
 /* Class = "UIButton"; normalTitle = "固定到时间轴"; ObjectID = "Rlz-l5-yKm"; */
 "Rlz-l5-yKm.normalTitle" = "固定到时间轴";
 
-/* Class = "UILabel"; text = "Label"; ObjectID = "TQx-HK-uUQ"; */
-"TQx-HK-uUQ.text" = "Label";
-
-/* Class = "UIButton"; normalTitle = "删除"; ObjectID = "U7P-km-ck7"; */
-"U7P-km-ck7.normalTitle" = "删除";
+/* Class = "UIButton"; normalTitle = "  删除  "; ObjectID = "U7P-km-ck7"; */
+"U7P-km-ck7.normalTitle" = "  删除  ";
 
 /* Class = "UITabBarItem"; title = "只争朝夕"; ObjectID = "Xog-Ve-ZvY"; */
 "Xog-Ve-ZvY.title" = "只争朝夕";
@@ -77,8 +77,8 @@
 /* Class = "UINavigationItem"; title = "详情"; ObjectID = "eAY-FT-u8t"; */
 "eAY-FT-u8t.title" = "详情";
 
-/* Class = "UILabel"; text = "我是猪"; ObjectID = "f5n-OB-JNs"; */
-"f5n-OB-JNs.text" = "我是猪";
+/* Class = "UILabel"; text = "2015年00月06日"; ObjectID = "f5n-OB-JNs"; */
+"f5n-OB-JNs.text" = "2015年00月06日";
 
 /* Class = "UILabel"; text = "如果这辈子只有70岁"; ObjectID = "iRF-RS-ORF"; */
 "iRF-RS-ORF.text" = "如果这辈子只有70岁";
@@ -89,8 +89,8 @@
 /* Class = "UINavigationItem"; title = "待办事件"; ObjectID = "mkD-vf-3KU"; */
 "mkD-vf-3KU.title" = "待办事件";
 
-/* Class = "UIButton"; normalTitle = "分享到微信"; ObjectID = "nBk-D9-Jer"; */
-"nBk-D9-Jer.normalTitle" = "分享到微信";
+/* Class = "UIButton"; normalTitle = "   分享到微信  "; ObjectID = "nBk-D9-Jer"; */
+"nBk-D9-Jer.normalTitle" = "   分享到微信  ";
 
 /* Class = "UINavigationItem"; title = "我的日记"; ObjectID = "pjv-7C-dEl"; */
 "pjv-7C-dEl.title" = "我的日记";
@@ -104,8 +104,8 @@
 /* Class = "UILabel"; text = "10:44:17"; ObjectID = "yTV-Dx-pbC"; */
 "yTV-Dx-pbC.text" = "10:44:17";
 
-/* Class = "UIButton"; normalTitle = "固定到时间轴"; ObjectID = "ycQ-hW-NYf"; */
-"ycQ-hW-NYf.normalTitle" = "固定到时间轴";
+/* Class = "UIButton"; normalTitle = "  固定到时间轴  "; ObjectID = "ycQ-hW-NYf"; */
+"ycQ-hW-NYf.normalTitle" = "  固定到时间轴  ";
 
 /* Class = "UIBarButtonItem"; title = "保存"; ObjectID = "z85-dR-LF3"; */
 "z85-dR-LF3.title" = "保存";
