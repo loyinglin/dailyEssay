@@ -18,3 +18,5 @@
 #import "EssayModel.h"
 #import "TodoModel.h"
 #import "DoneModel.h"
+
+#import "WeixinShare.h"
