@@ -20,7 +20,7 @@ class SwiftDoneTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NSNotificationCenter.defaultCenter().addObserverForName("DoneModelchange", object: nil, queue: nil) { [unowned self](note) -> Void in
+        NSNotificationCenter.defaultCenter().addObserverForName("DoneModelChange", object: nil, queue: nil) { [unowned self](note) -> Void in
             self.tableView.reloadData()
         }
         
