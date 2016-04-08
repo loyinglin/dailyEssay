@@ -383,10 +383,10 @@
             </objects>
             <point key="canvasLocation" x="-1054" y="-2490"/>
         </scene>
-        <!--Ly Controller-->
+        <!--Swift Time Select Controller-->
         <scene sceneID="odK-wL-fig">
             <objects>
-                <viewController storyboardIdentifier="TimeSelect" extendedLayoutIncludesOpaqueBars="YES" modalTransitionStyle="flipHorizontal" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vUQ-uD-LRS" customClass="TimeSelectController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TimeSelect" extendedLayoutIncludesOpaqueBars="YES" modalTransitionStyle="flipHorizontal" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vUQ-uD-LRS" customClass="SwiftTimeSelectController" customModule="TimeFlies" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ss8-Ua-BmE"/>
                         <viewControllerLayoutGuide type="bottom" id="Ivc-7I-efe"/>
@@ -460,11 +460,6 @@
                         <action selector="onClose:" destination="vUQ-uD-LRS" id="Pgl-Jw-ZNN"/>
                     </connections>
                 </tapGestureRecognizer>
-                <customObject id="eI4-iz-9A6" customClass="UIViewControllerDelegate">
-                    <connections>
-                        <outlet property="lyController" destination="vUQ-uD-LRS" id="vJ7-qN-FH8"/>
-                    </connections>
-                </customObject>
             </objects>
             <point key="canvasLocation" x="-379" y="-2486"/>
         </scene>

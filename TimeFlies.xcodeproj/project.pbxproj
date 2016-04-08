@@ -11,6 +11,7 @@
 		FD0F49AE1CB6799F00C2155E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0F49AD1CB6799F00C2155E /* HomeViewController.swift */; };
 		FD15A1EC1BAAB1D70048B4D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15A1EB1BAAB1D70048B4D2 /* AppDelegate.m */; };
 		FD15A2061BAAB1D70048B4D2 /* TimeFliesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15A2051BAAB1D70048B4D2 /* TimeFliesTests.m */; };
+		FD1DEFC11CB73BE9008AB24C /* TimeSelectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1DEFC01CB73BE9008AB24C /* TimeSelectController.swift */; };
 		FD2928821C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2928811C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.m */; };
 		FD2928851C8688C4001A41F3 /* LYColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2928841C8688C4001A41F3 /* LYColor.m */; };
 		FD2928871C86BE40001A41F3 /* done.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD2928861C86BE40001A41F3 /* done.storyboard */; };
@@ -101,6 +102,7 @@
 		FD15A1FF1BAAB1D70048B4D2 /* TimeFlies.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeFlies.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD15A2041BAAB1D70048B4D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD15A2051BAAB1D70048B4D2 /* TimeFliesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeFliesTests.m; sourceTree = "<group>"; };
+		FD1DEFC01CB73BE9008AB24C /* TimeSelectController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSelectController.swift; sourceTree = "<group>"; };
 		FD2928801C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TimeFliesNavigationItem.h"; sourceTree = "<group>"; };
 		FD2928811C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TimeFliesNavigationItem.m"; sourceTree = "<group>"; };
 		FD2928831C8688C4001A41F3 /* LYColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYColor.h; sourceTree = "<group>"; };
@@ -522,6 +524,7 @@
 				FD0F49AD1CB6799F00C2155E /* HomeViewController.swift */,
 				FD47D4691BDE0076000482A7 /* TimeSelectController.h */,
 				FD47D46A1BDE0076000482A7 /* TimeSelectController.m */,
+				FD1DEFC01CB73BE9008AB24C /* TimeSelectController.swift */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -743,6 +746,7 @@
 				FD47D4681BDDE1C5000482A7 /* TodoCollectionViewCell.m in Sources */,
 				FDDFE16F1BDDD8BF00865CDE /* main.m in Sources */,
 				FDDFE1861BDDDA7200865CDE /* EssayModel.m in Sources */,
+				FD1DEFC11CB73BE9008AB24C /* TimeSelectController.swift in Sources */,
 				FDDFE1711BDDD8BF00865CDE /* EssayTableViewCell.m in Sources */,
 				FDDFE1851BDDDA7200865CDE /* DoneModel.m in Sources */,
 				FDDFE1701BDDD8BF00865CDE /* EssayDetailController.m in Sources */,
