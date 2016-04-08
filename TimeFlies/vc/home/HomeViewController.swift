@@ -105,7 +105,7 @@ class SwiftHomeViewController: UIViewController, ModalViewControllerDelegate {
     }
     
     @IBAction func onSwipeRight(sender: UISwipeGestureRecognizer) {
-        tabBarController?.selectedIndex = 3
+//        tabBarController?.selectedIndex = 3
     }
     
     @IBAction func handleValueChanged(sender: AnyObject) {

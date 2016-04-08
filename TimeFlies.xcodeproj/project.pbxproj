@@ -14,6 +14,7 @@
 		FD1DEFC11CB73BE9008AB24C /* TimeSelectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1DEFC01CB73BE9008AB24C /* TimeSelectController.swift */; };
 		FD1DEFC31CB748F7008AB24C /* EssayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1DEFC21CB748F7008AB24C /* EssayTableViewCell.swift */; };
 		FD1DEFC51CB75158008AB24C /* EssayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1DEFC41CB75158008AB24C /* EssayViewController.swift */; };
+		FD1DEFC71CB7864A008AB24C /* TodoDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1DEFC61CB7864A008AB24C /* TodoDetailController.swift */; };
 		FD2928821C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2928811C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.m */; };
 		FD2928851C8688C4001A41F3 /* LYColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2928841C8688C4001A41F3 /* LYColor.m */; };
 		FD2928871C86BE40001A41F3 /* done.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD2928861C86BE40001A41F3 /* done.storyboard */; };
@@ -107,6 +108,7 @@
 		FD1DEFC01CB73BE9008AB24C /* TimeSelectController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSelectController.swift; sourceTree = "<group>"; };
 		FD1DEFC21CB748F7008AB24C /* EssayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EssayTableViewCell.swift; sourceTree = "<group>"; };
 		FD1DEFC41CB75158008AB24C /* EssayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EssayViewController.swift; sourceTree = "<group>"; };
+		FD1DEFC61CB7864A008AB24C /* TodoDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoDetailController.swift; sourceTree = "<group>"; };
 		FD2928801C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TimeFliesNavigationItem.h"; sourceTree = "<group>"; };
 		FD2928811C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TimeFliesNavigationItem.m"; sourceTree = "<group>"; };
 		FD2928831C8688C4001A41F3 /* LYColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYColor.h; sourceTree = "<group>"; };
@@ -540,6 +542,7 @@
 			children = (
 				FDDFE15D1BDDD8BF00865CDE /* TodoDetailController.h */,
 				FDDFE15E1BDDD8BF00865CDE /* TodoDetailController.m */,
+				FD1DEFC61CB7864A008AB24C /* TodoDetailController.swift */,
 				FDDFE15F1BDDD8BF00865CDE /* TodoViewController.h */,
 				FDDFE1601BDDD8BF00865CDE /* TodoViewController.m */,
 				FD47D4661BDDE1C5000482A7 /* TodoCollectionViewCell.h */,
@@ -763,6 +766,7 @@
 				FDDFE1751BDDD8BF00865CDE /* TestTabBarController.m in Sources */,
 				FD4BB4B31BDF20B500F4AA30 /* DoneDetailController.m in Sources */,
 				FDDFE1611BDDD8BF00865CDE /* ApiXml.mm in Sources */,
+				FD1DEFC71CB7864A008AB24C /* TodoDetailController.swift in Sources */,
 				FDDFE1621BDDD8BF00865CDE /* payRequsestHandler.mm in Sources */,
 				FDDFE1831BDDDA7200865CDE /* BaseModel.m in Sources */,
 				FDDFE1631BDDD8BF00865CDE /* WXUtil.mm in Sources */,

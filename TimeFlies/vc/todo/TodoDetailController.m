@@ -8,8 +8,8 @@
 
 #import "TodoDetailController.h"
 #import "UIViewController+TimeFliesNavigationItem.h"
-#include "TodoModel.h"
-#include "DoneModel.h"
+#import "TodoModel.h"
+#import "DoneModel.h"
 
 @interface TodoDetailController ()
 

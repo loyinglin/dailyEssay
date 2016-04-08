@@ -8,9 +8,9 @@
 //
 
 #import "TodoViewController.h"
-#import "TodoDetailController.h"
 #import "TodoCollectionViewCell.h"
 #import "UIViewController+TimeFliesNavigationItem.h"
+#import "TimeFlies-Swift.h"
 #import "TodoModel.h"
 
 @interface TodoViewController ()
@@ -91,8 +91,8 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if([segue.identifier isEqualToString:const_todo_detail]){
-        TodoDetailController* controller = segue.destinationViewController;
-        controller.index = myDetailIndex;
+        SwiftTodoDetailController* controller = segue.destinationViewController;
+        controller.myIndex = myDetailIndex;
     }
 }
 

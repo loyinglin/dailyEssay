@@ -609,7 +609,7 @@
         <!--详情-->
         <scene sceneID="1g4-uI-Y26">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="zEL-Rg-GHn" customClass="TodoDetailController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="zEL-Rg-GHn" customClass="SwiftTodoDetailController" customModule="TimeFlies" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="v8S-W2-Xzm"/>
                         <viewControllerLayoutGuide type="bottom" id="DIZ-53-C7O"/>
@@ -655,7 +655,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="onDelte:" destination="zEL-Rg-GHn" eventType="touchUpInside" id="PKj-xp-aIN"/>
+                                    <action selector="onDelete:" destination="zEL-Rg-GHn" eventType="touchUpInside" id="fdk-Au-wDo"/>
                                 </connections>
                             </button>
                         </subviews>
