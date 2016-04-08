@@ -27,6 +27,15 @@ class SwiftTimeSelectController: UIViewController {
         
         myDatePicker?.maximumDate = NSDate(timeIntervalSinceNow: 0)
         myDatePicker?.date = HomeModel.instance().getBirthDate()
+        
+
+        //TEST weak strong dance
+        weak var weakSelf = self
+        NSNotificationCenter.defaultCenter().addObserverForName("EssayModelChange", object: nil, queue: nil) { (note) -> Void in
+            let strongSelf = weakSelf
+            print("EssayModalChange is listen \(strongSelf)")
+
+        }
     }
     
     
@@ -36,6 +45,10 @@ class SwiftTimeSelectController: UIViewController {
     
     override func viewDidDisappear(animated: Bool) {
         super.viewDidDisappear(animated)
+    }
+    
+    deinit {
+        print("dealloc \(self)")
     }
     
     //MARK: ui
@@ -51,5 +64,7 @@ class SwiftTimeSelectController: UIViewController {
     @IBAction func onValueChange(sender: NSObject) {
         print("date with \(myDatePicker?.date)")
     }
+    
+    
     
 }

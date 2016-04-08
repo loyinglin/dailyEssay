@@ -82,6 +82,10 @@ class SwiftHomeViewController: UIViewController, ModalViewControllerDelegate {
         super.viewDidAppear(animated)
         
     }
+    
+    deinit {
+        print("dealloc \(self)")
+    }
 
     func addTimer() {
         myTimer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "onTimer:", userInfo: self, repeats: true)

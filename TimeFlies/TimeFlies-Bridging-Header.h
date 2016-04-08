@@ -8,7 +8,7 @@
 #import "HomeModel.h"
 #import "TimeSelectController.h"
 #import "UIViewControllerDelegate.h"
-
-
-//TimeSelectController
+#import "EssayModel.h"
+#import "EssayViewController.h"
+#import "EssayDetailController.h"
 

@@ -12,6 +12,8 @@
 		FD15A1EC1BAAB1D70048B4D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15A1EB1BAAB1D70048B4D2 /* AppDelegate.m */; };
 		FD15A2061BAAB1D70048B4D2 /* TimeFliesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15A2051BAAB1D70048B4D2 /* TimeFliesTests.m */; };
 		FD1DEFC11CB73BE9008AB24C /* TimeSelectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1DEFC01CB73BE9008AB24C /* TimeSelectController.swift */; };
+		FD1DEFC31CB748F7008AB24C /* EssayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1DEFC21CB748F7008AB24C /* EssayTableViewCell.swift */; };
+		FD1DEFC51CB75158008AB24C /* EssayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1DEFC41CB75158008AB24C /* EssayViewController.swift */; };
 		FD2928821C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2928811C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.m */; };
 		FD2928851C8688C4001A41F3 /* LYColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2928841C8688C4001A41F3 /* LYColor.m */; };
 		FD2928871C86BE40001A41F3 /* done.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD2928861C86BE40001A41F3 /* done.storyboard */; };
@@ -103,6 +105,8 @@
 		FD15A2041BAAB1D70048B4D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD15A2051BAAB1D70048B4D2 /* TimeFliesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeFliesTests.m; sourceTree = "<group>"; };
 		FD1DEFC01CB73BE9008AB24C /* TimeSelectController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSelectController.swift; sourceTree = "<group>"; };
+		FD1DEFC21CB748F7008AB24C /* EssayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EssayTableViewCell.swift; sourceTree = "<group>"; };
+		FD1DEFC41CB75158008AB24C /* EssayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EssayViewController.swift; sourceTree = "<group>"; };
 		FD2928801C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TimeFliesNavigationItem.h"; sourceTree = "<group>"; };
 		FD2928811C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TimeFliesNavigationItem.m"; sourceTree = "<group>"; };
 		FD2928831C8688C4001A41F3 /* LYColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYColor.h; sourceTree = "<group>"; };
@@ -510,8 +514,10 @@
 				FDDFE1501BDDD8BF00865CDE /* EssayDetailController.m */,
 				FDDFE1511BDDD8BF00865CDE /* EssayTableViewCell.h */,
 				FDDFE1521BDDD8BF00865CDE /* EssayTableViewCell.m */,
+				FD1DEFC21CB748F7008AB24C /* EssayTableViewCell.swift */,
 				FDDFE1531BDDD8BF00865CDE /* EssayViewController.h */,
 				FDDFE1541BDDD8BF00865CDE /* EssayViewController.m */,
+				FD1DEFC41CB75158008AB24C /* EssayViewController.swift */,
 			);
 			path = essay;
 			sourceTree = "<group>";
@@ -729,6 +735,7 @@
 				FDDFE1721BDDD8BF00865CDE /* EssayViewController.m in Sources */,
 				FD4077211BE46ADC00423A93 /* RWKnobRenderer.m in Sources */,
 				FDDFE1761BDDD8BF00865CDE /* TodoDetailController.m in Sources */,
+				FD1DEFC31CB748F7008AB24C /* EssayTableViewCell.swift in Sources */,
 				FD4077201BE46ADC00423A93 /* RWKnobControl.m in Sources */,
 				FDDFE1841BDDDA7200865CDE /* DataClass.m in Sources */,
 				FD15A1EC1BAAB1D70048B4D2 /* AppDelegate.m in Sources */,
@@ -749,6 +756,7 @@
 				FD1DEFC11CB73BE9008AB24C /* TimeSelectController.swift in Sources */,
 				FDDFE1711BDDD8BF00865CDE /* EssayTableViewCell.m in Sources */,
 				FDDFE1851BDDDA7200865CDE /* DoneModel.m in Sources */,
+				FD1DEFC51CB75158008AB24C /* EssayViewController.swift in Sources */,
 				FDDFE1701BDDD8BF00865CDE /* EssayDetailController.m in Sources */,
 				FD7D9B8E1BEA050A0012B41D /* ModalMoveTransitionAnimation.m in Sources */,
 				FD40776B1BE89E0100423A93 /* TabbarControllerDelegate.m in Sources */,
