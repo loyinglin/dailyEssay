@@ -506,7 +506,7 @@
         <!--three-->
         <scene sceneID="Ci4-B7-nlE">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="H8B-nG-ldt" userLabel="three" customClass="TodoViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="H8B-nG-ldt" userLabel="three" customClass="SwiftTodoViewController" customModule="TimeFlies" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UOR-jm-rzv"/>
                         <viewControllerLayoutGuide type="bottom" id="WAt-NI-y6r"/>
@@ -525,7 +525,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="todo" id="A7r-H7-ix1" customClass="TodoCollectionViewCell">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="todo" id="A7r-H7-ix1" customClass="SwiftTodoCollectionViewCell" customModule="TimeFlies" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -593,12 +593,12 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="igw-o7-IXk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer cancelsTouchesInView="NO" direction="left" id="E1w-d5-5HI">
+                <swipeGestureRecognizer cancelsTouchesInView="NO" direction="left" id="E1w-d5-5HI" userLabel="left">
                     <connections>
                         <action selector="onSwipeLeft:" destination="H8B-nG-ldt" id="ckV-l0-a1r"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="right" id="xvK-b0-Jxc">
+                <swipeGestureRecognizer direction="right" id="xvK-b0-Jxc" userLabel="right">
                     <connections>
                         <action selector="onSwipeRight:" destination="H8B-nG-ldt" id="F6F-xD-Esj"/>
                     </connections>

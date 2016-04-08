@@ -144,7 +144,7 @@
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     CGSize size = CGSizeZero;
-    
+//    UICollectionViewFlowLayout
     size.width = (long)[[UIScreen mainScreen] bounds].size.width / 3 - 1;
     
     size.height = 100;

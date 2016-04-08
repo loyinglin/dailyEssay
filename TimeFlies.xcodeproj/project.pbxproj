@@ -15,6 +15,8 @@
 		FD1DEFC31CB748F7008AB24C /* EssayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1DEFC21CB748F7008AB24C /* EssayTableViewCell.swift */; };
 		FD1DEFC51CB75158008AB24C /* EssayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1DEFC41CB75158008AB24C /* EssayViewController.swift */; };
 		FD1DEFC71CB7864A008AB24C /* TodoDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1DEFC61CB7864A008AB24C /* TodoDetailController.swift */; };
+		FD1DEFC91CB794D5008AB24C /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1DEFC81CB794D5008AB24C /* TodoViewController.swift */; };
+		FD1DEFCB1CB7951B008AB24C /* TodoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1DEFCA1CB7951B008AB24C /* TodoCollectionViewCell.swift */; };
 		FD2928821C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2928811C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.m */; };
 		FD2928851C8688C4001A41F3 /* LYColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2928841C8688C4001A41F3 /* LYColor.m */; };
 		FD2928871C86BE40001A41F3 /* done.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD2928861C86BE40001A41F3 /* done.storyboard */; };
@@ -109,6 +111,8 @@
 		FD1DEFC21CB748F7008AB24C /* EssayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EssayTableViewCell.swift; sourceTree = "<group>"; };
 		FD1DEFC41CB75158008AB24C /* EssayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EssayViewController.swift; sourceTree = "<group>"; };
 		FD1DEFC61CB7864A008AB24C /* TodoDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoDetailController.swift; sourceTree = "<group>"; };
+		FD1DEFC81CB794D5008AB24C /* TodoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
+		FD1DEFCA1CB7951B008AB24C /* TodoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoCollectionViewCell.swift; sourceTree = "<group>"; };
 		FD2928801C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TimeFliesNavigationItem.h"; sourceTree = "<group>"; };
 		FD2928811C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TimeFliesNavigationItem.m"; sourceTree = "<group>"; };
 		FD2928831C8688C4001A41F3 /* LYColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYColor.h; sourceTree = "<group>"; };
@@ -545,8 +549,10 @@
 				FD1DEFC61CB7864A008AB24C /* TodoDetailController.swift */,
 				FDDFE15F1BDDD8BF00865CDE /* TodoViewController.h */,
 				FDDFE1601BDDD8BF00865CDE /* TodoViewController.m */,
+				FD1DEFC81CB794D5008AB24C /* TodoViewController.swift */,
 				FD47D4661BDDE1C5000482A7 /* TodoCollectionViewCell.h */,
 				FD47D4671BDDE1C5000482A7 /* TodoCollectionViewCell.m */,
+				FD1DEFCA1CB7951B008AB24C /* TodoCollectionViewCell.swift */,
 			);
 			path = todo;
 			sourceTree = "<group>";
@@ -773,8 +779,10 @@
 				FD6C044F1BE8A46C009F056F /* TabbarTransitionLeftAnimation.m in Sources */,
 				FD0F49AE1CB6799F00C2155E /* HomeViewController.swift in Sources */,
 				FD4077681BE89D7000423A93 /* TabbarTransitionRightAnimation.m in Sources */,
+				FD1DEFCB1CB7951B008AB24C /* TodoCollectionViewCell.swift in Sources */,
 				FD2928821C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.m in Sources */,
 				FDDFE1871BDDDA7200865CDE /* TodoModel.m in Sources */,
+				FD1DEFC91CB794D5008AB24C /* TodoViewController.swift in Sources */,
 				FD4077221BE46ADC00423A93 /* RWRotationGestureRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
