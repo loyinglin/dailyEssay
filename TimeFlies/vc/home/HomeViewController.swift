@@ -82,6 +82,10 @@ class SwiftHomeViewController: UIViewController, ModalViewControllerDelegate {
         super.viewDidAppear(animated)
         
     }
+    
+    deinit {
+        print("dealloc \(self)")
+    }
 
     func addTimer() {
         myTimer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "onTimer:", userInfo: self, repeats: true)
@@ -101,7 +105,7 @@ class SwiftHomeViewController: UIViewController, ModalViewControllerDelegate {
     }
     
     @IBAction func onSwipeRight(sender: UISwipeGestureRecognizer) {
-        tabBarController?.selectedIndex = 3
+//        tabBarController?.selectedIndex = 3
     }
     
     @IBAction func handleValueChanged(sender: AnyObject) {

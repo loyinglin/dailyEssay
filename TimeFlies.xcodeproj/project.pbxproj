@@ -11,6 +11,15 @@
 		FD0F49AE1CB6799F00C2155E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0F49AD1CB6799F00C2155E /* HomeViewController.swift */; };
 		FD15A1EC1BAAB1D70048B4D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15A1EB1BAAB1D70048B4D2 /* AppDelegate.m */; };
 		FD15A2061BAAB1D70048B4D2 /* TimeFliesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15A2051BAAB1D70048B4D2 /* TimeFliesTests.m */; };
+		FD1DEFC11CB73BE9008AB24C /* TimeSelectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1DEFC01CB73BE9008AB24C /* TimeSelectController.swift */; };
+		FD1DEFC31CB748F7008AB24C /* EssayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1DEFC21CB748F7008AB24C /* EssayTableViewCell.swift */; };
+		FD1DEFC51CB75158008AB24C /* EssayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1DEFC41CB75158008AB24C /* EssayViewController.swift */; };
+		FD1DEFC71CB7864A008AB24C /* TodoDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1DEFC61CB7864A008AB24C /* TodoDetailController.swift */; };
+		FD1DEFC91CB794D5008AB24C /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1DEFC81CB794D5008AB24C /* TodoViewController.swift */; };
+		FD1DEFCB1CB7951B008AB24C /* TodoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1DEFCA1CB7951B008AB24C /* TodoCollectionViewCell.swift */; };
+		FD1DEFCD1CB7A250008AB24C /* DoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1DEFCC1CB7A250008AB24C /* DoneTableViewCell.swift */; };
+		FD1DEFCF1CB7A387008AB24C /* DoneDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1DEFCE1CB7A387008AB24C /* DoneDetailController.swift */; };
+		FD1DEFD11CB7A441008AB24C /* DoneTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1DEFD01CB7A441008AB24C /* DoneTableViewController.swift */; };
 		FD2928821C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2928811C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.m */; };
 		FD2928851C8688C4001A41F3 /* LYColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2928841C8688C4001A41F3 /* LYColor.m */; };
 		FD2928871C86BE40001A41F3 /* done.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD2928861C86BE40001A41F3 /* done.storyboard */; };
@@ -101,6 +110,15 @@
 		FD15A1FF1BAAB1D70048B4D2 /* TimeFlies.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeFlies.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD15A2041BAAB1D70048B4D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD15A2051BAAB1D70048B4D2 /* TimeFliesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeFliesTests.m; sourceTree = "<group>"; };
+		FD1DEFC01CB73BE9008AB24C /* TimeSelectController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSelectController.swift; sourceTree = "<group>"; };
+		FD1DEFC21CB748F7008AB24C /* EssayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EssayTableViewCell.swift; sourceTree = "<group>"; };
+		FD1DEFC41CB75158008AB24C /* EssayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EssayViewController.swift; sourceTree = "<group>"; };
+		FD1DEFC61CB7864A008AB24C /* TodoDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoDetailController.swift; sourceTree = "<group>"; };
+		FD1DEFC81CB794D5008AB24C /* TodoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
+		FD1DEFCA1CB7951B008AB24C /* TodoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoCollectionViewCell.swift; sourceTree = "<group>"; };
+		FD1DEFCC1CB7A250008AB24C /* DoneTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneTableViewCell.swift; sourceTree = "<group>"; };
+		FD1DEFCE1CB7A387008AB24C /* DoneDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneDetailController.swift; sourceTree = "<group>"; };
+		FD1DEFD01CB7A441008AB24C /* DoneTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneTableViewController.swift; sourceTree = "<group>"; };
 		FD2928801C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TimeFliesNavigationItem.h"; sourceTree = "<group>"; };
 		FD2928811C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TimeFliesNavigationItem.m"; sourceTree = "<group>"; };
 		FD2928831C8688C4001A41F3 /* LYColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYColor.h; sourceTree = "<group>"; };
@@ -493,10 +511,13 @@
 			children = (
 				FD47D46C1BDE0AEB000482A7 /* DoneTableViewController.h */,
 				FD47D46D1BDE0AEB000482A7 /* DoneTableViewController.m */,
+				FD1DEFD01CB7A441008AB24C /* DoneTableViewController.swift */,
 				FD4BB4B11BDF20B500F4AA30 /* DoneDetailController.h */,
 				FD4BB4B21BDF20B500F4AA30 /* DoneDetailController.m */,
+				FD1DEFCE1CB7A387008AB24C /* DoneDetailController.swift */,
 				FD47D46F1BDE0B72000482A7 /* DoneTableViewCell.h */,
 				FD47D4701BDE0B72000482A7 /* DoneTableViewCell.m */,
+				FD1DEFCC1CB7A250008AB24C /* DoneTableViewCell.swift */,
 			);
 			path = done;
 			sourceTree = "<group>";
@@ -508,8 +529,10 @@
 				FDDFE1501BDDD8BF00865CDE /* EssayDetailController.m */,
 				FDDFE1511BDDD8BF00865CDE /* EssayTableViewCell.h */,
 				FDDFE1521BDDD8BF00865CDE /* EssayTableViewCell.m */,
+				FD1DEFC21CB748F7008AB24C /* EssayTableViewCell.swift */,
 				FDDFE1531BDDD8BF00865CDE /* EssayViewController.h */,
 				FDDFE1541BDDD8BF00865CDE /* EssayViewController.m */,
+				FD1DEFC41CB75158008AB24C /* EssayViewController.swift */,
 			);
 			path = essay;
 			sourceTree = "<group>";
@@ -522,6 +545,7 @@
 				FD0F49AD1CB6799F00C2155E /* HomeViewController.swift */,
 				FD47D4691BDE0076000482A7 /* TimeSelectController.h */,
 				FD47D46A1BDE0076000482A7 /* TimeSelectController.m */,
+				FD1DEFC01CB73BE9008AB24C /* TimeSelectController.swift */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -531,10 +555,13 @@
 			children = (
 				FDDFE15D1BDDD8BF00865CDE /* TodoDetailController.h */,
 				FDDFE15E1BDDD8BF00865CDE /* TodoDetailController.m */,
+				FD1DEFC61CB7864A008AB24C /* TodoDetailController.swift */,
 				FDDFE15F1BDDD8BF00865CDE /* TodoViewController.h */,
 				FDDFE1601BDDD8BF00865CDE /* TodoViewController.m */,
+				FD1DEFC81CB794D5008AB24C /* TodoViewController.swift */,
 				FD47D4661BDDE1C5000482A7 /* TodoCollectionViewCell.h */,
 				FD47D4671BDDE1C5000482A7 /* TodoCollectionViewCell.m */,
+				FD1DEFCA1CB7951B008AB24C /* TodoCollectionViewCell.swift */,
 			);
 			path = todo;
 			sourceTree = "<group>";
@@ -605,7 +632,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "林伟池";
 				TargetAttributes = {
 					FD15A1E21BAAB1D70048B4D2 = {
@@ -726,7 +753,9 @@
 				FDDFE1721BDDD8BF00865CDE /* EssayViewController.m in Sources */,
 				FD4077211BE46ADC00423A93 /* RWKnobRenderer.m in Sources */,
 				FDDFE1761BDDD8BF00865CDE /* TodoDetailController.m in Sources */,
+				FD1DEFC31CB748F7008AB24C /* EssayTableViewCell.swift in Sources */,
 				FD4077201BE46ADC00423A93 /* RWKnobControl.m in Sources */,
+				FD1DEFCF1CB7A387008AB24C /* DoneDetailController.swift in Sources */,
 				FDDFE1841BDDDA7200865CDE /* DataClass.m in Sources */,
 				FD15A1EC1BAAB1D70048B4D2 /* AppDelegate.m in Sources */,
 				FDDFE1731BDDD8BF00865CDE /* HomeViewController.m in Sources */,
@@ -736,6 +765,7 @@
 				FD7D9B911BEA054D0012B41D /* ModalInterActiveTransitionAnimation.m in Sources */,
 				FDA7FBD01BE99F400005C4DC /* NavigationTransitionAnimation.m in Sources */,
 				FD2928851C8688C4001A41F3 /* LYColor.m in Sources */,
+				FD1DEFD11CB7A441008AB24C /* DoneTableViewController.swift in Sources */,
 				FD47D46E1BDE0AEB000482A7 /* DoneTableViewController.m in Sources */,
 				FD47D46B1BDE0076000482A7 /* TimeSelectController.m in Sources */,
 				FD7D9B881BE9FDED0012B41D /* ModalTransitionAnimation.m in Sources */,
@@ -743,22 +773,28 @@
 				FD47D4681BDDE1C5000482A7 /* TodoCollectionViewCell.m in Sources */,
 				FDDFE16F1BDDD8BF00865CDE /* main.m in Sources */,
 				FDDFE1861BDDDA7200865CDE /* EssayModel.m in Sources */,
+				FD1DEFC11CB73BE9008AB24C /* TimeSelectController.swift in Sources */,
 				FDDFE1711BDDD8BF00865CDE /* EssayTableViewCell.m in Sources */,
 				FDDFE1851BDDDA7200865CDE /* DoneModel.m in Sources */,
+				FD1DEFC51CB75158008AB24C /* EssayViewController.swift in Sources */,
 				FDDFE1701BDDD8BF00865CDE /* EssayDetailController.m in Sources */,
 				FD7D9B8E1BEA050A0012B41D /* ModalMoveTransitionAnimation.m in Sources */,
 				FD40776B1BE89E0100423A93 /* TabbarControllerDelegate.m in Sources */,
 				FDDFE1751BDDD8BF00865CDE /* TestTabBarController.m in Sources */,
 				FD4BB4B31BDF20B500F4AA30 /* DoneDetailController.m in Sources */,
 				FDDFE1611BDDD8BF00865CDE /* ApiXml.mm in Sources */,
+				FD1DEFC71CB7864A008AB24C /* TodoDetailController.swift in Sources */,
 				FDDFE1621BDDD8BF00865CDE /* payRequsestHandler.mm in Sources */,
 				FDDFE1831BDDDA7200865CDE /* BaseModel.m in Sources */,
 				FDDFE1631BDDD8BF00865CDE /* WXUtil.mm in Sources */,
 				FD6C044F1BE8A46C009F056F /* TabbarTransitionLeftAnimation.m in Sources */,
 				FD0F49AE1CB6799F00C2155E /* HomeViewController.swift in Sources */,
 				FD4077681BE89D7000423A93 /* TabbarTransitionRightAnimation.m in Sources */,
+				FD1DEFCB1CB7951B008AB24C /* TodoCollectionViewCell.swift in Sources */,
+				FD1DEFCD1CB7A250008AB24C /* DoneTableViewCell.swift in Sources */,
 				FD2928821C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.m in Sources */,
 				FDDFE1871BDDDA7200865CDE /* TodoModel.m in Sources */,
+				FD1DEFC91CB794D5008AB24C /* TodoViewController.swift in Sources */,
 				FD4077221BE46ADC00423A93 /* RWRotationGestureRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -848,6 +884,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -926,8 +963,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TimeFlies/extension/weixin/SDKExport",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "loying.lin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = TimeFlies;
 				PROVISIONING_PROFILE = "fc8d3839-703e-4c50-a654-8bf866e71df2";
 				SWIFT_OBJC_BRIDGING_HEADER = "TimeFlies/TimeFlies-Bridging-Header.h";
@@ -952,8 +989,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TimeFlies/extension/weixin/SDKExport",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "loying.lin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = TimeFlies;
 				PROVISIONING_PROFILE = "fc8d3839-703e-4c50-a654-8bf866e71df2";
 				SWIFT_OBJC_BRIDGING_HEADER = "TimeFlies/TimeFlies-Bridging-Header.h";
@@ -975,6 +1012,7 @@
 				);
 				INFOPLIST_FILE = TimeFliesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "loying.lin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = TimeFlies;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeFlies.app/TimeFlies";
 			};
@@ -990,6 +1028,7 @@
 				);
 				INFOPLIST_FILE = TimeFliesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "loying.lin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = TimeFlies;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeFlies.app/TimeFlies";
 			};

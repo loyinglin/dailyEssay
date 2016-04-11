@@ -9,6 +9,7 @@
 #import "EssayViewController.h"
 #import "EssayDetailController.h"
 #import "EssayTableViewCell.h"
+#import "TimeFlies-Swift.h"
 #import "EssayModel.h"
 
 #define open_str @"open_essay_detail_board"
@@ -159,11 +160,11 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    EssayTableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"detail" forIndexPath:indexPath];
+    SwiftEssayTableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"detail" forIndexPath:indexPath];
     
     Essay* essay = [[EssayModel instance] getEssayByIndex:indexPath.row];
     
-    [cell viewInitWithText:essay.text Time:essay.time];
+    [cell viewInitWithText:essay.text time:essay.time];
     
     return cell;
 }

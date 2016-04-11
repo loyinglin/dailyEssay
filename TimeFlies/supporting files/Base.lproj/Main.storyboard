@@ -8,14 +8,14 @@
         <!--记录-->
         <scene sceneID="PbJ-zM-nfx">
             <objects>
-                <tableViewController title="记录" id="x1H-bL-wyH" customClass="EssayViewController" sceneMemberID="viewController">
+                <tableViewController title="记录" id="x1H-bL-wyH" customClass="SwiftEssayViewController" customModule="TimeFlies" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="128" sectionHeaderHeight="28" sectionFooterHeight="28" id="K2n-An-5Ih">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="detail" rowHeight="128" id="svd-g5-q3l" customClass="EssayTableViewCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="detail" rowHeight="128" id="svd-g5-q3l" customClass="SwiftEssayTableViewCell" customModule="TimeFlies" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="128"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="svd-g5-q3l" id="jec-bn-Xf9">
@@ -56,8 +56,8 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <outlet property="text" destination="YGI-cA-mPO" id="LG7-1Q-aVD"/>
-                                    <outlet property="time" destination="MUb-o6-lkb" id="a0T-78-MQa"/>
+                                    <outlet property="myText" destination="YGI-cA-mPO" id="00o-0D-dtH"/>
+                                    <outlet property="myTime" destination="MUb-o6-lkb" id="N81-Tl-rJ1"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -80,12 +80,12 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UfZ-bu-aXW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="I1S-iS-PmY">
+                <swipeGestureRecognizer direction="left" id="I1S-iS-PmY" userLabel="left">
                     <connections>
                         <action selector="onSwipeLeft:" destination="x1H-bL-wyH" id="7dN-yi-MtV"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="right" id="Onc-3T-8qJ">
+                <swipeGestureRecognizer direction="right" id="Onc-3T-8qJ" userLabel="right">
                     <connections>
                         <action selector="onSwipeRight:" destination="x1H-bL-wyH" id="GwY-Sa-mko"/>
                     </connections>
@@ -383,10 +383,10 @@
             </objects>
             <point key="canvasLocation" x="-1054" y="-2490"/>
         </scene>
-        <!--Ly Controller-->
+        <!--Swift Time Select Controller-->
         <scene sceneID="odK-wL-fig">
             <objects>
-                <viewController storyboardIdentifier="TimeSelect" extendedLayoutIncludesOpaqueBars="YES" modalTransitionStyle="flipHorizontal" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vUQ-uD-LRS" customClass="TimeSelectController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TimeSelect" extendedLayoutIncludesOpaqueBars="YES" modalTransitionStyle="flipHorizontal" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vUQ-uD-LRS" customClass="SwiftTimeSelectController" customModule="TimeFlies" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ss8-Ua-BmE"/>
                         <viewControllerLayoutGuide type="bottom" id="Ivc-7I-efe"/>
@@ -460,11 +460,6 @@
                         <action selector="onClose:" destination="vUQ-uD-LRS" id="Pgl-Jw-ZNN"/>
                     </connections>
                 </tapGestureRecognizer>
-                <customObject id="eI4-iz-9A6" customClass="UIViewControllerDelegate">
-                    <connections>
-                        <outlet property="lyController" destination="vUQ-uD-LRS" id="vJ7-qN-FH8"/>
-                    </connections>
-                </customObject>
             </objects>
             <point key="canvasLocation" x="-379" y="-2486"/>
         </scene>
@@ -511,7 +506,7 @@
         <!--three-->
         <scene sceneID="Ci4-B7-nlE">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="H8B-nG-ldt" userLabel="three" customClass="TodoViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="H8B-nG-ldt" userLabel="three" customClass="SwiftTodoViewController" customModule="TimeFlies" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UOR-jm-rzv"/>
                         <viewControllerLayoutGuide type="bottom" id="WAt-NI-y6r"/>
@@ -530,7 +525,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="todo" id="A7r-H7-ix1" customClass="TodoCollectionViewCell">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="todo" id="A7r-H7-ix1" customClass="SwiftTodoCollectionViewCell" customModule="TimeFlies" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -598,12 +593,12 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="igw-o7-IXk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer cancelsTouchesInView="NO" direction="left" id="E1w-d5-5HI">
+                <swipeGestureRecognizer cancelsTouchesInView="NO" direction="left" id="E1w-d5-5HI" userLabel="left">
                     <connections>
                         <action selector="onSwipeLeft:" destination="H8B-nG-ldt" id="ckV-l0-a1r"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="right" id="xvK-b0-Jxc">
+                <swipeGestureRecognizer direction="right" id="xvK-b0-Jxc" userLabel="right">
                     <connections>
                         <action selector="onSwipeRight:" destination="H8B-nG-ldt" id="F6F-xD-Esj"/>
                     </connections>
@@ -614,7 +609,7 @@
         <!--详情-->
         <scene sceneID="1g4-uI-Y26">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="zEL-Rg-GHn" customClass="TodoDetailController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="zEL-Rg-GHn" customClass="SwiftTodoDetailController" customModule="TimeFlies" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="v8S-W2-Xzm"/>
                         <viewControllerLayoutGuide type="bottom" id="DIZ-53-C7O"/>
@@ -660,7 +655,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="onDelte:" destination="zEL-Rg-GHn" eventType="touchUpInside" id="PKj-xp-aIN"/>
+                                    <action selector="onDelete:" destination="zEL-Rg-GHn" eventType="touchUpInside" id="fdk-Au-wDo"/>
                                 </connections>
                             </button>
                         </subviews>
