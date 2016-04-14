@@ -7,10 +7,12 @@
 //
 
 #import "EssayModel.h"
+#import "sqlService.h"
 
 @implementation EssayModel
 {
     NSMutableArray<Essay*>* myEssays;
+    sqlService* mySqlService;
 }
 
 #define lyCloud @"iCloud.loying.lin.TimeFlies"
@@ -35,7 +37,7 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyValueStoreChange:) name:NSUbiquitousKeyValueStoreDidChangeExternallyNotification object:nil];
     
-    
+    mySqlService = [[sqlService alloc] init];
     [self loadCache];
     
     return self;
@@ -49,6 +51,10 @@
         myEssays = [NSKeyedUnarchiver unarchiveObjectWithData:data];
     }
     
+    NSArray* array = [mySqlService getTestList];
+    for (sqlTestList* item in array) {
+        NSLog(@"ID:%d TEXT:%@ NAME:%@", item.sqlID, item.sqlText, item.sqlname);
+    }
 //    NSData* data = [[NSUbiquitousKeyValueStore defaultStore] objectForKey:[[self class] description]];
 //    if (data) {
 //
@@ -95,7 +101,7 @@
 //    for (int i = 13; i > 0; --i) {
 //        text = [text stringByAppendingString:text];
 //    }
-    
+    [mySqlService insertTestList:[[sqlTestList alloc] initWithID:0 Text:text Name:@"loying"]];
     Essay* item = [Essay new];
     item.text = text;
     item.time = [[NSDate alloc] initWithTimeIntervalSinceNow:0];

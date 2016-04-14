@@ -20,6 +20,7 @@
 		FD1DEFCD1CB7A250008AB24C /* DoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1DEFCC1CB7A250008AB24C /* DoneTableViewCell.swift */; };
 		FD1DEFCF1CB7A387008AB24C /* DoneDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1DEFCE1CB7A387008AB24C /* DoneDetailController.swift */; };
 		FD1DEFD11CB7A441008AB24C /* DoneTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1DEFD01CB7A441008AB24C /* DoneTableViewController.swift */; };
+		FD1DF0451CBF3CB2008AB24C /* sqlService.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1DF0441CBF3CB2008AB24C /* sqlService.m */; };
 		FD2928821C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2928811C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.m */; };
 		FD2928851C8688C4001A41F3 /* LYColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2928841C8688C4001A41F3 /* LYColor.m */; };
 		FD2928871C86BE40001A41F3 /* done.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD2928861C86BE40001A41F3 /* done.storyboard */; };
@@ -119,6 +120,8 @@
 		FD1DEFCC1CB7A250008AB24C /* DoneTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneTableViewCell.swift; sourceTree = "<group>"; };
 		FD1DEFCE1CB7A387008AB24C /* DoneDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneDetailController.swift; sourceTree = "<group>"; };
 		FD1DEFD01CB7A441008AB24C /* DoneTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneTableViewController.swift; sourceTree = "<group>"; };
+		FD1DF0431CBF3CB2008AB24C /* sqlService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sqlService.h; path = sql/sqlService.h; sourceTree = "<group>"; };
+		FD1DF0441CBF3CB2008AB24C /* sqlService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = sqlService.m; path = sql/sqlService.m; sourceTree = "<group>"; };
 		FD2928801C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TimeFliesNavigationItem.h"; sourceTree = "<group>"; };
 		FD2928811C86886E001A41F3 /* UIViewController+TimeFliesNavigationItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TimeFliesNavigationItem.m"; sourceTree = "<group>"; };
 		FD2928831C8688C4001A41F3 /* LYColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYColor.h; sourceTree = "<group>"; };
@@ -281,10 +284,7 @@
 		FD15A1DA1BAAB1D70048B4D2 = {
 			isa = PBXGroup;
 			children = (
-				FDDFE11E1BDCE58B00865CDE /* SystemConfiguration.framework */,
-				FDDFE11C1BDCE57D00865CDE /* UIKit.framework */,
-				FDDFE11A1BDCE54A00865CDE /* libsqlite3.0.tbd */,
-				FDDFE1181BDCE53200865CDE /* libz.tbd */,
+				FD1DF03F1CBF3ADF008AB24C /* framework */,
 				FD15A1E51BAAB1D70048B4D2 /* TimeFlies */,
 				FD15A2021BAAB1D70048B4D2 /* TimeFliesTests */,
 				FD15A1E41BAAB1D70048B4D2 /* Products */,
@@ -333,6 +333,26 @@
 				FD15A2041BAAB1D70048B4D2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD1DF03F1CBF3ADF008AB24C /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				FDDFE11E1BDCE58B00865CDE /* SystemConfiguration.framework */,
+				FDDFE11C1BDCE57D00865CDE /* UIKit.framework */,
+				FDDFE11A1BDCE54A00865CDE /* libsqlite3.0.tbd */,
+				FDDFE1181BDCE53200865CDE /* libz.tbd */,
+			);
+			name = framework;
+			sourceTree = "<group>";
+		};
+		FD1DF0401CBF3C63008AB24C /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				FD1DF0431CBF3CB2008AB24C /* sqlService.h */,
+				FD1DF0441CBF3CB2008AB24C /* sqlService.m */,
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 		FD29287F1C868839001A41F3 /* base */ = {
@@ -569,6 +589,7 @@
 		FDDFE1781BDDDA7200865CDE /* model */ = {
 			isa = PBXGroup;
 			children = (
+				FD1DF0401CBF3C63008AB24C /* New Group */,
 				FDDFE1791BDDDA7200865CDE /* BaseModel.h */,
 				FDDFE17A1BDDDA7200865CDE /* BaseModel.m */,
 				FDDFE17B1BDDDA7200865CDE /* DataClass.h */,
@@ -778,6 +799,7 @@
 				FDDFE1851BDDDA7200865CDE /* DoneModel.m in Sources */,
 				FD1DEFC51CB75158008AB24C /* EssayViewController.swift in Sources */,
 				FDDFE1701BDDD8BF00865CDE /* EssayDetailController.m in Sources */,
+				FD1DF0451CBF3CB2008AB24C /* sqlService.m in Sources */,
 				FD7D9B8E1BEA050A0012B41D /* ModalMoveTransitionAnimation.m in Sources */,
 				FD40776B1BE89E0100423A93 /* TabbarControllerDelegate.m in Sources */,
 				FDDFE1751BDDD8BF00865CDE /* TestTabBarController.m in Sources */,
