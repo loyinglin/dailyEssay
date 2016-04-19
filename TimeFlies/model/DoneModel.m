@@ -7,6 +7,7 @@
 //
 
 #import "DoneModel.h"
+#import <ReactiveCocoa.h>
 
 @implementation DoneModel
 {
@@ -144,6 +145,15 @@
     if (index >= 0 && index < [self getDoneCounts]) {
         ret = myPassThings[index];
     }
+    [[[myPassThings.rac_sequence filter:^BOOL(id value) {
+        return YES;
+    }] map:^id(PassThing* item) {
+        NSLog(@"item %@", item.text);
+        return item;
+    }] array];
+    
+//    RACTargetQueueScheduler 
+    
     return ret;
 }
 
