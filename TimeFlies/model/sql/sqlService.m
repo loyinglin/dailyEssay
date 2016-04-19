@@ -108,7 +108,6 @@
         NSLog(@"Error: failed to dehydrate:create table test");
         return NO;
     }
-    NSLog(@"Create table 'testTable' successed.");
     return YES;
 }
 
