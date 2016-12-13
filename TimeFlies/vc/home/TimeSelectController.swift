@@ -12,7 +12,7 @@ import Foundation
  
 */
 protocol SwiftModalViewControllerDelegate {
-    func dismissViewController(controller: SwiftTimeSelectController)
+    func dismissViewController(_ controller: SwiftTimeSelectController)
 }
 
 class SwiftTimeSelectController: UIViewController {
@@ -25,13 +25,13 @@ class SwiftTimeSelectController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        myDatePicker?.maximumDate = NSDate(timeIntervalSinceNow: 0)
+        myDatePicker?.maximumDate = Date(timeIntervalSinceNow: 0)
         myDatePicker?.date = HomeModel.instance().getBirthDate()
         
 
         //TEST weak strong dance
         weak var weakSelf = self
-        NSNotificationCenter.defaultCenter().addObserverForName("EssayModelChange", object: nil, queue: nil) { (note) -> Void in
+        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "EssayModelChange"), object: nil, queue: nil) { (note) -> Void in
             let strongSelf = weakSelf
             print("EssayModalChange is listen \(strongSelf)")
 
@@ -43,7 +43,7 @@ class SwiftTimeSelectController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    override func viewDidDisappear(animated: Bool) {
+    override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
     }
     
@@ -52,16 +52,16 @@ class SwiftTimeSelectController: UIViewController {
     }
     
     //MARK: ui
-    @IBAction func onClose(sender: NSObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func onClose(_ sender: NSObject) {
+        dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func onSave(sender: NSObject) {
+    @IBAction func onSave(_ sender: NSObject) {
         HomeModel.instance().setBirthDate(myDatePicker?.date)
         onClose(sender)
     }
     
-    @IBAction func onValueChange(sender: NSObject) {
+    @IBAction func onValueChange(_ sender: NSObject) {
         print("date with \(myDatePicker?.date)")
     }
     

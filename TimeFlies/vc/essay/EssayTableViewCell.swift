@@ -14,12 +14,12 @@ class SwiftEssayTableViewCell: UITableViewCell {
     @IBOutlet var myText:UILabel?
     @IBOutlet var myTime:UILabel?
     
-    func viewInitWithText(text:String, time:NSDate) {
+    func viewInitWithText(_ text:String, time:Date) {
         myText?.text = text
-        let dateFormatter = NSDateFormatter()
+        let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = NSLocalizedString("yyyy年MM月dd日 HH:mm:ss", comment: lyCommentDefault)
         
-        myTime?.text = dateFormatter.stringFromDate(time)
+        myTime?.text = dateFormatter.string(from: time)
     }
     
     

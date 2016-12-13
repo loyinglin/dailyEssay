@@ -20,7 +20,7 @@ class SwiftHomeViewController: UIViewController, ModalViewControllerDelegate {
     @IBOutlet var myValueSlider:UISlider?
     @IBOutlet var myKnobPlaceholder:UIView?
     
-    var myTimer:NSTimer?
+    var myTimer:Timer?
     var myKnobControl:RWKnobControl?
     
     
@@ -29,21 +29,21 @@ class SwiftHomeViewController: UIViewController, ModalViewControllerDelegate {
         
         viewInit()
         
-        NSNotificationCenter.defaultCenter().addObserverForName("HomeModalChange", object: nil, queue: nil) { (notify) -> Void in
+        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "HomeModalChange"), object: nil, queue: nil) { (notify) -> Void in
             self.viewInit()
         }
-        onTimer("")
+        onTimer("" as AnyObject)
         myKnobControl = RWKnobControl(frame: self.myKnobPlaceholder!.bounds)
         self.myKnobPlaceholder?.addSubview(myKnobControl!)
         
         myKnobControl?.lineWidth = 4.0
         myKnobControl?.pointerLength = 8.0
         
-        view.tintColor = UIColor.lightGrayColor()
+        view.tintColor = UIColor.lightGray
         
-        myKnobControl?.addObserver(self, forKeyPath: "value", options: .New, context: nil)
+        myKnobControl?.addObserver(self, forKeyPath: "value", options: .new, context: nil)
         
-        myKnobControl?.addTarget(self, action: "handleValueChanged:", forControlEvents: .ValueChanged)
+        myKnobControl?.addTarget(self, action: #selector(SwiftHomeViewController.handleValueChanged(_:)), for: .valueChanged)
     }
     
     override func didReceiveMemoryWarning() {
@@ -58,27 +58,27 @@ class SwiftHomeViewController: UIViewController, ModalViewControllerDelegate {
         myValueSlider?.value = 1.0 - per
         myKnobControl?.setValue(CGFloat(1.0 - per), animated: true)
 
-        let current = NSDate(timeIntervalSinceNow: 0)
-        let dataFormatter = NSDateFormatter()
+        let current = Date(timeIntervalSinceNow: 0)
+        let dataFormatter = DateFormatter()
         dataFormatter.dateFormat = NSLocalizedString("yyyy年MM月dd日", comment: lyCommentDefault)
-        myDay?.text = dataFormatter.stringFromDate(current)
+        myDay?.text = dataFormatter.string(from: current)
     }
     
 
     //MARK: view init
 
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         viewInit()
         addTimer()
     }
     
-    override func viewWillDisappear(animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         myTimer?.invalidate()
     }
 
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
     }
@@ -88,27 +88,27 @@ class SwiftHomeViewController: UIViewController, ModalViewControllerDelegate {
     }
 
     func addTimer() {
-        myTimer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "onTimer:", userInfo: self, repeats: true)
+        myTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(SwiftHomeViewController.onTimer(_:)), userInfo: self, repeats: true)
     }
 
-    func onTimer(sender: AnyObject) {
-        let current = NSDate(timeIntervalSinceNow: 0)
-        let dataFormatter = NSDateFormatter()
+    func onTimer(_ sender: AnyObject) {
+        let current = Date(timeIntervalSinceNow: 0)
+        let dataFormatter = DateFormatter()
         dataFormatter.dateFormat = "HH:mm:ss"
-        mySecond?.text = dataFormatter.stringFromDate(current)
+        mySecond?.text = dataFormatter.string(from: current)
     }
     
     //MARK: UI
-    @IBAction func onSwipe(sender: UISwipeGestureRecognizer) {
+    @IBAction func onSwipe(_ sender: UISwipeGestureRecognizer) {
         tabBarController?.selectedIndex = 1
-        tabBarController?.tabBar((tabBarController?.tabBar)!, didSelectItem: (tabBarController?.tabBar.items![1])!)
+        tabBarController?.tabBar((tabBarController?.tabBar)!, didSelect: (tabBarController?.tabBar.items![1])!)
     }
     
-    @IBAction func onSwipeRight(sender: UISwipeGestureRecognizer) {
+    @IBAction func onSwipeRight(_ sender: UISwipeGestureRecognizer) {
 //        tabBarController?.selectedIndex = 3
     }
     
-    @IBAction func handleValueChanged(sender: AnyObject) {
+    @IBAction func handleValueChanged(_ sender: AnyObject) {
         if (sender as? NSObject) == self.myValueSlider {
             myKnobControl?.value = CGFloat((myValueSlider?.value)!)
         }
@@ -117,22 +117,22 @@ class SwiftHomeViewController: UIViewController, ModalViewControllerDelegate {
         }
     }
 
-    override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         
         if object as? NSObject == myKnobControl && keyPath! == "value" {
             myDeadDay?.text = String(format: NSLocalizedString("还有%d天", comment: lyCommentDefault), Int(365.0 * 70.0 * (1.0 - (myKnobControl?.value)!)))
             var date = HomeModel.instance().getBirthDate()
-            date = NSDate(timeInterval: Double(365.0 * 70 * (myKnobControl?.value)! * 24 * 3600), sinceDate: date)
-            let dateFormatter = NSDateFormatter()
+            date = Date(timeInterval: Double(365.0 * 70 * (myKnobControl?.value)! * 24 * 3600), since: date!)
+            let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = NSLocalizedString("yyyy年MM月dd日", comment: lyCommentDefault)
             
-            myDay?.text = dateFormatter.stringFromDate(date)
+            myDay?.text = dateFormatter.string(from: date!)
         }
     }
 
     //MARK: delegate
-    func dismissViewController(mcv: TimeSelectController) {
-        dismissViewControllerAnimated(true) { () -> Void in
+    func dismissViewController(_ mcv: TimeSelectController) {
+        dismiss(animated: true) { () -> Void in
             
         }
     }

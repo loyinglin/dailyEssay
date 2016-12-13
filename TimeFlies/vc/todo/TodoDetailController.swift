@@ -20,7 +20,7 @@ class SwiftTodoDetailController: UIViewController {
         super.viewDidLoad()
         
         if myIndex >= 0 {
-            let item:Thing? = TodoModel.instance().getThingByIndex(myIndex)
+            let item:Thing? = TodoModel.instance().getThingBy(myIndex)
             if (item != nil) {
                 myText?.text = item?.text
             }
@@ -43,30 +43,30 @@ class SwiftTodoDetailController: UIViewController {
         
     }
     
-    @IBAction func onSave(sender: NSObject) {
+    @IBAction func onSave(_ sender: NSObject) {
         if myIndex != -1 {
-            TodoModel.instance().modifyTodoByIndex(myIndex, text: myText?.text)
+            TodoModel.instance().modifyTodo(by: myIndex, text: myText?.text)
         }
         else {
             TodoModel.instance().addNewTodo(myText?.text)
         }
         
-        navigationController?.popViewControllerAnimated(true)
+        navigationController?.popViewController(animated: true)
     }
     
-    @IBAction func onDone(sender: NSObject) {
+    @IBAction func onDone(_ sender: NSObject) {
         if DoneModel.instance().getDoneCounts() > 0 {
-            let controller = UIAlertController(title: NSLocalizedString("固定到时间轴", comment: lyCommentDefault), message: NSLocalizedString("固定后可在时间轴查看，同时不再可修改", comment: lyCommentDefault), preferredStyle: .Alert)
+            let controller = UIAlertController(title: NSLocalizedString("固定到时间轴", comment: lyCommentDefault), message: NSLocalizedString("固定后可在时间轴查看，同时不再可修改", comment: lyCommentDefault), preferredStyle: .alert)
             
-            let cancelAction = UIAlertAction(title: NSLocalizedString("否", comment: lyCommentDefault), style: .Default, handler: nil)
-            let okAction = UIAlertAction(title: NSLocalizedString("是", comment: lyCommentDefault), style: .Default, handler: { [unowned self](action) -> Void in
+            let cancelAction = UIAlertAction(title: NSLocalizedString("否", comment: lyCommentDefault), style: .default, handler: nil)
+            let okAction = UIAlertAction(title: NSLocalizedString("是", comment: lyCommentDefault), style: .default, handler: { [unowned self](action) -> Void in
                 self.onSure()
             })
             
             controller.addAction(okAction)
             controller.addAction(cancelAction)
             
-            presentViewController(controller, animated: true, completion: nil)
+            present(controller, animated: true, completion: nil)
         }
         else {
             onSure()
@@ -75,19 +75,19 @@ class SwiftTodoDetailController: UIViewController {
     
     func onSure() {
         if myIndex != -1 {
-            TodoModel.instance().deleteTodoByIndex(myIndex)
+            TodoModel.instance().deleteTodo(by: myIndex)
         }
-        DoneModel.instance().addNewPassByText(myText?.text, type: .pass_type_thing)
+        DoneModel.instance().addNewPass(byText: myText?.text, type: .pass_type_thing)
         
-        navigationController?.popViewControllerAnimated(true)
+        navigationController?.popViewController(animated: true)
     }
     
-    @IBAction func onDelete(sender: NSObject) {
+    @IBAction func onDelete(_ sender: NSObject) {
         if myIndex != -1 {
-            TodoModel.instance().deleteTodoByIndex(myIndex)
+            TodoModel.instance().deleteTodo(by: myIndex)
         }
         
-        navigationController?.popViewControllerAnimated(true)
+        navigationController?.popViewController(animated: true)
     }
     //MARK: delegate
     

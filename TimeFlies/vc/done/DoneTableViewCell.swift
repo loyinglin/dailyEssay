@@ -17,10 +17,10 @@ class SwiftDoneTableViewCell: UITableViewCell {
     
     
     //MARK: init
-    func viewInitWithTime(endTime:NSDate, text:String) {
-        let dateFormatter = NSDateFormatter()
+    func viewInitWithTime(_ endTime:Date, text:String) {
+        let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = NSLocalizedString("yyyy年M月dd日", comment: lyCommentDefault)
-        myLeftText?.text = dateFormatter.stringFromDate(endTime)
+        myLeftText?.text = dateFormatter.string(from: endTime)
         myRightText?.text = text
     }
     

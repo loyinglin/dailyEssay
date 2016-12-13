@@ -25,7 +25,7 @@ class SwiftEssayViewController:UITableViewController {
         tableView.allowsMultipleSelectionDuringEditing = false
         myDelete = false
         weak var weakSelf = self
-        NSNotificationCenter.defaultCenter().addObserverForName("EssayModalChange", object: nil, queue: nil) { (note) -> Void in
+        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "EssayModalChange"), object: nil, queue: nil) { (note) -> Void in
             let strongSelf = weakSelf
             if (strongSelf?.myDelete)! {
                 return
@@ -38,15 +38,15 @@ class SwiftEssayViewController:UITableViewController {
         super.didReceiveMemoryWarning()
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         tableView.reloadData()
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier! == SwiftEssayViewController.open_str {
-            let controller:EssayDetailController? = segue.destinationViewController as? EssayDetailController
+            let controller:EssayDetailController? = segue.destination as? EssayDetailController
             if let con = controller {
                 con.index = myDetailIndex!
             }
@@ -57,40 +57,40 @@ class SwiftEssayViewController:UITableViewController {
     }
     //MARK: ui
     
-    @IBAction func onNewEssay(sender: NSObject) {
+    @IBAction func onNewEssay(_ sender: NSObject) {
         myDetailIndex = -1
-        performSegueWithIdentifier(SwiftEssayViewController.open_str, sender: nil)
+        performSegue(withIdentifier: SwiftEssayViewController.open_str, sender: nil)
     }
     
-    @IBAction func onSwipeLeft(sender: NSObject) {
+    @IBAction func onSwipeLeft(_ sender: NSObject) {
         tabBarController?.selectedIndex = 3
     }
     
-    @IBAction func onSwipeRight(sender: NSObject) {
+    @IBAction func onSwipeRight(_ sender: NSObject) {
         tabBarController?.selectedIndex = 1
     }
     
     //MARK: delegate
-    override func tableView(tableView: UITableView, titleForDeleteConfirmationButtonForRowAtIndexPath indexPath: NSIndexPath) -> String? {
+    override func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
         return NSLocalizedString("删除", comment: lyCommentDefault)
     }
     
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
     
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
             myDelete = true
             
-            EssayModel.instance().deleteEssayByIndex(indexPath.row)
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+            EssayModel.instance().deleteEssay(by: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
             
             myDelete = false
         }
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         lyShowEmptyTips()
         return EssayModel.instance().getEssaysCount()
     }
@@ -103,31 +103,31 @@ class SwiftEssayViewController:UITableViewController {
         else {
             let messageLabel = UILabel()
             messageLabel.text = NSLocalizedString("没有日记，请新建", comment: lyCommentDefault)
-            messageLabel.textColor = UIColor.lightGrayColor()
-            messageLabel.textAlignment = .Center
+            messageLabel.textColor = UIColor.lightGray
+            messageLabel.textAlignment = .center
             messageLabel.sizeToFit()
             tableView.backgroundView = messageLabel
         }
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell:SwiftEssayTableViewCell = tableView.dequeueReusableCellWithIdentifier("detail", forIndexPath: indexPath) as! SwiftEssayTableViewCell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell:SwiftEssayTableViewCell = tableView.dequeueReusableCell(withIdentifier: "detail", for: indexPath) as! SwiftEssayTableViewCell
         
-        let essay = EssayModel.instance().getEssayByIndex(indexPath.row)
+        let essay = EssayModel.instance().getEssayBy(indexPath.row)
         cell.viewInitWithText(essay.text, time: essay.time)
         
         return cell
     }
     
-    override func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
+    override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
         myDetailIndex = indexPath.row
         
-        performSegueWithIdentifier(SwiftEssayViewController.open_str, sender: self)
+        performSegue(withIdentifier: SwiftEssayViewController.open_str, sender: self)
         
         return nil
     }
     
-    override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 0.01
     }
 }

@@ -20,7 +20,7 @@ class SwiftDoneDetailController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let item:PassThing? = DoneModel.instance().getThingByIndex(myIndex)
+        let item:PassThing? = DoneModel.instance().getThingBy(myIndex)
         if item != nil {
             myDoneDetail?.text = item!.text
         }

@@ -20,7 +20,7 @@ class SwiftDoneTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NSNotificationCenter.defaultCenter().addObserverForName("DoneModelChange", object: nil, queue: nil) { [unowned self](note) -> Void in
+        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "DoneModelChange"), object: nil, queue: nil) { [unowned self](note) -> Void in
             self.tableView.reloadData()
         }
         
@@ -28,31 +28,31 @@ class SwiftDoneTableViewController: UITableViewController {
             navigationItem.rightBarButtonItem = nil
         }
 
-        NSNotificationCenter.defaultCenter().addObserverForName("FavoriteSuccess", object: nil, queue: nil) { (note) -> Void in
+        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "FavoriteSuccess"), object: nil, queue: nil) { (note) -> Void in
             DoneModel.instance().clearCache()
         }
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == const_open_done_detail {
-            let controller = segue.destinationViewController as! SwiftDoneDetailController
+            let controller = segue.destination as! SwiftDoneDetailController
             controller.myIndex = myIndex
         }
     }
     //MARK: ui
-    @IBAction func onSave(sender: NSObject) {
-        let alertController = UIAlertController(title: NSLocalizedString("分享到微信收藏", comment: lyCommentDefault), message: NSLocalizedString("把时间轴所有的信息收藏到微信，同时清除时间轴的信息", comment: lyCommentDefault), preferredStyle: .Alert)
+    @IBAction func onSave(_ sender: NSObject) {
+        let alertController = UIAlertController(title: NSLocalizedString("分享到微信收藏", comment: lyCommentDefault), message: NSLocalizedString("把时间轴所有的信息收藏到微信，同时清除时间轴的信息", comment: lyCommentDefault), preferredStyle: .alert)
         
-        let cancelAction = UIAlertAction(title: NSLocalizedString("否", comment: lyCommentDefault), style: .Default, handler: nil)
-        let okAction = UIAlertAction(title: NSLocalizedString("是", comment: lyCommentDefault), style: .Default) { (action) -> Void in
+        let cancelAction = UIAlertAction(title: NSLocalizedString("否", comment: lyCommentDefault), style: .default, handler: nil)
+        let okAction = UIAlertAction(title: NSLocalizedString("是", comment: lyCommentDefault), style: .default) { (action) -> Void in
             var str:String = ""
             
-            for var i = 0; i < DoneModel.instance().getDoneCounts(); ++i {
-                let item = DoneModel.instance().getThingByIndex(i)
-                let dateformatter = NSDateFormatter()
+            for i in 0 ..< DoneModel.instance().getDoneCounts() += 1 {
+                let item = DoneModel.instance().getThingBy(i)
+                let dateformatter = DateFormatter()
                 dateformatter.dateFormat = NSLocalizedString("yyyy年MM月dd日", comment: lyCommentDefault)
                 
-                str = String(format: "%@%@ -- %@\n%@\n", str, dateformatter.stringFromDate(item.startTime), dateformatter.stringFromDate(item.endTime), item.text)
+                str = String(format: "%@%@ -- %@\n%@\n", str, dateformatter.string(from: item?.startTime), dateformatter.string(from: item?.endTime), item?.text)
             }
             
             WeixinShare.instance().sendTextContent(str, scene: WXSceneFavorite)
@@ -61,27 +61,27 @@ class SwiftDoneTableViewController: UITableViewController {
         alertController.addAction(okAction)
         alertController.addAction(cancelAction)
         
-        presentViewController(alertController, animated: true, completion: nil)
+        present(alertController, animated: true, completion: nil)
     }
     
-    @IBAction func onSwipeRight(sender: NSObject) {
+    @IBAction func onSwipeRight(_ sender: NSObject) {
         tabBarController?.selectedIndex = 2
     }
     
-    @IBAction func onSwipeLeft(sender: NSObject) {
+    @IBAction func onSwipeLeft(_ sender: NSObject) {
         
     }
     //MARK: delegate
     
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return DoneModel.instance().getDoneCounts()
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("done", forIndexPath: indexPath) as! SwiftDoneTableViewCell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "done", for: indexPath) as! SwiftDoneTableViewCell
         
-        let item = DoneModel.instance().getThingByIndex(indexPath.row)
+        let item = DoneModel.instance().getThingBy(indexPath.row)
         if item != nil {
             cell.viewInitWithTime(item.endTime, text: item.text)
         }
@@ -92,13 +92,13 @@ class SwiftDoneTableViewController: UITableViewController {
         return cell
     }
     
-    override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 0.01
     }
     
-    override func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
+    override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
         myIndex = indexPath.row
-        performSegueWithIdentifier(const_open_done_detail, sender: nil)
+        performSegue(withIdentifier: const_open_done_detail, sender: nil)
         
         return nil
     }

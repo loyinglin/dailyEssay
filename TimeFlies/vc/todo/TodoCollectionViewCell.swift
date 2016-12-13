@@ -17,12 +17,12 @@ class SwiftTodoCollectionViewCell: UICollectionViewCell {
     
     //MARK: init
     
-    func viewInitWith(startTime: NSDate, text: String) {
+    func viewInitWith(_ startTime: Date, text: String) {
         myDetail?.text = text
-        let dateFormatter = NSDateFormatter()
+        let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy/MM/dd"
         
-        myStartTime?.text = dateFormatter.stringFromDate(startTime)
+        myStartTime?.text = dateFormatter.string(from: startTime)
     }
     
     

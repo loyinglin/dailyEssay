@@ -659,6 +659,8 @@
 					FD15A1E21BAAB1D70048B4D2 = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = A478ENRUX2;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.iCloud = {
 								enabled = 1;
@@ -977,7 +979,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "TimeFlies/supporting files/TimeFlies.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "TimeFlies/supporting files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -986,11 +988,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/TimeFlies/extension/weixin/SDKExport",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = loying.lin.TimeFlies.Test;
+				PRODUCT_BUNDLE_IDENTIFIER = loying.lin.TimeFlies.t;
 				PRODUCT_NAME = TimeFlies;
-				PROVISIONING_PROFILE = "be18191f-d31f-41a8-845c-31bb49b5a2eb";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "TimeFlies/TimeFlies-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1003,7 +1006,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "TimeFlies/supporting files/TimeFlies.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "TimeFlies/supporting files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1012,10 +1015,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/TimeFlies/extension/weixin/SDKExport",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = loying.lin.TimeFlies.Test;
+				PRODUCT_BUNDLE_IDENTIFIER = loying.lin.TimeFlies.t;
 				PRODUCT_NAME = TimeFlies;
-				PROVISIONING_PROFILE = "be18191f-d31f-41a8-845c-31bb49b5a2eb";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "TimeFlies/TimeFlies-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
