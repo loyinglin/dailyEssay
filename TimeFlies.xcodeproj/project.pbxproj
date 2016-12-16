@@ -669,6 +669,7 @@
 					};
 					FD15A1FE1BAAB1D70048B4D2 = {
 						CreatedOnToolsVersion = 6.4;
+						ProvisioningStyle = Automatic;
 						TestTargetID = FD15A1E21BAAB1D70048B4D2;
 					};
 				};
@@ -980,6 +981,7 @@
 				CODE_SIGN_ENTITLEMENTS = "TimeFlies/supporting files/TimeFlies.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = A478ENRUX2;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "TimeFlies/supporting files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -988,7 +990,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/TimeFlies/extension/weixin/SDKExport",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = loying.lin.TimeFlies.t;
+				PRODUCT_BUNDLE_IDENTIFIER = loying.lin.TimeFlies.loying;
 				PRODUCT_NAME = TimeFlies;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "TimeFlies/TimeFlies-Bridging-Header.h";
@@ -1007,6 +1009,7 @@
 				CODE_SIGN_ENTITLEMENTS = "TimeFlies/supporting files/TimeFlies.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = A478ENRUX2;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "TimeFlies/supporting files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1015,7 +1018,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/TimeFlies/extension/weixin/SDKExport",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = loying.lin.TimeFlies.t;
+				PRODUCT_BUNDLE_IDENTIFIER = loying.lin.TimeFlies.loying;
 				PRODUCT_NAME = TimeFlies;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "TimeFlies/TimeFlies-Bridging-Header.h";
@@ -1028,6 +1031,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1048,6 +1052,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

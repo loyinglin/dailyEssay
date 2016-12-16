@@ -114,7 +114,7 @@ class SwiftEssayViewController:UITableViewController {
         let cell:SwiftEssayTableViewCell = tableView.dequeueReusableCell(withIdentifier: "detail", for: indexPath) as! SwiftEssayTableViewCell
         
         let essay = EssayModel.instance().getEssayBy(indexPath.row)
-        cell.viewInitWithText(essay.text, time: essay.time)
+        cell.viewInitWithText((essay?.text)!, time: (essay?.time)!)
         
         return cell
     }

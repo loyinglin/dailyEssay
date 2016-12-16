@@ -47,12 +47,12 @@ class SwiftDoneTableViewController: UITableViewController {
         let okAction = UIAlertAction(title: NSLocalizedString("是", comment: lyCommentDefault), style: .default) { (action) -> Void in
             var str:String = ""
             
-            for i in 0 ..< DoneModel.instance().getDoneCounts() += 1 {
+            for i in 0 ..< DoneModel.instance().getDoneCounts() {
                 let item = DoneModel.instance().getThingBy(i)
                 let dateformatter = DateFormatter()
                 dateformatter.dateFormat = NSLocalizedString("yyyy年MM月dd日", comment: lyCommentDefault)
                 
-                str = String(format: "%@%@ -- %@\n%@\n", str, dateformatter.string(from: item?.startTime), dateformatter.string(from: item?.endTime), item?.text)
+                str = String(format: "%@%@ -- %@\n%@\n", str, dateformatter.string(from: (item?.startTime)!), dateformatter.string(from: (item?.endTime)!), (item?.text)!)
             }
             
             WeixinShare.instance().sendTextContent(str, scene: WXSceneFavorite)
@@ -83,7 +83,7 @@ class SwiftDoneTableViewController: UITableViewController {
         
         let item = DoneModel.instance().getThingBy(indexPath.row)
         if item != nil {
-            cell.viewInitWithTime(item.endTime, text: item.text)
+            cell.viewInitWithTime((item?.endTime)!, text: (item?.text)!)
         }
         else {
             cell.clear()
